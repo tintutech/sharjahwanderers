@@ -125,6 +125,7 @@
 
 	img {
 		max-width: 350px;
+		overflow: hidden;
 	}
 	.eventContainer div {
 		max-width: 370px;
