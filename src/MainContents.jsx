@@ -14,7 +14,7 @@ const data = {
 		link: "",
 	},
 	cardThree: {
-		title: "Indulge",
+		title: "INDULGE",
 		paraOne:
 			"dolorem nostrum, veniam. Deserunt odio consectetur autem inventore",
 		paraTwo: "Consectetur doloremque nihil Similique?",
