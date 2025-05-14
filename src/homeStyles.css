@@ -10,13 +10,17 @@
 }
 
 html {
+	font-size: 1.15em;
 	background: blue;
 	color: var(--text-color);
 }
 
-body {
-	max-width: 1920px;
+.heroNav > *,
+.mainContainer > *,
+.footer > * {
 	margin: 0 auto;
+	max-width: 1024px;
+	padding: 20px 10px;
 }
 
 li {
