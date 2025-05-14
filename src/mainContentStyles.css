@@ -66,6 +66,7 @@
 
 #experience {
 	max-width: 1024px;
+	margin-bottom: 80px;
 	h2 {
 		text-align: center;
 		margin-bottom: 20px;
@@ -111,12 +112,34 @@
 	}
 }
 
-@media (max-width: 450px) {
-	.leftCard {
-		:5px;
+#offerevents {
+	h2 {
+		padding: 15px;
+		font-weight: 400;
+		letter-spacing: 0.1em;
+		margin-bottom: 20px;
 	}
+	.eventContainer {
+		display: flex;
+	}
+
+	img {
+		max-width: 350px;
+	}
+	.eventContainer div {
+		max-width: 370px;
+		background-color: black;
+		padding: 20px;
+	}
+}
+
+@media (max-width: 450px) {
 	.leftCard > div > div:nth-of-type(1) {
 		padding: 5px;
+	}
+	#offerevents {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 @media (max-width: 790px) {
@@ -124,5 +147,10 @@
 		flex-direction: column;
 		.leftCard > div {
 		}
+	}
+
+	.eventContainer {
+		align-items: center;
+		flex-direction: column;
 	}
 }
