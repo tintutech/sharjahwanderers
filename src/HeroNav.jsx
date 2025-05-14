@@ -49,8 +49,12 @@ function HeroSection() {
 					, for all wanderers in Sharjah.
 				</h2>
 				<p>Be part of the club, become a member today!</p>
-				<a href="#">Become a member</a>
-				<a href="#">Explore offers, or attend an event?</a>
+				<div className="bg-blur">
+					<a href="#">Become a member</a>
+				</div>
+				<div className="bg-blur">
+					<a href="#">Explore offers, or attend an event?</a>
+				</div>
 			</div>
 			<div className="heroRight"></div>
 		</div>

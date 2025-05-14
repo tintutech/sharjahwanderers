@@ -15,6 +15,11 @@
 		letter-spacing: 0.1em;
 		margin-bottom: 60px;
 	}
+	h3 {
+		font-weight: 500;
+		letter-spacing: 0.125em;
+		font-size: 2em;
+	}
 	.tick {
 		filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7477%)
 			hue-rotate(126deg) brightness(106%) contrast(97%);
@@ -32,19 +37,14 @@
 		background: url("/sunAsset.png");
 		background-size: 68%;
 		background-repeat: no-repeat;
-		background-position: right 1.5em top -80%;
+		background-position: right 1.5em top 100%;
 		padding-top: 30px;
 		padding-bottom: 30px;
 		padding-right: 250px;
 	}
 
 	.leftCard > div > div > * {
-		margin-top: 20px;
-	}
-	a {
-		margin-top: 5px;
-		font-weight: 500;
-		color: #d993c2;
+		margin-top: 30px;
 	}
 
 	.leftCard div:nth-of-type(2) {
@@ -56,6 +56,12 @@
 		padding: 0 80px;
 		background-color: #1c1c1c;
 	}
+}
+#about .leftCard > div > div > a {
+	display: inline-block;
+	margin-top: 5px;
+	font-weight: 500;
+	color: #d993c2;
 }
 
 #experience {
