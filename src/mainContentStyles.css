@@ -127,7 +127,7 @@
 		max-width: 350px;
 		overflow: hidden;
 	}
-	.eventContainer div {
+	.offerCard {
 		max-width: 370px;
 		background-color: black;
 		padding: 20px;
@@ -146,8 +146,6 @@
 @media (max-width: 790px) {
 	#about {
 		flex-direction: column;
-		.leftCard > div {
-		}
 	}
 
 	.eventContainer {
