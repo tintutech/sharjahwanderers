@@ -6,6 +6,7 @@
 .footerCards {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	align-items: center;
 	gap: 40px;
 }
 
@@ -14,5 +15,22 @@
 		display: block;
 		width: 120px;
 		margin: 0 auto;
+	}
+}
+
+.footerRight {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	a {
+		display: block;
+	}
+}
+
+@media (max-width: 550px) {
+	.footerCards {
+		display: block;
+		> * {
+			margin: 10px auto;
+		}
 	}
 }
