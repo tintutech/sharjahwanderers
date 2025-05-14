@@ -1,31 +1,36 @@
 function Navbar() {
 	return (
 		<div className="navBar">
-			<ul>
-				<li>
-					<a href="#">ABOUT</a>
-				</li>
-				<li>
-					<a href="#">MEMBERSHIP</a>
-				</li>
-				<li>
-					<a href="#">EVENTS & OFFERS</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="/logo.svg" />
-					</a>
-				</li>
-				<li>
-					<a href="#">RESTAURANT</a>
-				</li>
-				<li>
-					<a href="#">FACILITIES</a>
-				</li>
-				<li>
-					<a href="#">SPA & SALON</a>
-				</li>
-			</ul>
+			<div className="mobileNav">
+				<img src="/logo.svg" />
+			</div>
+			<div className="desktopNav">
+				<ul>
+					<li>
+						<a href="#">ABOUT</a>
+					</li>
+					<li>
+						<a href="#">MEMBERSHIP</a>
+					</li>
+					<li>
+						<a href="#">EVENTS & OFFERS</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/logo.svg" />
+						</a>
+					</li>
+					<li>
+						<a href="#">RESTAURANT</a>
+					</li>
+					<li>
+						<a href="#">FACILITIES</a>
+					</li>
+					<li>
+						<a href="#">SPA & SALON</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	);
 }

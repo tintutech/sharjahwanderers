@@ -1,3 +1,7 @@
+:root {
+	--text-color: white;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -6,9 +10,24 @@
 }
 
 html {
-	color: white;
+	background: blue;
+	color: var(--text-color);
 }
 
-.heroNav {
-	background-color: blue;
+body {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 1px solid var(--text-color);
 }
