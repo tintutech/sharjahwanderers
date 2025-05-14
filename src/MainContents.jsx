@@ -54,9 +54,9 @@ function Experience() {
 
 function Events() {
 	return (
-		<div className="offerEvents">
+		<div id="offerevents">
 			<h2>OFFERS & EVENTS</h2>
-			<img src="" />
+			<img />
 			<div className="offerCard">
 				<h3></h3>
 				<p>
@@ -69,6 +69,9 @@ function Events() {
 		</div>
 	);
 }
+function Guestbook() {
+	return <div id="guestbook"></div>;
+}
 
 export default function MainContents() {
 	return (
@@ -79,6 +82,11 @@ export default function MainContents() {
 				<div className="explore"></div>
 				<Experience />
 				<Events />
+				<Guestbook />
+				<div className="endQUote">
+					<p>Not all those who wander are lost</p>
+					<a href="#">Pay us a Visit</a>
+				</div>
 			</div>
 		</>
 	);
