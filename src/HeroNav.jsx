@@ -46,11 +46,7 @@ function HeroSection() {
 					</span>
 					, for all wanderers in Sharjah.
 				</h2>
-				<p>
-					Adipisicing maxime eligendi quod blanditiis consectetur animi?
-					Exercitationem obcaecati quaerat saepe velit sapiente Quibusdam
-					incidunt totam lorem enim facilis Dicta vero voluptas ut vitae quia
-				</p>
+				<p>Be part of the club, become a member today!</p>
 				<a href="#">Become a member</a>
 				<a href="#">Explore offers, or attend an event?</a>
 			</div>

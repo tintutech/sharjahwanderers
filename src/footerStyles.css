@@ -8,13 +8,14 @@
 .footerCards {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 40px;
+	gap: 50px;
 	.footerBold {
 		font-weight: bold;
 	}
 }
 
 .footerLeft {
+	padding: 10px;
 	img {
 		display: block;
 		width: 120px;
@@ -26,6 +27,7 @@
 }
 
 .footerRight {
+	padding: 10px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
