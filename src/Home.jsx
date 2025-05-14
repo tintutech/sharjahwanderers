@@ -1,6 +1,7 @@
 import HeroNav from "./HeroNav.jsx";
 import MainContents from "./MainContents.jsx";
 import Footer from "./Footer.jsx";
+
 import "./homeStyles.css";
 import "./heroNavStyles.css";
 import "./footerStyles.css";
