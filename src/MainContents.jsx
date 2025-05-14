@@ -51,9 +51,18 @@ function About() {
 				</div>
 				<div>
 					<ul>
-						<li>{aboutData.list[0]}</li>
-						<li>{aboutData.list[1]}</li>
-						<li>{aboutData.list[2]}</li>
+						<li>
+							<img class="tick" src="/tick.svg" />
+							{aboutData.list[0]}
+						</li>
+						<li>
+							<img class="tick" src="/tick.svg" />
+							{aboutData.list[1]}
+						</li>
+						<li>
+							<img class="tick" src="/tick.svg" />
+							{aboutData.list[2]}
+						</li>
 					</ul>
 				</div>
 			</div>
