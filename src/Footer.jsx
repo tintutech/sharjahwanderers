@@ -47,8 +47,10 @@ function RightContents() {
 export default function Footer() {
 	return (
 		<div className="footer">
-			<LeftContents />
-			<RightContents />
+			<div className="footerCards">
+				<LeftContents />
+				<RightContents />
+			</div>
 		</div>
 	);
 }
