@@ -1,8 +1,8 @@
 function LeftContents() {
 	return (
 		<div className="footerLeft">
-			<img />
-			<p className="footerBold"></p>
+			<img src="/logo.svg" />
+			<p className="footerBold">Sharjah Wanderers Sports Club</p>
 			<div>
 				<p>Samman,</p>
 				<p>Harwan Suburb,</p>

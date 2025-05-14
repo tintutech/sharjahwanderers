@@ -1,6 +1,18 @@
-
-
-
 .footer {
 	width: 100%;
+	background-color: black;
+}
+
+.footerCards {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px;
+}
+
+.footerLeft {
+	img {
+		display: block;
+		width: 120px;
+		margin: 0 auto;
+	}
 }
