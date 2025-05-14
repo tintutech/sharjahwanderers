@@ -10,16 +10,20 @@
 }
 
 html {
-	font-size: 1.15em;
 	background: blue;
 	color: var(--text-color);
 }
 
-.heroNav > *,
-.mainContainer > *,
-.footer > * {
+.mainContainer > div,
+.footer > div {
 	margin: 0 auto;
-	max-width: 1024px;
+	max-width: 800px;
+	padding: 20px 10px;
+}
+
+.heroNav.navBar {
+	margin: 0 auto;
+	max-width: 1025px;
 	padding: 20px 10px;
 }
 

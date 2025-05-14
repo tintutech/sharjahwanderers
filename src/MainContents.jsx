@@ -45,6 +45,7 @@ function About() {
 	return (
 		<div id="about">
 			<div className="leftCard">
+				<h1>EXPLORE</h1>
 				<div>
 					<h3>{aboutData.title}</h3>
 					<p>{aboutData.content}</p>
@@ -131,7 +132,6 @@ export default function MainContents() {
 	return (
 		<>
 			<div className="mainContainer">
-				<h1>EXPLORE</h1>
 				<About />
 				<Experience />
 				<Events />
