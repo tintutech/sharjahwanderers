@@ -115,7 +115,7 @@ function Events() {
 			<h2>OFFERS & EVENTS</h2>
 			<img />
 			<div className="offerCard">
-				<h3></h3>
+				<h3>Promo Title</h3>
 				<p>
 					Sit praesentium blanditiis deleniti deserunt eligendi. Odio adipisci
 					iusto maiores dolorem ratione. Quis nisi facilis officia animi libero!
