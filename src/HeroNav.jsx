@@ -13,7 +13,9 @@ export default function Nav() {
 						<a href="#">EVENTS & OFFERS</a>
 					</li>
 					<li>
-						<img src="./images/logo.svg" />
+						<a href="#">
+							<img src="/logo.svg" />
+						</a>
 					</li>
 					<li>
 						<a href="#">RESTAURANT</a>
