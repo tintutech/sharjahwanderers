@@ -18,9 +18,10 @@
 	max-width: 1024px;
 	margin: 0 auto;
 	display: flex;
+	gap: 5px;
 	justify-content: space-between;
 	align-items: center;
-	padding: 30px;
+	padding: 20px;
 	padding-top: 50px;
 	padding-bottom: 10px;
 }
@@ -31,12 +32,17 @@
 }
 
 .heroSection {
+	color: #ffffff;
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 10px;
 	display: flex;
 	justify-content: space-around;
 	padding-bottom: 50px;
+}
+
+.heroSpecial {
+	color: #c1997b;
 }
 
 .heroLeft {
@@ -55,7 +61,7 @@
 	background-color: teal;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 	.desktopNav {
 		display: none;
 	}

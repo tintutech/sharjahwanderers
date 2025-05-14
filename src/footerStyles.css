@@ -1,13 +1,17 @@
 .footer {
+	letter-spacing: 0.05em;
 	width: 100%;
 	background-color: black;
+	padding: 50px;
 }
 
 .footerCards {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	align-items: center;
 	gap: 40px;
+	.footerBold {
+		font-weight: bold;
+	}
 }
 
 .footerLeft {
@@ -16,13 +20,18 @@
 		width: 120px;
 		margin: 0 auto;
 	}
+	> * {
+		margin-top: 25px;
+	}
 }
 
 .footerRight {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	gap: 20px;
 	a {
 		display: block;
+		margin-top: 15px;
 	}
 }
 
@@ -30,7 +39,10 @@
 	.footerCards {
 		display: block;
 		> * {
-			margin: 10px auto;
+			margin: 40px auto;
 		}
+	}
+	.footer {
+		padding: 10px;
 	}
 }
