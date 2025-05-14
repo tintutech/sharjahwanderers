@@ -32,8 +32,11 @@ export default function Nav() {
 			<div className="heroSection">
 				<div className="heroLeft">
 					<h2>
-						A private <span className="heroSpecial">Oasis</span>, for all
-						wanderers in Sharjah.
+						A private{" "}
+						<span className="heroSpecial">
+							<em>Oasis</em>
+						</span>
+						, for all wanderers in Sharjah.
 					</h2>
 					<p>
 						Adipisicing maxime eligendi quod blanditiis consectetur animi?
