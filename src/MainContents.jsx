@@ -68,6 +68,7 @@ function About() {
 function Experience() {
 	return (
 		<div id="experience">
+			<h2>EXPERIENCE</h2>
 			<div className="cardContainer">
 				<div className="card">
 					<h2>{data.cardOne.title}</h2>
