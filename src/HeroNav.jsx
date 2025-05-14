@@ -3,12 +3,27 @@ export default function Nav() {
 		<>
 			<div className="navBar">
 				<ul>
-					<li>one</li>
-					<li>two</li>
-					<li>three</li>
-					<li>four</li>
-					<li>five</li>
-					<li>six</li>
+					<li>
+						<a href="#">ABOUT</a>
+					</li>
+					<li>
+						<a href="#">MEMBERSHIP</a>
+					</li>
+					<li>
+						<a href="#">EVENTS & OFFERS</a>
+					</li>
+					<li>
+						<img />
+					</li>
+					<li>
+						<a href="#">RESTAURANT</a>
+					</li>
+					<li>
+						<a href="#">FACILITIES</a>
+					</li>
+					<li>
+						<a href="#">SPA & SALON</a>
+					</li>
 				</ul>
 			</div>
 
