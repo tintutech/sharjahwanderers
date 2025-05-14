@@ -1,0 +1,14 @@
+* {
+	padding: 0;
+	margin: 0;
+	line-height: 1.2em;
+	box-sizing: border-box;
+}
+
+html {
+	color: white;
+}
+
+.heroNav {
+	background-color: blue;
+}
