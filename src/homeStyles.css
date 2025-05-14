@@ -40,5 +40,5 @@ a {
 }
 
 a:hover {
-	border-bottom: 1px solid var(--text-color);
+	text-shadow: 0 0 10px gray;
 }
