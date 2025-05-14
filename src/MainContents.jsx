@@ -16,7 +16,7 @@ const data = {
 	cardThree: {
 		title: "Indulge",
 		paraOne:
-			"Ipsum cum labore maiores dolorem nostrum, veniam. Deserunt odio consectetur autem inventore",
+			"dolorem nostrum, veniam. Deserunt odio consectetur autem inventore",
 		paraTwo: "Consectetur doloremque nihil Similique?",
 		link: "",
 	},
