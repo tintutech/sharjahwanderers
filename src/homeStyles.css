@@ -10,7 +10,7 @@
 }
 
 html {
-	background: blue;
+	background: #1c1c1c;
 	font-size: 1.1em;
 	color: var(--text-color);
 }
