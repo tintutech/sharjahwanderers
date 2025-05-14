@@ -45,25 +45,27 @@ function About() {
 			<div className="leftCard">
 				<h1>EXPLORE</h1>
 				<div>
-					<h3>{aboutData.title}</h3>
-					<p>{aboutData.content}</p>
-					<a href="">Learn More</a>
-				</div>
-				<div>
-					<ul>
-						<li>
-							<img class="tick" src="/tick.svg" />
-							{aboutData.list[0]}
-						</li>
-						<li>
-							<img class="tick" src="/tick.svg" />
-							{aboutData.list[1]}
-						</li>
-						<li>
-							<img class="tick" src="/tick.svg" />
-							{aboutData.list[2]}
-						</li>
-					</ul>
+					<div>
+						<h3>{aboutData.title}</h3>
+						<p>{aboutData.content}</p>
+						<a href="">Learn More</a>
+					</div>
+					<div>
+						<ul>
+							<li>
+								<img class="tick" src="/tick.svg" />
+								{aboutData.list[0]}
+							</li>
+							<li>
+								<img class="tick" src="/tick.svg" />
+								{aboutData.list[1]}
+							</li>
+							<li>
+								<img class="tick" src="/tick.svg" />
+								{aboutData.list[2]}
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 
