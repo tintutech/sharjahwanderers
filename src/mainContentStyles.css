@@ -1,3 +1,35 @@
+#about {
+	display: flex;
+	position: relative;
+	top: -30px;
+	padding-top: 0;
+	padding-bottom: 60px;
+	h1 {
+		color: #d2a98a;
+		font-size: 3em;
+		font-weight: 500;
+		letter-spacing: 0.1em;
+		margin-bottom: 60px;
+	}
+	.leftCard > div {
+		padding: 10px;
+	}
+	a {
+		color: pink;
+	}
+
+	.leftCard div:nth-of-type(2) {
+		margin-left: 200px;
+	}
+	.rightCard {
+		position: relative;
+		top: 70px;
+		padding: 20px 120px;
+		background-color: #1c1c1c;
+		border: 1px solid white;
+	}
+}
+
 #experience {
 	max-width: 1024px;
 	h2 {
@@ -5,6 +37,7 @@
 		margin-bottom: 20px;
 		letter-spacing: 0.2em;
 		font-weight: 400;
+		color: #d2a98a;
 	}
 	.cardContainer {
 		display: grid;
@@ -12,8 +45,8 @@
 		gap: 40px;
 	}
 	.card {
-		background-color: #0e0e0e;
-		padding: 40px 20px;
+		background-color: #171717;
+		padding: 25px;
 		border-radius: 10px;
 		display: flex;
 		flex-direction: column;
@@ -24,7 +57,8 @@
 	}
 
 	p {
-		font-weight: 200;
+		font-size: 0.85em;
+		font-weight: 300;
 		letter-spacing: 0.1em;
 		line-height: 1.3em;
 		margin: 20px 0;
@@ -32,12 +66,13 @@
 
 	a {
 		display: inline-block;
-		margin: 20px;
+		margin: 5px 20px;
 		font-weight: 300;
 		font-size: 1.2em;
 		margin-bottom: 0px;
 		text-align: center;
 		padding: 10px 10px;
-		background-color: #616161;
+		background-color: #444444;
+		border-radius: 30px;
 	}
 }

@@ -26,7 +26,7 @@ const data = {
 const aboutData = {
 	title: "About the Club",
 	content:
-		"Consectetur dolorem ipsa dolorum explicabo dolor. Officiis aliquam adipisicing sequi officia obcaecati quaerat Doloribus dicta omnis facere eum sint Dicta atque impedit quisquam sunt odio Natus aspernatur ullam odit quis",
+		"Founded in 1977, when expats residing in Sharjah required a home away from home, the Sharjah Wanderer’s club were established, commonly known as the “British Club”.",
 	link: "",
 	list: ["Fully licensed bar", "Swimming pool", "Spa and Salon"],
 };

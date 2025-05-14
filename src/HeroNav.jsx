@@ -2,7 +2,9 @@ function Navbar() {
 	return (
 		<div className="navBar">
 			<div className="mobileNav">
-				<img src="/logo.svg" />
+				<a href="#">
+					<img src="/logo.svg" />
+				</a>
 			</div>
 			<div className="desktopNav">
 				<ul>
