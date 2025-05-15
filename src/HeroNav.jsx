@@ -1,8 +1,24 @@
+function openWindow() {
+	let open = document.querySelector(".openWindow");
+	let mobileNav = document.querySelector(".mobileNav");
+	mobileNav.classList.add("hidden");
+	open.classList.remove("hidden");
+}
+
+function closeWindow() {
+	let open = document.querySelector(".openWindow");
+	let mobileNav = document.querySelector(".mobileNav");
+	mobileNav.classList.remove("hidden");
+	open.classList.add("hidden");
+}
+
 function Navbar() {
 	return (
 		<div className="navBar">
-			<div className="openWindow">
-				<button className="close">&#128473;</button>
+			<div className="openWindow hidden">
+				<button onClick={closeWindow} className="close">
+					&#128473;
+				</button>
 				<ul>
 					<li>
 						<a href="#">ABOUT</a>
@@ -28,7 +44,9 @@ function Navbar() {
 				<a href="#">
 					<img src="/logo.svg" />
 				</a>
-				<button className="hamburgerMenu">&#9776;</button>
+				<button onClick={openWindow} className="hamburgerMenu">
+					&#9776;
+				</button>
 			</div>
 			<div className="desktopNav">
 				<ul>
