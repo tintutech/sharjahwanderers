@@ -113,6 +113,7 @@
 }
 
 #offerevents {
+	overflow: hidden;
 	h2 {
 		padding: 15px;
 		font-weight: 400;
@@ -125,13 +126,13 @@
 
 	img {
 		max-width: 350px;
-		overflow: hidden;
 	}
 	.offerCard {
 		max-width: 370px;
-		background-color: black;
+		background-color: #0e0e0e;
 		padding: 20px;
 	}
+
 }
 
 @media (max-width: 450px) {
