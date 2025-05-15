@@ -1,14 +1,10 @@
 function openWindow() {
 	let open = document.querySelector(".openWindow");
-	let mobileNav = document.querySelector(".mobileNav");
-	mobileNav.classList.add("hidden");
 	open.classList.remove("hidden");
 }
 
 function closeWindow() {
 	let open = document.querySelector(".openWindow");
-	let mobileNav = document.querySelector(".mobileNav");
-	mobileNav.classList.remove("hidden");
 	open.classList.add("hidden");
 }
 
