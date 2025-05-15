@@ -132,7 +132,16 @@
 		background-color: #0e0e0e;
 		padding: 20px;
 	}
+}
 
+#guestbookMembership {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 65px;
+	align-items: end;
+}
+
+#guestbookMembership.guest {
 }
 
 @media (max-width: 450px) {

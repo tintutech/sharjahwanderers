@@ -53,15 +53,15 @@ function About() {
 					<div>
 						<ul>
 							<li>
-								<img class="tick" src="/tick.svg" />
+								<img className="tick" src="/tick.svg" />
 								{aboutData.list[0]}
 							</li>
 							<li>
-								<img class="tick" src="/tick.svg" />
+								<img className="tick" src="/tick.svg" />
 								{aboutData.list[1]}
 							</li>
 							<li>
-								<img class="tick" src="/tick.svg" />
+								<img className="tick" src="/tick.svg" />
 								{aboutData.list[2]}
 							</li>
 						</ul>
@@ -131,26 +131,38 @@ function Events() {
 
 function Guestbook() {
 	return (
-		<div id="guestbookMembership">
-			<div className="left">
-				<h3>GUESTBOOK</h3>
-				<div>
-					<p>{guestBook.para1}</p>
-					<p>{guestBook.para2}</p>
-					<p>{guestBook.para3}</p>
+		<div className="guest">
+			<h3>GUESTBOOK</h3>
+			<div>
+				<p>{guestBook.para1}</p>
+				<p>{guestBook.para2}</p>
+				<p>{guestBook.para3}</p>
 
-					<h3 className="guestName">{guestBook.name}</h3>
-				</div>
-				<p>Learn More about our Membership benefits</p>
+				<h3 className="guestName">{guestBook.name}</h3>
 			</div>
-			<div className="right">
-				<h3>Membership</h3>
-				<p>
-					Become part of the club, explore unique offers, and enjoy unparalleled
-					access to our exclusive club.
-				</p>
-				<a href="#">ACTION BUTTON</a>
-			</div>
+			<p>Learn More about our Membership benefits</p>
+		</div>
+	);
+}
+
+function Membership() {
+	return (
+		<div className="membership">
+			<h3>Membership</h3>
+			<p>
+				Become part of the club, explore unique offers, and enjoy unparalleled
+				access to our exclusive club.
+			</p>
+			<a href="#">ACTION BUTTON</a>
+		</div>
+	);
+}
+
+function GuestbookMembership() {
+	return (
+		<div id="guestbookMembership">
+			<Guestbook />
+			<Membership />
 		</div>
 	);
 }
@@ -162,7 +174,7 @@ export default function MainContents() {
 				<About />
 				<Experience />
 				<Events />
-				<Guestbook />
+				<GuestbookMembership />
 				<div className="endQUote">
 					<p>Not all those who wander are lost</p>
 					<a href="#">Pay us a Visit</a>
