@@ -126,11 +126,28 @@
 
 	img {
 		max-width: 350px;
+		object-fit: cover;
 	}
 	.offerCard {
 		max-width: 370px;
 		background-color: #0e0e0e;
-		padding: 20px;
+		padding: 30px;
+	}
+	.offerCard h3 {
+		font-size: 1.5em;
+		font-weight: 500;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 0.9em;
+		line-height: 1.2em;
+		margin-bottom: 40px;
+	}
+	a {
+		font-size: 0.9em;
+		padding: 7px 15px;
+		background: white;
+		color: black;
 	}
 }
 
