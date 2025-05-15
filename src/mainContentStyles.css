@@ -140,6 +140,7 @@
 	gap: 65px;
 	align-items: end;
 	margin-top: 100px;
+	margin-bottom: 50px;
 }
 
 #guestbookMembership .guest {
@@ -181,16 +182,34 @@
 }
 
 #guestbookMembership .membership {
+	margin-top: 50px;
 	padding: 20px 50px;
 	background: url("/membershipBackground.jpg");
 	background-position: center;
 	background-size: cover;
+	h3 {
+		font-size: 1.8em;
+		font-weight: 400;
+	}
+	p {
+		margin-top: 10px;
+		font-weight: 300;
+	}
 	a {
-		display: inline-block;
-		margin: 30px auto;
-		padding: 15px 20px;
+		text-align: center;
+		display: block;
+		max-width: 220px;
+		margin: 40px auto;
+		margin-top: 80px;
+		padding: 10px 20px;
 		border: 2px solid black;
+		border-radius: 50px;
 		background-color: rgba(255, 255, 255, 0.2);
+		border-color: rgba(255, 255, 255, 0.1);
+		backdrop-filter: blur(8px);
+	}
+	a:hover {
+		border-color: rgba(255, 255, 255, 0.5);
 	}
 }
 
