@@ -116,7 +116,7 @@ function Events() {
 			<div className="eventContainer">
 				<img src="/placeholderImage.jpg" />
 				<div className="offerCard">
-					<h3>Promo Title</h3>
+					<h3>PROMO TITLE</h3>
 					<p>
 						Sit praesentium blanditiis deleniti deserunt eligendi. Odio adipisci
 						iusto maiores dolorem ratione. Quis nisi facilis officia animi
@@ -131,7 +131,7 @@ function Events() {
 
 function Guestbook() {
 	return (
-		<div id="guestbook">
+		<div id="guestbookMembership">
 			<div className="left">
 				<h3>GUESTBOOK</h3>
 				<div>
@@ -142,6 +142,14 @@ function Guestbook() {
 					<h3 className="guestName">{guestBook.name}</h3>
 				</div>
 				<p>Learn More about our Membership benefits</p>
+			</div>
+			<div className="right">
+				<h3>Membership</h3>
+				<p>
+					Become part of the club, explore unique offers, and enjoy unparalleled
+					access to our exclusive club.
+				</p>
+				<a href="#">ACTION BUTTON</a>
 			</div>
 		</div>
 	);
