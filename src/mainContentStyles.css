@@ -139,9 +139,61 @@
 	grid-template-columns: 1fr 1fr;
 	gap: 65px;
 	align-items: end;
+	margin-top: 100px;
 }
 
-#guestbookMembership.guest {
+#guestbookMembership .guest {
+	h3 {
+		font-size: 2em;
+		color: #d2a98a;
+		margin-bottom: 20px;
+	}
+	> p {
+		font-size: 1em !important;
+		margin-top: 30px;
+	}
+	p:nth-of-type(1) {
+		font-size: 1.8em;
+		margin-bottom: 10px;
+	}
+	p:nth-of-type(2) {
+		margin-bottom: 5px;
+	}
+	.guestName {
+		margin-top: 50px;
+		padding-top: 10px;
+		border-top: 1px solid white;
+		color: white;
+		font-weight: 500;
+		letter-spacing: 0.1em;
+	}
+	div {
+		border-radius: 5px;
+		font-weight: 300;
+		padding: 40px 30px;
+		background: #7a1d1d;
+		background: linear-gradient(
+			180deg,
+			rgba(122, 29, 29, 1) 0%,
+			rgba(48, 12, 12, 1) 100%
+		);
+	}
+}
+
+.endQuote {
+	text-align: center;
+	padding-bottom: 10px !important;
+	font-style: italic;
+	font-size: 1.5em;
+	font-weight: 400;
+	> * {
+		display: block;
+		margin-top: 5px;
+		letter-spacing: 0.05em;
+	}
+	a {
+		color: #d2a98a;
+	}
 }
 
 @media (max-width: 450px) {
@@ -153,6 +205,12 @@
 		padding-right: 0;
 	}
 }
+@media (max-width: 600px) {
+	#guestbookMembership {
+		display: block;
+	}
+}
+
 @media (max-width: 790px) {
 	#about {
 		flex-direction: column;

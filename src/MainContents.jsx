@@ -175,7 +175,7 @@ export default function MainContents() {
 				<Experience />
 				<Events />
 				<GuestbookMembership />
-				<div className="endQUote">
+				<div className="endQuote">
 					<p>Not all those who wander are lost</p>
 					<a href="#">Pay us a Visit</a>
 				</div>
