@@ -5,6 +5,7 @@ function Navbar() {
 				<a href="#">
 					<img src="/logo.svg" />
 				</a>
+				<button className="hamburgerMenu">&#9776;</button>
 			</div>
 			<div className="desktopNav">
 				<ul>

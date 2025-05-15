@@ -89,12 +89,24 @@
 	border-radius: 10px;
 }
 
+.hidden {
+	display: none;
+}
+
 @media (max-width: 800px) {
 	.desktopNav {
 		display: none;
 	}
 	.mobileNav {
-		display: block;
+		display: flex;
+		justify-content: space-between;
+	}
+	.hamburgerMenu {
+		font-size: 2.5em;
+		font-weight: 300;
+		background: none;
+		border: none;
+		color: white;
 	}
 	.heroRight {
 		display: none;
