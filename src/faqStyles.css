@@ -11,8 +11,12 @@
 
 	.card {
 		margin: 0 auto;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 		padding-right: 100px;
+	}
+	h3 {
+		font-size: 1.2em;
+		font-weight: 400;
 	}
 	.cardUpper {
 		display: flex;
@@ -21,20 +25,20 @@
 	}
 	button {
 		color: inherit;
-		font-size: 2em;
+		font-size: 3em;
 		background: none;
 		border: none;
-	}
-	.minimize {
-		font-size: 3em;
+		transition: 1s ease;
 	}
 	button:hover {
 		cursor: pointer;
 	}
 
-	.infoCard {
+	.cardInfo {
 		opacity: 1;
-		transition: opacity 1s ease;
+		font-size: 0.9em;
+		padding-right: 50px;
+		transition: all 1s ease;
 	}
 
 	.hiddenCard {
