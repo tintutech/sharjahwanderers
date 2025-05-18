@@ -79,7 +79,7 @@ function ReturnRadioCards() {
 	});
 	return (
 		<div id="FAQ">
-			<h2>Frequently asked questions</h2>
+			<h2>Frequently asked questions radio buttons</h2>
 			<ul>{cards}</ul>
 		</div>
 	);
@@ -102,7 +102,7 @@ function ReturnCheckboxCards() {
 	});
 	return (
 		<div id="FAQ">
-			<h2>Frequently asked questions</h2>
+			<h2>Frequently asked questions checkbox</h2>
 			<ul>{cards}</ul>
 		</div>
 	);
