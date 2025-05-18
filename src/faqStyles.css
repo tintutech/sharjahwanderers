@@ -1,0 +1,44 @@
+#FAQ {
+	margin-top: 50px;
+	margin-bottom: 200px;
+	h2 {
+		font-size: 2em;
+		font-weight: 300;
+		font-style: italic;
+		letter-spacing: 0.15em;
+		margin-bottom: 40px;
+	}
+
+	.card {
+		margin: 0 auto;
+		margin-bottom: 20px;
+		padding-right: 100px;
+	}
+	.cardUpper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	button {
+		color: inherit;
+		font-size: 2em;
+		background: none;
+		border: none;
+	}
+	.minimize {
+		font-size: 3em;
+	}
+	button:hover {
+		cursor: pointer;
+	}
+
+	.infoCard {
+		opacity: 1;
+		transition: opacity 1s ease;
+	}
+
+	.hiddenCard {
+		display: none;
+		opacity: 0;
+	}
+}
