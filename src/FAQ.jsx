@@ -62,12 +62,43 @@ function ReturnCards() {
 
 import "./faqRadioStyles.css";
 
+function radioToggle(e) {
+	let curr = e.target.nodeName.toLowerCase();
+	if (curr == "label") {
+		let span = e.target.querySelector("span");
+		if (span.textContent === "−") {
+			span.textContent = "+";
+		} else {
+			span.textContent = "−";
+		}
+		let showCard = e.target.parentNode.querySelector("input");
+		if (showCard.checked === true) {
+			showCard.checked = false;
+		}
+	}
+	if (curr == "span") {
+		if (e.target.textContent === "−") {
+			e.target.textContent = "+";
+		} else {
+			e.target.textContent = "−";
+		}
+		let showCard = e.target.parentNode.parentNode.querySelector("input");
+		if (showCard.checked === true) {
+			showCard.checked = false;
+		}
+	}
+}
+
 function ReturnRadioCards() {
 	const cards = info.map((i) => {
 		return (
 			<li key={i.id}>
 				<div className="card">
-					<label htmlFor={"check" + i.id} className="cardUpper">
+					<label
+						onClick={radioToggle}
+						htmlFor={"check" + i.id}
+						className="cardUpper"
+					>
 						{i.title}
 						<span>+</span>
 					</label>

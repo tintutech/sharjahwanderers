@@ -57,27 +57,27 @@
 	}
 
 	input[type="radio"]:checked + p {
-		max-height: 1000px;
+		max-height: 400px;
 		padding-top: 10px;
 		padding-bottom: 20px;
 		opacity: 1;
 		font-size: 0.9em;
 		padding-right: 50px;
 		transition:
-			max-height 2400ms linear,
-			opacity 600ms linear;
+			max-height 500ms linear,
+			opacity 500ms linear;
 	}
 
 	input[type="checkbox"]:checked + p {
-		max-height: 1000px;
+		max-height: 400px;
 		padding-top: 10px;
 		padding-bottom: 20px;
 		opacity: 1;
 		font-size: 0.9em;
 		padding-right: 50px;
 		transition:
-			max-height 2400ms linear,
-			opacity 600ms linear;
+			max-height 500ms ease,
+			opacity 500ms ease;
 	}
 }
 
