@@ -21,34 +21,38 @@ let info = [
 	},
 ];
 
+import "./faqStyles.css";
+
 function toggle(e) {
 	e.target.parentNode.parentNode
 		.querySelector(".cardInfo")
-		.classList.toggle("accordionHidden");
+		.classList.toggle("hiddenCard");
 	console.log(e.target);
 	if (e.target.textContent == "+") {
 		e.target.textContent = "-";
+		e.target.classList.add("minimize");
 	} else {
 		e.target.textContent = "+";
+		e.target.classList.remove("minimize");
 	}
 }
 
 function ReturnCards() {
 	const cards = info.map((i) => {
 		return (
-			<div key={i.title} id="cards">
+			<div key={i.title} className="card">
 				<div className="cardUpper">
 					<h3>{i.title}</h3>
 					<button onClick={toggle}>+</button>
 				</div>
-				<div className="cardInfo">
+				<div className="cardInfo hiddenCard">
 					<p>{i.cardInfo}</p>
 				</div>
 			</div>
 		);
 	});
 	return (
-		<div className="FAQ">
+		<div id="FAQ">
 			<h2>Frequently asked questions</h2>
 			{cards}
 		</div>
