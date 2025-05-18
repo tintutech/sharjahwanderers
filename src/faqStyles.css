@@ -4,7 +4,7 @@
 	margin-bottom: 200px;
 	h2 {
 		font-size: 1.8em;
-		font-weight: 300;
+		font-weight: 350;
 		font-style: italic;
 		letter-spacing: 0.15em;
 		margin-bottom: 40px;
@@ -14,6 +14,7 @@
 		margin: 0 auto;
 	}
 	h3 {
+		letter-spacing: 0.1em;
 		font-size: 1em;
 		font-weight: 300;
 	}
@@ -24,14 +25,22 @@
 	}
 	button {
 		font-family: "Inter";
+		height: 45px;
 		color: inherit;
 		font-size: 2.5em;
 		background: none;
 		font-weight: 200;
 		border: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	button:hover {
 		cursor: pointer;
+	}
+
+	button:focus {
+		outline: 1px solid rgba(255, 255, 255, 0.7);
 	}
 
 	.hiddenCard {
