@@ -27,13 +27,10 @@ function toggle(e) {
 	e.target.parentNode.parentNode
 		.querySelector(".cardInfo")
 		.classList.toggle("hiddenCard");
-	console.log(e.target);
 	if (e.target.textContent == "+") {
 		e.target.textContent = "−";
-		e.target.classList.add("minimize");
 	} else {
 		e.target.textContent = "+";
-		e.target.classList.remove("minimize");
 	}
 }
 

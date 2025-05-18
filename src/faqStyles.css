@@ -2,7 +2,7 @@
 	margin-top: 50px;
 	margin-bottom: 200px;
 	h2 {
-		font-size: 2em;
+		font-size: 1.8em;
 		font-weight: 300;
 		font-style: italic;
 		letter-spacing: 0.15em;
@@ -11,12 +11,10 @@
 
 	.card {
 		margin: 0 auto;
-		margin-bottom: 10px;
-		padding-right: 100px;
 	}
 	h3 {
 		font-size: 1.2em;
-		font-weight: 400;
+		font-weight: 300;
 	}
 	.cardUpper {
 		display: flex;
@@ -24,25 +22,28 @@
 		align-items: center;
 	}
 	button {
+		font-family: "Inter";
 		color: inherit;
-		font-size: 3em;
+		font-size: 2.5em;
 		background: none;
+		font-weight: 200;
 		border: none;
-		transition: 1s ease;
 	}
 	button:hover {
 		cursor: pointer;
 	}
 
-	.cardInfo {
-		opacity: 1;
-		font-size: 0.9em;
-		padding-right: 50px;
-		transition: all 1s ease;
+	.hiddenCard {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 1s ease-out;
 	}
 
-	.hiddenCard {
-		display: none;
-		opacity: 0;
+	.cardInfo {
+		font-size: 0.9em;
+		padding-right: 50px;
+	}
+	.cardInfo p {
+		padding-bottom: 30px;
 	}
 }
