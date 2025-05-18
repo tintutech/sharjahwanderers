@@ -1,3 +1,5 @@
+import "./footerStyles.css";
+
 function LeftContents() {
 	return (
 		<div className="footerLeft">
