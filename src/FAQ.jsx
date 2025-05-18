@@ -67,7 +67,7 @@ function ReturnRadioCards() {
 		return (
 			<li key={i.id}>
 				<div className="card">
-					<label for={"check" + i.id} className="cardUpper">
+					<label htmlFor={"check" + i.id} className="cardUpper">
 						{i.title}
 						<span>+</span>
 					</label>
@@ -85,11 +85,35 @@ function ReturnRadioCards() {
 	);
 }
 
+function ReturnCheckboxCards() {
+	const cards = info.map((i) => {
+		return (
+			<li key={i.id}>
+				<div className="card">
+					<label htmlFor={"checkbox" + i.id} className="cardUpper">
+						{i.title}
+						<span>+</span>
+					</label>
+					<input name="accordion" id={"checkbox" + i.id} type="checkbox" />
+					<p className="cardInfo hiddenCard">{i.cardInfo}</p>
+				</div>
+			</li>
+		);
+	});
+	return (
+		<div id="FAQ">
+			<h2>Frequently asked questions</h2>
+			<ul>{cards}</ul>
+		</div>
+	);
+}
+
 export default function FAQ() {
 	return (
 		<>
 			<ReturnCards />
-			<ReturnRadioCards />;
+			<ReturnRadioCards />
+			<ReturnCheckboxCards />
 		</>
 	);
 }

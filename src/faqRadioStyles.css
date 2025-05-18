@@ -42,28 +42,42 @@
 	}
 
 	.cards p {
-		display: none;
-		opacity: 0;
+		max-height: 0;
 		overflow: hidden;
 		transition: max-height 1s ease-out;
 	}
 
-	.cardInfo {
-		font-size: 0.9em;
-		padding-right: 50px;
-		transition: all 200ms linear;
-	}
-	.cardInfo p {
-		padding-top: 10px;
-		padding-bottom: 30px;
+	.radioCardInfo {
+		max-height: 0;
+		opacity: 0;
 	}
 
 	input {
-		display: block;
+		display: hidden;
 	}
 
-	input:checked + p {
-		display: block;
+	input[type="radio"]:checked + p {
+		max-height: 1000px;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		opacity: 1;
+		font-size: 0.9em;
+		padding-right: 50px;
+		transition:
+			max-height 2400ms linear,
+			opacity 600ms linear;
+	}
+
+	input[type="checkbox"]:checked + p {
+		max-height: 1000px;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		opacity: 1;
+		font-size: 0.9em;
+		padding-right: 50px;
+		transition:
+			max-height 2400ms linear,
+			opacity 600ms linear;
 	}
 }
 
