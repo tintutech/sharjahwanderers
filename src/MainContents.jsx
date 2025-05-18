@@ -1,3 +1,5 @@
+import FAQ from "./FAQ.jsx";
+
 const data = {
 	cardOne: {
 		title: "EAT",
@@ -172,6 +174,7 @@ export default function MainContents() {
 		<>
 			<div className="mainContainer">
 				<About />
+				<FAQ />
 				<Experience />
 				<Events />
 				<GuestbookMembership />
