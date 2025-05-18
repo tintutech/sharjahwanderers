@@ -1,21 +1,21 @@
 let info = [
 	{
-		title: "CARD 1",
+		title: "Membership requirements",
 		cardInfo:
 			"Ipsum laudantium dolore commodi voluptas autem. Voluptates molestiae voluptatem corrupti at nisi placeat a ipsa optio. Libero distinctio ducimus sed voluptas reprehenderit Praesentium hic aut",
 	},
 	{
-		title: "CARD 2",
+		title: "Membership requirements",
 		cardInfo:
 			"Amet ab quidem quaerat repudiandae maxime Enim commodi molestias nobis sed unde. Adipisci pariatur tempora nobis sapiente iste reiciendis Culpa corporis suscipit neque odio dicta",
 	},
 	{
-		title: "CARD 3",
+		title: "Membership requirements",
 		cardInfo:
 			"Ipsum laudantium dolore commodi voluptas autem. Voluptates molestiae voluptatem corrupti at nisi placeat a ipsa optio. Libero distinctio ducimus sed voluptas reprehenderit Praesentium hic aut",
 	},
 	{
-		title: "CARD 4",
+		title: "Membership requirements",
 		cardInfo:
 			"Amet ab quidem quaerat repudiandae maxime Enim commodi molestias nobis sed unde. Adipisci pariatur tempora nobis sapiente iste reiciendis Culpa corporis suscipit neque odio dicta",
 	},
