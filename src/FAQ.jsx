@@ -60,6 +60,34 @@ function ReturnCards() {
 	);
 }
 
+import "./faqRadioStyles.css";
+
+function ReturnRadioCards() {
+	const cards = info.map((i) => {
+		return (
+			<div key={i.id} className="card">
+				<label for={"check" + i.id} className="cardUpper">
+					{i.title}
+					<span>+</span>
+				</label>
+				<input id={"check" + i.id} type="radio" />
+				<p className="cardInfo hiddenCard">{i.cardInfo}</p>
+			</div>
+		);
+	});
+	return (
+		<div id="FAQ">
+			<h2>Frequently asked questions</h2>
+			{cards}
+		</div>
+	);
+}
+
 export default function FAQ() {
-	return <ReturnCards />;
+	return (
+		<>
+			<ReturnCards />
+			<ReturnRadioCards />;
+		</>
+	);
 }
