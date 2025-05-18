@@ -1,0 +1,69 @@
+#FAQ {
+	max-width: 650px;
+	margin-top: 50px;
+	margin-bottom: 200px;
+	h2 {
+		font-size: 1.8em;
+		font-weight: 350;
+		font-style: italic;
+		letter-spacing: 0.15em;
+		margin-bottom: 40px;
+	}
+
+	.card {
+		margin: 20px auto;
+	}
+	label {
+		letter-spacing: 0.1em;
+		font-size: 1em;
+		font-weight: 300;
+	}
+	.cardUpper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	label span {
+		font-family: "Inter";
+		height: 30px;
+		width: 30px;
+		color: inherit;
+		font-size: 2.5em;
+		background: none;
+		font-weight: 200;
+		border: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	button:hover,
+	label span:hover {
+		cursor: pointer;
+	}
+
+	.hiddenCard {
+		max-height: 0px;
+		opacity: 0;
+		overflow: hidden;
+		transition: max-height 1s ease-out;
+	}
+
+	.cardInfo {
+		font-size: 0.9em;
+		padding-right: 50px;
+		transition: all 200ms linear;
+	}
+	.cardInfo p {
+		padding-top: 10px;
+		padding-bottom: 30px;
+	}
+}
+
+@media (max-width: 370px) {
+	#FAQ {
+		padding: 15px;
+		.cardInfo {
+			padding-right: 0;
+		}
+	}
+}
