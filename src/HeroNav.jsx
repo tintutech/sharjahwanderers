@@ -1,3 +1,5 @@
+import "./heroNavStyles.css";
+
 function openWindow() {
 	let open = document.querySelector(".openWindow");
 	open.classList.remove("hidden");
