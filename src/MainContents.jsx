@@ -1,4 +1,5 @@
 import FAQ from "./FAQ.jsx";
+import "./mainContentStyles.css";
 
 const data = {
 	cardOne: {

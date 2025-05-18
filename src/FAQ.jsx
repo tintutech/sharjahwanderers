@@ -36,7 +36,7 @@ function toggle(e) {
 function ReturnCards() {
 	const cards = info.map((i) => {
 		return (
-			<div key={i.title} className="cards">
+			<div key={i.title} id="cards">
 				<div className="cardUpper">
 					<h3>{i.title}</h3>
 					<button onClick={toggle}>+</button>

@@ -4,7 +4,6 @@ import Footer from "./Footer.jsx";
 
 import "./homeStyles.css";
 import "./heroNavStyles.css";
-import "./mainContentStyles.css";
 
 export default function Home() {
 	return (
