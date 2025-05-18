@@ -41,8 +41,8 @@
 		cursor: pointer;
 	}
 
-	.hiddenCard {
-		max-height: 0px;
+	.cards p {
+		display: none;
 		opacity: 0;
 		overflow: hidden;
 		transition: max-height 1s ease-out;
@@ -56,6 +56,14 @@
 	.cardInfo p {
 		padding-top: 10px;
 		padding-bottom: 30px;
+	}
+
+	input {
+		display: block;
+	}
+
+	input:checked + p {
+		display: block;
 	}
 }
 

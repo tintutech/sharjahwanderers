@@ -65,20 +65,22 @@ import "./faqRadioStyles.css";
 function ReturnRadioCards() {
 	const cards = info.map((i) => {
 		return (
-			<div key={i.id} className="card">
-				<label for={"check" + i.id} className="cardUpper">
-					{i.title}
-					<span>+</span>
-				</label>
-				<input id={"check" + i.id} type="radio" />
-				<p className="cardInfo hiddenCard">{i.cardInfo}</p>
-			</div>
+			<li key={i.id}>
+				<div className="card">
+					<label for={"check" + i.id} className="cardUpper">
+						{i.title}
+						<span>+</span>
+					</label>
+					<input name="accordion" id={"check" + i.id} type="radio" />
+					<p className="cardInfo hiddenCard">{i.cardInfo}</p>
+				</div>
+			</li>
 		);
 	});
 	return (
 		<div id="FAQ">
 			<h2>Frequently asked questions</h2>
-			{cards}
+			<ul>{cards}</ul>
 		</div>
 	);
 }
