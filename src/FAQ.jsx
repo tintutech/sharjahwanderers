@@ -49,7 +49,13 @@ function toggleClass(e) {
 		e.classList.remove("open");
 		e.querySelector("button").textContent = "+";
 	});
-	if (contains) curr.classList.toggle("open");
+
+	if (contains) {
+		curr.classList.add("open");
+	} else {
+		curr.classList.remove("open");
+	}
+
 	if (currButtonText === "+") {
 		currButton.textContent = "−";
 	} else if (currButtonText === "−") {
