@@ -34,19 +34,29 @@ function toggleClass(e) {
 	} else {
 		curr = e.target;
 	}
-
-	curr.classList.toggle("open");
-
-	/*
-	e.target.parentNode.parentNode
-		.querySelector(".cardInfo")
-		.classList.toggle("hiddenCard");
-	if (e.target.textContent == "+") {
-		e.target.textContent = "−";
+	let parentContainer =
+		curr.parentNode.parentNode.querySelectorAll(".card .cardUpper");
+	let contains;
+	if (curr.classList.contains("open")) {
+		contains = false;
 	} else {
-		e.target.textContent = "+";
+		contains = true;
 	}
-	*/
+	let currButton = curr.querySelector("button");
+	let currButtonText = currButton.textContent;
+
+	parentContainer.forEach((e) => {
+		console.log(e);
+		e.classList.remove("open");
+		e.querySelector("button").textContent = "+";
+	});
+	if (contains) curr.classList.toggle("open");
+	console.log(currButton);
+	if (currButtonText === "+") {
+		currButton.textContent = "−";
+	} else if (currButtontext === "−") {
+		currButton.textContent = "+";
+	}
 }
 
 function ReturnCards() {
