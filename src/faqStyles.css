@@ -40,14 +40,11 @@
 		cursor: pointer;
 	}
 
-	.hiddenCard {
+	.cardInfo {
 		max-height: 0px;
 		opacity: 0;
 		overflow: hidden;
 		transition: max-height 1s ease-out;
-	}
-
-	.cardInfo {
 		font-size: 0.9em;
 		padding-right: 50px;
 		transition: all 200ms linear;
@@ -55,6 +52,11 @@
 	.cardInfo p {
 		padding-top: 10px;
 		padding-bottom: 30px;
+	}
+
+	.open + .cardInfo {
+		max-height: 300px;
+		opacity: 1;
 	}
 }
 

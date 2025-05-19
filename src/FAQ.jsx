@@ -27,7 +27,17 @@ let info = [
 
 import "./faqStyles.css";
 
-function toggle(e) {
+function toggleClass(e) {
+	let curr;
+	if (e.target.nodeName.toLowerCase() == "button") {
+		curr = e.target.parentNode;
+	} else {
+		curr = e.target;
+	}
+
+	curr.classList.toggle("open");
+
+	/*
 	e.target.parentNode.parentNode
 		.querySelector(".cardInfo")
 		.classList.toggle("hiddenCard");
@@ -36,15 +46,16 @@ function toggle(e) {
 	} else {
 		e.target.textContent = "+";
 	}
+	*/
 }
 
 function ReturnCards() {
 	const cards = info.map((i) => {
 		return (
 			<div key={i.id} className="card">
-				<div className="cardUpper">
+				<div onClick={toggleClass} className="cardUpper">
 					<h3>{i.title}</h3>
-					<button onClick={toggle}>+</button>
+					<button>+</button>
 				</div>
 				<div className="cardInfo hiddenCard">
 					<p>{i.cardInfo}</p>
@@ -60,6 +71,7 @@ function ReturnCards() {
 	);
 }
 
+/*
 import "./faqRadioStyles.css";
 
 function ReturnRadioCards() {
@@ -107,13 +119,12 @@ function ReturnCheckboxCards() {
 		</div>
 	);
 }
+*/
 
 export default function FAQ() {
 	return (
 		<>
 			<ReturnCards />
-			<ReturnRadioCards />
-			<ReturnCheckboxCards />
 		</>
 	);
 }
