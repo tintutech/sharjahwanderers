@@ -46,15 +46,13 @@ function toggleClass(e) {
 	let currButtonText = currButton.textContent;
 
 	parentContainer.forEach((e) => {
-		console.log(e);
 		e.classList.remove("open");
 		e.querySelector("button").textContent = "+";
 	});
 	if (contains) curr.classList.toggle("open");
-	console.log(currButton);
 	if (currButtonText === "+") {
 		currButton.textContent = "−";
-	} else if (currButtontext === "−") {
+	} else if (currButtonText === "−") {
 		currButton.textContent = "+";
 	}
 }
@@ -80,56 +78,6 @@ function ReturnCards() {
 		</div>
 	);
 }
-
-/*
-import "./faqRadioStyles.css";
-
-function ReturnRadioCards() {
-	const cards = info.map((i) => {
-		return (
-			<li key={i.id}>
-				<div className="card">
-					<label htmlFor={"check" + i.id} className="cardUpper">
-						{i.title}
-						<span>+</span>
-					</label>
-					<input name="accordion" id={"check" + i.id} type="radio" />
-					<p className="cardInfo hiddenCard">{i.cardInfo}</p>
-				</div>
-			</li>
-		);
-	});
-	return (
-		<div id="FAQ">
-			<h2>Frequently asked questions radio buttons</h2>
-			<ul>{cards}</ul>
-		</div>
-	);
-}
-
-function ReturnCheckboxCards() {
-	const cards = info.map((i) => {
-		return (
-			<li key={i.id}>
-				<div className="card">
-					<label htmlFor={"checkbox" + i.id} className="cardUpper">
-						{i.title}
-						<span>+</span>
-					</label>
-					<input name="accordion" id={"checkbox" + i.id} type="checkbox" />
-					<p className="cardInfo hiddenCard">{i.cardInfo}</p>
-				</div>
-			</li>
-		);
-	});
-	return (
-		<div id="FAQ">
-			<h2>Frequently asked questions checkbox</h2>
-			<ul>{cards}</ul>
-		</div>
-	);
-}
-*/
 
 export default function FAQ() {
 	return (
