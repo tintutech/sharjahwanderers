@@ -26,6 +26,7 @@
 	button {
 		font-family: "Inter";
 		height: 30px;
+		opacity: 1;
 		width: 30px;
 		color: inherit;
 		font-size: 2.5em;
@@ -35,7 +36,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		transition: all 1s ease;
+		transition: opacity 1s ease;
 	}
 	button:hover {
 		cursor: pointer;
