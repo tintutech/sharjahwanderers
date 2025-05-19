@@ -1,5 +1,4 @@
 import "./navStyles.css";
-import { BrowserRouter, Router, Route } from "react-router-dom";
 
 import Home from "../Home.jsx";
 import AboutMembership from "../pages/aboutMembership/AboutMembership.jsx";
