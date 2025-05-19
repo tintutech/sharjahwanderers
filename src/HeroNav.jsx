@@ -1,4 +1,4 @@
-import "./heroNavStyles.css";
+import "./heroStyles.css";
 import Nav from "./components/Nav.jsx";
 
 function HeroSection() {
