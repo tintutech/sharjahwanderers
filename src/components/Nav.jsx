@@ -1,4 +1,8 @@
 import "./navStyles.css";
+import { BrowserRouter, Router, Route } from "react-router-dom";
+
+import Home from "../Home.jsx";
+import AboutMembership from "../pages/aboutMembership/AboutMembership.jsx";
 
 function openWindow() {
 	let open = document.querySelector(".openWindow");
@@ -58,7 +62,7 @@ export default function Navbar() {
 						<a href="#">EVENTS & OFFERS</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="/">
 							<img src="/logo.svg" />
 						</a>
 					</li>
