@@ -4,6 +4,6 @@ import Home from "./Home.jsx";
 import AboutMembership from "./pages/aboutMembership/AboutMembership.jsx";
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
-		<Home />
+		<AboutMembership />
 	</StrictMode>
 );
