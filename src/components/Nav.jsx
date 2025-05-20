@@ -1,8 +1,5 @@
 import "./navStyles.css";
 
-import Home from "../Home.jsx";
-import AboutMembership from "../pages/aboutMembership/AboutMembership.jsx";
-
 function openWindow() {
 	let open = document.querySelector(".openWindow");
 	open.classList.remove("hidden");
@@ -50,31 +47,44 @@ export default function Navbar() {
 				</button>
 			</div>
 			<div className="desktopNav">
-				<ul>
-					<li>
-						<a href="#">ABOUT</a>
-					</li>
-					<li>
-						<a href="#">MEMBERSHIP</a>
-					</li>
-					<li>
-						<a href="#">EVENTS & OFFERS</a>
-					</li>
-					<li>
-						<a href="/">
-							<img src="/logo.svg" />
+				<div className="topNav">
+					<a href="#">
+						<img src="/home.svg" />
+					</a>
+					<div className="rightNavContents">
+						<a href="#">
+							members login <img src="/enter.svg" />
 						</a>
-					</li>
-					<li>
-						<a href="#">RESTAURANT</a>
-					</li>
-					<li>
-						<a href="#">FACILITIES</a>
-					</li>
-					<li>
-						<a href="#">SPA & SALON</a>
-					</li>
-				</ul>
+						<a href="#">contact</a>
+					</div>
+				</div>
+				<div className="bottomNav">
+					<ul>
+						<li>
+							<a href="#">ABOUT</a>
+						</li>
+						<li>
+							<a href="#">MEMBERSHIP</a>
+						</li>
+						<li>
+							<a href="#">EVENTS & OFFERS</a>
+						</li>
+						<li>
+							<a href="/">
+								<img src="/logo.svg" />
+							</a>
+						</li>
+						<li>
+							<a href="#">RESTAURANT</a>
+						</li>
+						<li>
+							<a href="#">FACILITIES</a>
+						</li>
+						<li>
+							<a href="#">SPA & SALON</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	);

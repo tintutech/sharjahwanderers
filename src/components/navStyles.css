@@ -1,8 +1,7 @@
-.heroNav {
+.navBar {
 	width: 100%;
 	font-size: 0.8em;
-	font-weight: 200;
-	background: url("/heroImage.svg");
+	font-weight: 250;
 	background-repeat: no-repeat;
 	background-size: cover;
 	letter-spacing: 0.1em;
@@ -12,6 +11,28 @@
 	position: relative;
 	bottom: 20px;
 	width: 50px;
+}
+
+.topNav {
+	position: relative;
+	width: 100%;
+	top: 50px;
+	max-width: 1025px;
+	margin: 0 auto;
+	display: flex;
+	padding: 0 20px;
+	justify-content: space-between;
+	align-items: center;
+	img {
+		width: 25px;
+		height: 25px;
+		opacity: 0.8;
+		filter: brightness(0) saturate(100%) invert(86%) sepia(100%) saturate(14%)
+			hue-rotate(130deg) brightness(105%) contrast(103%);
+	}
+	.rightNavContents a:nth-of-type(2) {
+		padding-left: 40px;
+	}
 }
 
 .navBar ul {
