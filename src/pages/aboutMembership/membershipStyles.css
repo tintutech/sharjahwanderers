@@ -4,9 +4,11 @@
 	display: grid;
 	padding-top: 40px;
 	grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
-	gap: 100px;
+	gap: 40px;
+	grid-row-gap: 0;
 	.card {
 		padding: 20px;
+		padding-bottom: 0;
 	}
 	.card h3 {
 		font-weight: 400;
@@ -27,12 +29,45 @@
 		margin-bottom: 30px;
 		font-weight: 300;
 	}
+	.second.card {
+	}
 	.second.card p {
-		padding-left: 20px;
+		padding-left: 10px;
 	}
 	.card .disclaimer {
 		font-size: 0.7em;
 		padding-left: 5px;
+	}
+}
+#aboutMembership .membershipCard {
+	padding: 20px 50px;
+	margin: 0 10px;
+	background: url("/membershipBackground.jpg");
+	background-position: center;
+	background-size: cover;
+	h3 {
+		font-size: 1.8em;
+		font-weight: 400;
+	}
+	p {
+		margin-top: 10px;
+		font-weight: 300;
+	}
+	a {
+		text-align: center;
+		display: block;
+		max-width: 220px;
+		margin: 40px auto;
+		margin-top: 80px;
+		padding: 10px 20px;
+		border: 2px solid black;
+		border-radius: 50px;
+		background-color: rgba(255, 255, 255, 0.2);
+		border-color: rgba(255, 255, 255, 0.1);
+		backdrop-filter: blur(8px);
+	}
+	a:hover {
+		border-color: rgba(255, 255, 255, 0.5);
 	}
 }
 

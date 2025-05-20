@@ -1,5 +1,4 @@
 import "./membershipStyles.css";
-
 let data1 = {
 	title: "MEMBERSHIP INFO",
 	paragraphs: [
@@ -48,12 +47,27 @@ function Card2() {
 		</div>
 	);
 }
+function Card3() {
+	return (
+		<div className="membershipCard">
+			<h3>Membership</h3>
+			<p>
+				Become part of the club, explore unique offers, and enjoy unparalleled
+				access to our exclusive club.
+			</p>
+			<a href="#">ACTION BUTTON</a>
+		</div>
+	);
+}
 
 export default function Membership() {
 	return (
-		<div id="membership">
-			<Card1 />
-			<Card2 />
-		</div>
+		<>
+			<div id="membership">
+				<Card1 />
+				<Card2 />
+				<Card3 />
+			</div>
+		</>
 	);
 }
