@@ -9,7 +9,7 @@ import FAQ from "./FAQ.jsx";
 export default function AboutMembership() {
 	return (
 		<div id="aboutMembership">
-			<div id="topSection">
+			<div class="topSection">
 				<Nav />
 				<About />
 			</div>

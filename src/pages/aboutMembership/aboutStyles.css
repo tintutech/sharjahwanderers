@@ -1,3 +1,7 @@
+#aboutMembership .topSection {
+	background: url("/aboutBackground.png");
+}
+
 #aboutMembership #about {
 	max-width: 900px;
 	padding: 40px 50px;
