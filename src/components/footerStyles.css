@@ -18,8 +18,10 @@
 	padding: 10px;
 	img {
 		display: block;
-		width: 120px;
+		width: 250px;
 		margin: 0 auto;
+		filter: brightness(0) saturate(100%) invert(82%) sepia(90%) saturate(3%)
+			hue-rotate(144deg) brightness(115%) contrast(78%);
 	}
 	> * {
 		margin-top: 25px;

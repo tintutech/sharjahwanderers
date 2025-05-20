@@ -40,7 +40,7 @@ export default function Navbar() {
 			</div>
 			<div className="mobileNav">
 				<a href="#">
-					<img src="/logo.svg" />
+					<img className="logo" src="/logo.svg" />
 				</a>
 				<button onClick={openWindow} className="hamburgerMenu">
 					&#9776;
@@ -71,7 +71,7 @@ export default function Navbar() {
 						</li>
 						<li>
 							<a href="/">
-								<img src="/logo.svg" />
+								<img className="logo" src="/logo.svg" />
 							</a>
 						</li>
 						<li>

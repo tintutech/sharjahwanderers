@@ -6,7 +6,9 @@ import "./aboutMembershipStyles.css";
 export default function AboutMembership() {
 	return (
 		<>
+		<div id="topSection">
 			<Nav />
+		</div>
 			<Footer />
 		</>
 	);

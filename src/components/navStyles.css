@@ -11,7 +11,13 @@
 .heroNav img {
 	position: relative;
 	bottom: 20px;
-	width: 50px;
+	width: 10px;
+}
+
+.heroNav .logo {
+	width: 200px;
+	filter: brightness(0) saturate(100%) invert(82%) sepia(90%) saturate(3%)
+		hue-rotate(144deg) brightness(115%) contrast(78%);
 }
 
 .navBar ul {
