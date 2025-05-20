@@ -10,14 +10,24 @@
 
 .heroNav img {
 	position: relative;
-	bottom: 20px;
-	width: 10px;
+	width: 20px;
 }
 
 .heroNav .logo {
 	width: 200px;
 	filter: brightness(0) saturate(100%) invert(82%) sepia(90%) saturate(3%)
 		hue-rotate(144deg) brightness(115%) contrast(78%);
+}
+
+.topNav {
+	position: relative;
+	top: 50px;
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 20px;
+	padding-top: 20px;
 }
 
 .navBar ul {
@@ -28,7 +38,6 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px;
-	padding-top: 50px;
 	padding-bottom: 10px;
 }
 

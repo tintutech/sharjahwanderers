@@ -49,7 +49,7 @@ export default function Navbar() {
 			<div className="desktopNav">
 				<div className="topNav">
 					<a href="#">
-						<img src="/home.svg" />
+						<img src="/home.png" />
 					</a>
 					<div className="rightNavContents">
 						<a href="#">
