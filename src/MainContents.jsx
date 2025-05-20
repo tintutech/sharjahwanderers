@@ -1,4 +1,4 @@
-import FAQ from "./FAQ.jsx";
+import FAQ from "./components/FAQ.jsx";
 import "./mainContentStyles.css";
 
 const data = {
