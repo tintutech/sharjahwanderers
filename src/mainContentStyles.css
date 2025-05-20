@@ -1,4 +1,4 @@
-#about {
+#home #about {
 	overflow: hidden;
 	display: flex;
 	gap: 20px;
@@ -57,14 +57,14 @@
 		background-color: #1c1c1c;
 	}
 }
-#about .leftCard > div > div > a {
+#home #about .leftCard > div > div > a {
 	display: inline-block;
 	margin-top: 5px;
 	font-weight: 500;
 	color: #d993c2;
 }
 
-#experience {
+#home #experience {
 	max-width: 1024px;
 	margin-bottom: 80px;
 	h2 {
@@ -112,7 +112,7 @@
 	}
 }
 
-#offerevents {
+#home #offerevents {
 	overflow: hidden;
 	h2 {
 		padding: 15px;
@@ -151,7 +151,7 @@
 	}
 }
 
-#guestbookMembership {
+#home #guestbookMembership {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 65px;
@@ -160,7 +160,7 @@
 	margin-bottom: 50px;
 }
 
-#guestbookMembership .guest {
+#home #guestbookMembership .guest {
 	h3 {
 		font-size: 2em;
 		color: #d2a98a;
@@ -198,7 +198,7 @@
 	}
 }
 
-#guestbookMembership .membership {
+#home #guestbookMembership .membership {
 	margin-top: 50px;
 	padding: 20px 50px;
 	background: url("/membershipBackground.jpg");
@@ -230,7 +230,7 @@
 	}
 }
 
-.endQuote {
+#home .endQuote {
 	text-align: center;
 	padding-bottom: 10px !important;
 	font-style: italic;
@@ -247,32 +247,32 @@
 }
 
 @media (max-width: 450px) {
-	.leftCard > div > div:nth-of-type(1) {
+	#home .leftCard > div > div:nth-of-type(1) {
 		padding: 5px;
 	}
-	#offerevents {
+	#home #offerevents {
 		padding-left: 0;
 		padding-right: 0;
 	}
-	#experience {
+	#home #experience {
 		padding: 20px;
 	}
-	#guestbookMembership {
+	#home #guestbookMembership {
 		padding: 20px;
 	}
 }
 @media (max-width: 650px) {
-	#guestbookMembership {
+	#home #guestbookMembership {
 		display: block;
 	}
 }
 
 @media (max-width: 790px) {
-	#about {
+	#home #about {
 		flex-direction: column;
 	}
 
-	.eventContainer {
+	#home .eventContainer {
 		align-items: center;
 		flex-direction: column;
 	}

@@ -8,7 +8,7 @@ import FAQ from "./FAQ.jsx";
 
 export default function AboutMembership() {
 	return (
-		<>
+		<div id="AboutMembership">
 			<div id="topSection">
 				<Nav />
 				<About />
@@ -21,6 +21,6 @@ export default function AboutMembership() {
 				</div>
 			</div>
 			<Footer />
-		</>
+		</ div>
 	);
 }

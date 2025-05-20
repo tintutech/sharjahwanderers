@@ -6,10 +6,10 @@ import "./homeStyles.css";
 
 export default function Home() {
 	return (
-		<>
+		<div id="home">
 			<HeroNav />
 			<MainContents />
 			<Footer />
-		</>
+		</div>
 	);
 }

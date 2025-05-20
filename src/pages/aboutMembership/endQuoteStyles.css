@@ -1,16 +1,15 @@
 .endQuote {
-  text-align: center;
-  padding-bottom: 10px !important;
-  font-style: italic;
-  font-size: 1.5em;
-  font-weight: 400;
-  > * { 
-    display: block;
-    margin-top: 5px;
-    letter-spacing: 0.05em;
-  }
-  a { 
-    color: #d2a98a;
-  }
+	text-align: center;
+	padding-bottom: 180px;
+	font-style: italic;
+	font-size: 1.5em;
+	font-weight: 400;
+	> * {
+		display: block;
+		margin-top: 5px;
+		letter-spacing: 0.05em;
+	}
+	a {
+		color: #d2a98a;
+	}
 }
-

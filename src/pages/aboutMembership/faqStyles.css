@@ -10,7 +10,7 @@
 	h2 {
 		color: #d2a98a;
 		position: relative;
-		top: 80px;
+		top: 50px;
 		font-size: 1.4em;
 		font-weight: 400;
 		font-style: italic;
@@ -19,7 +19,7 @@
 	}
 
 	.card {
-		margin-bottom: 20px;
+		padding-bottom: 15px;
 		max-width: 500px;
 	}
 	h3 {
@@ -34,7 +34,7 @@
 	}
 	button {
 		font-family: "Inter";
-		height: 30px;
+		height: 25px;
 		opacity: 1;
 		width: 30px;
 		color: inherit;
