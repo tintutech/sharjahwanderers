@@ -1,6 +1,6 @@
 .navBar {
 	font-size: 0.8em;
-	font-weight: 200;
+	font-weight: 300;
 	letter-spacing: 0.1em;
 }
 
@@ -10,7 +10,9 @@
 }
 
 .navBar .logo {
-	width: 200px;
+	width: 120px;
+	position: relative;
+	bottom: 10px;
 	filter: brightness(0) saturate(100%) invert(82%) sepia(90%) saturate(3%)
 		hue-rotate(144deg) brightness(115%) contrast(78%);
 }
@@ -26,6 +28,20 @@
 	padding-top: 20px;
 }
 
+.topNav .rightNavContents {
+	a:nth-of-type(1) {
+		margin-right: 25px;
+	}
+	img {
+		position: relative;
+		width: 22px;
+		top: 8px;
+
+		filter: brightness(0) saturate(100%) invert(82%) sepia(90%) saturate(3%)
+			hue-rotate(144deg) brightness(115%) contrast(78%);
+	}
+}
+
 .navBar ul {
 	max-width: 1024px;
 	margin: 0 auto;
@@ -34,6 +50,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px;
+	padding-top: 60px;
 	padding-bottom: 10px;
 }
 
