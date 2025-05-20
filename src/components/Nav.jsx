@@ -52,9 +52,7 @@ export default function Navbar() {
 						<img src="/home.png" />
 					</a>
 					<div className="rightNavContents">
-						<a href="#">
-							members login <img src="/enter.svg" />
-						</a>
+						<a href="#">members login</a>
 						<a href="#">contact</a>
 					</div>
 				</div>

@@ -1,19 +1,15 @@
-.heroNav {
-	width: 100%;
+.navBar {
 	font-size: 0.8em;
 	font-weight: 200;
-	background: url("/heroImage.svg");
-	background-repeat: no-repeat;
-	background-size: cover;
 	letter-spacing: 0.1em;
 }
 
-.heroNav img {
+.navBar img {
 	position: relative;
 	width: 20px;
 }
 
-.heroNav .logo {
+.navBar .logo {
 	width: 200px;
 	filter: brightness(0) saturate(100%) invert(82%) sepia(90%) saturate(3%)
 		hue-rotate(144deg) brightness(115%) contrast(78%);
