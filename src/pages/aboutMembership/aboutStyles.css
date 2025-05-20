@@ -1,4 +1,4 @@
-#about {
+#aboutMembership #about {
 	max-width: 900px;
 	padding: 40px 50px;
 	background: url("/rugbyBall.png");
@@ -34,7 +34,7 @@
 }
 
 @media (max-width: 750px) {
-	#about {
+	#aboutMembership #about {
 		background-size: 90%;
 		display: block;
 		> div {
@@ -44,7 +44,7 @@
 }
 
 @media (max-width: 450px) {
-	#about {
+	#aboutMembership #about {
 		padding: 35px;
 		background-size: 140%;
 		background-position: right -80px top 60px;
