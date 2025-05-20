@@ -1,4 +1,3 @@
-import FAQ from "./components/FAQ.jsx";
 import "./mainContentStyles.css";
 
 const data = {
@@ -175,7 +174,6 @@ export default function MainContents() {
 		<>
 			<div className="mainContainer">
 				<About />
-				<FAQ />
 				<Experience />
 				<Events />
 				<GuestbookMembership />
