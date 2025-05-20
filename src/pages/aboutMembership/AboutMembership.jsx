@@ -1,4 +1,5 @@
 import "./aboutMembershipStyles.css";
+import "./endQuoteStyles.css";
 
 import Nav from "../../components/Nav.jsx";
 import Footer from "../../components/Footer.jsx";
@@ -14,6 +15,10 @@ export default function AboutMembership() {
 			</div>
 			<div id="membership">
 				<FAQ />
+				<div className="endQuote">
+					<p>Not all those who wander are lost</p>
+					<a href="#">Pay us a Visit</a>
+				</div>
 			</div>
 			<Footer />
 		</>
