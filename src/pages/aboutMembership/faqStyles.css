@@ -19,12 +19,12 @@
 	}
 
 	.card {
-		padding-bottom: 15px;
+		padding-bottom: 0px;
 		max-width: 500px;
 	}
 	h3 {
 		letter-spacing: 0.1em;
-		font-size: 0.9em;
+		font-size: 0.85em;
 		font-weight: 350;
 	}
 	.cardUpper {
@@ -34,11 +34,11 @@
 	}
 	button {
 		font-family: "Inter";
-		height: 25px;
+		outline: 1px solid blue;
 		opacity: 1;
 		width: 30px;
 		color: inherit;
-		font-size: 2.5em;
+		font-size: 1.5em;
 		background: none;
 		font-weight: 200;
 		border: none;
