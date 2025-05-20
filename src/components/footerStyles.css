@@ -6,7 +6,10 @@
 }
 
 .footerCards {
+	padding: 10px;
 	display: grid;
+	max-width: 720px;
+	margin: 0 auto;
 	grid-template-columns: 1fr 1fr;
 	gap: 50px;
 	.footerBold {
@@ -15,7 +18,6 @@
 }
 
 .footerLeft {
-	padding: 10px;
 	img {
 		display: block;
 		width: 250px;
