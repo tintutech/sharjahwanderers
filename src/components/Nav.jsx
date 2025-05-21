@@ -44,6 +44,9 @@ export default function Navbar() {
 					<li>
 						<a href="#">SPA & SALON</a>
 					</li>
+					<li>
+						<a href="#">CONTACT</a>
+					</li>
 				</ul>
 				<a href="#">MEMBERS LOGIN</a>
 				<p>Sharjah Wanderers Sports Club</p>
