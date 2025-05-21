@@ -11,8 +11,9 @@
 }
 
 #aboutMembership {
+	background: url("/desktopBackground.png");
+	background-size: cover;
 	font-family: "Inter", sans-serif;
-	background: #0b3c37;
 	color: var(--text-color);
 }
 
@@ -27,4 +28,10 @@ a {
 
 a:hover {
 	text-shadow: 0 0 10px gray;
+}
+
+@media (max-width: 450px) {
+	#aboutMembership {
+		background: url("/mobileBackground.png");
+	}
 }
