@@ -10,11 +10,11 @@ import Membership from "./Membership.jsx";
 export default function AboutMembership() {
 	return (
 		<div id="aboutMembership">
-			<div class="topSection">
+			<div className="topSection">
 				<Nav />
 				<About />
 			</div>
-			<div class="middleSection">
+			<div className="middleSection">
 				<Membership />
 				<FAQ />
 				<div className="endQuote">

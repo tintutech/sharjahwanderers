@@ -22,12 +22,13 @@ let data2 = {
 };
 
 function Card1() {
+	let n = 0;
 	let paragraphs = data1.paragraphs.map((e) => {
-		return <p>{e}</p>;
+		return <p key={n++}>{e}</p>;
 	});
 
 	return (
-		<div class="first card">
+		<div className="first card">
 			<h2>{data1.title}</h2>
 			{paragraphs}
 		</div>
@@ -35,12 +36,13 @@ function Card1() {
 }
 
 function Card2() {
+	let n = 0;
 	let paragraphs = data2.benefits.map((e) => {
-		return <p>{e}</p>;
+		return <p key={n++}>{e}</p>;
 	});
 
 	return (
-		<div class="second card">
+		<div className="second card">
 			<h3>{data2.title}</h3>
 			{paragraphs}
 			<p className="disclaimer">{data2.disclaimer}</p>
