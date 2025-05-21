@@ -19,6 +19,14 @@ export default function Navbar() {
 				</button>
 				<ul>
 					<li>
+						<a href="/">
+							<img src="/logo.svg" />
+						</a>
+					</li>
+					<li>
+						<a href="/">HOME</a>
+					</li>
+					<li>
 						<a href="#">ABOUT</a>
 					</li>
 					<li>
