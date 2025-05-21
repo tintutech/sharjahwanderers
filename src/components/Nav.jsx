@@ -15,7 +15,7 @@ export default function Navbar() {
 		<div className="navBar">
 			<div className="openWindow hidden">
 				<button onClick={closeWindow} className="close">
-					&#128473;
+					<img src="/multiply.svg" />
 				</button>
 				<ul>
 					<li>
