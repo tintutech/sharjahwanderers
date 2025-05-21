@@ -45,6 +45,8 @@ export default function Navbar() {
 						<a href="#">SPA & SALON</a>
 					</li>
 				</ul>
+				<a href="#">MEMBERS LOGIN</a>
+				<p>Sharjah Wanderers Sports Club</p>
 			</div>
 			<div className="mobileNav">
 				<a href="#">
