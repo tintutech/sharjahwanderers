@@ -7,6 +7,12 @@ export default function Restaurant() {
 			<div className="top">
 				<Nav />
 			</div>
+			<object
+				className="pdf"
+				data="/public/dineIn.pdf"
+				width="800"
+				height="600"
+			></object>
 
 			<Footer />
 		</div>
