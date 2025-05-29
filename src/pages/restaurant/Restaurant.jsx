@@ -4,13 +4,18 @@ import DineIn from "./DineIn.jsx";
 
 import "./restaurantStyles.css";
 
-function Hello(e) {
-	console.log(e.target.src);
+function close(e) {
+	document.querySelector(".fullPage").close();
 }
 
 export default function Restaurant() {
 	return (
 		<div id="restaurant">
+			<dialog className="fullPage">
+				<img onClick={(e) => close(e)} src="/multiply.svg" />
+				<img className="expandedPage" />
+			</dialog>
+
 			<div className="top">
 				<Nav />
 			</div>
