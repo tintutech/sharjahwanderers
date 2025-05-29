@@ -9,7 +9,7 @@
 	h1 {
 		position: relative;
 		left: -5px;
-		color: #d2a98a;
+		color: #f1ccb0;
 		font-size: 3em;
 		font-weight: 500;
 		letter-spacing: 0.1em;
@@ -72,7 +72,7 @@
 		margin-bottom: 20px;
 		letter-spacing: 0.2em;
 		font-weight: 400;
-		color: #d2a98a;
+		color: #f1ccb0;
 	}
 	.cardContainer {
 		display: grid;
@@ -163,7 +163,7 @@
 #home #guestbookMembership .guest {
 	h3 {
 		font-size: 2em;
-		color: #d2a98a;
+		color: #f1ccb0;
 		margin-bottom: 20px;
 	}
 	> p {
@@ -242,7 +242,7 @@
 		letter-spacing: 0.05em;
 	}
 	a {
-		color: #d2a98a;
+		color: #f1ccb0;
 	}
 }
 
