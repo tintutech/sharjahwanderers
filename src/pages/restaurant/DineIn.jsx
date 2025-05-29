@@ -1,9 +1,9 @@
-import image1 from "/dineIn/image1.png";
-import image2 from "/dineIn/image2.png";
-import image3 from "/dineIn/image3.png";
-import image4 from "/dineIn/image4.png";
-import image5 from "/dineIn/image5.png";
-import image6 from "/dineIn/image6.png";
+import image1 from "/dineIn/image1.jpeg";
+import image2 from "/dineIn/image2.jpeg";
+import image3 from "/dineIn/image3.jpg";
+import image4 from "/dineIn/image4.jpg";
+import image5 from "/dineIn/image5.jpg";
+import image6 from "/dineIn/image6.jpg";
 import pdf from "/dineIn.pdf";
 
 import "./dineInStyles.css";
