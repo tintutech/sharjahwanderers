@@ -18,15 +18,21 @@ function ReturnImages() {
 }
 
 function expandedPage(e) {
-	console.log(e.target.parentNode.parentNode.querySelector(".dineInFull"));
+	let expand = e.target.parentNode.parentNode.querySelector(".dineInFull");
+	expand.querySelector(".expandedPage").src = e.target.src;
+	expand.classList.remove("hidden");
+}
+
+function close(e) {
+	e.target.parentNode.classList.add("hidden");
 }
 
 export default function DineIn() {
 	return (
 		<div className="dineInSection">
 			<div className="dineInFull hidden">
-				<img src="/multiply.svg" />
-				<img className="expandedPage" />
+				<img onClick={(e) => close(e)} src="/multiply.svg" />
+				<img className="expandedPage" width="100" />
 			</div>
 			<div className="dineInTop">
 				<h2>DINE-IN</h2>
