@@ -12,15 +12,17 @@ createRoot(document.getElementById("root")).render(
 	</StrictMode>
 );
 
+*/
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
 		<AboutMembership />
 	</StrictMode>
 );
-*/
 
+/*
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
 		<Restaurant />
 	</StrictMode>
 );
+*/

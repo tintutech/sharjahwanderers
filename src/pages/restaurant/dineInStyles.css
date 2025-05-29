@@ -2,14 +2,20 @@
 	max-width: 1024px;
 	margin: 0 auto;
 	.dineInTop {
-		margin: 10px;
+		margin: 20px;
 		display: flex;
-		gap: 20px;
-		align-items: center
+		gap: 50px;
+		align-items: center;
+	}
+	h2 {
+		color: #f1ccb0;
+	}
+
+	.dineInTop p {
+		color: #6cc9ca;
 	}
 	.galleryContainer {
-		margin: 30px 10px;
-		margin-bottom: 50px;
+		margin: 100px 20px;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		gap: 40px;
@@ -17,5 +23,16 @@
 	img {
 		width: 100%;
 		object-fit: cover;
+	}
+}
+
+@media (max-width: 350px) {
+	.dineInSection {
+		.dineInTop {
+			margin: 10px;
+		}
+		.galleryContainer {
+			margin: 100px 10px;
+		}
 	}
 }
