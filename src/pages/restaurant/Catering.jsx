@@ -1,3 +1,5 @@
+import CateringCarousel from "./CateringCarousel.jsx";
+
 let catering1 = {
 	p1: "We offer catering services for events hosted within Club premises* and private venues for events and parties of all sizes.",
 	p2: "From corporate events, birthday parties and sports events!",
@@ -14,6 +16,7 @@ let catering2 = {
 export default function Catering() {
 	return (
 		<div className="catering">
+			<CateringCarousel />
 			<div className="rightContents">
 				<div>
 					<h2>CATERING</h2>
