@@ -1,3 +1,8 @@
+#restaurant > .top {
+	background: url("/pagesBackground.png");
+	padding-bottom: 100px;
+}
+
 #restaurant .topContent {
 	max-width: 1024px;
 	margin: 20px auto;
