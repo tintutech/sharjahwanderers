@@ -1,6 +1,6 @@
 .dineInSection {
 	max-width: 1024px;
-	margin: 0 auto;
+	margin: 50px auto;
 	.dineInTop {
 		margin: 20px;
 		display: flex;
@@ -10,6 +10,9 @@
 	}
 	h2 {
 		color: #f1ccb0;
+		font-size: 1.8em;
+		letter-spacing: 0.1em;
+		font-weight: 300;
 	}
 
 	.dineInTop p {
