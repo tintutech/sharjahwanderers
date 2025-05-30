@@ -1,5 +1,7 @@
 #restaurant > .top {
 	background: url("/pagesBackground.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 	padding-bottom: 100px;
 }
 
@@ -60,7 +62,7 @@
 	}
 }
 
-@media (max-width: 680px) {
+@media (max-width: 760px) {
 	#restaurant .topContent {
 		padding: 20px;
 		justify-content: center;
