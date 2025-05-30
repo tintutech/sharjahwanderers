@@ -5,6 +5,8 @@ import image4 from "/offers/image4.png";
 import image5 from "/offers/image5.png";
 import image6 from "/offers/image6.png";
 
+import "./offerStyles.css";
+
 let card1 = {
 	url: image1,
 	title: "SUNDAY BRUNCH OFFERS",
@@ -55,28 +57,35 @@ let card6 = {
 
 let cards = [card1, card2, card3, card4, card5, card6];
 
-function ReturnCards() {
-	let cardHTML = cards.map((e) => {
-		return (
+function ReturnCards({ e }) {
+	return (
+		<>
 			<div className="card">
 				<img src={e.url} />
 				<div>
 					<h2>{e.title}</h2>
 					<p>{e.description}</p>
-					<p>[e.timing[0]</p>
-					<p>[e.timing[1]</p>
+					<p>{e.timing[0]}</p>
+					<p>{e.timing[1]}</p>
 					<a>CLAIM OFFER</a>
 				</div>
 			</div>
-		);
-	});
+		</>
+	);
 }
 
 export default function Offers() {
 	return (
 		<div className="offers">
 			<h2>OFFERS</h2>
-			<ReturnCards />
+			<div className="offerContainer">
+				<ReturnCards e={card1} />
+				<ReturnCards e={card2} />
+				<ReturnCards e={card3} />
+				<ReturnCards e={card4} />
+				<ReturnCards e={card5} />
+				<ReturnCards e={card6} />
+			</div>
 		</div>
 	);
 }
