@@ -2,6 +2,8 @@ import image1 from "/delivery/image1.jpg";
 import image2 from "/delivery/image2.jpg";
 import image3 from "/delivery/image3.jpg";
 
+import "./deliveryStyles.css";
+
 let images = [image1, image2, image3];
 
 function LeftSection() {
@@ -10,7 +12,7 @@ function LeftSection() {
 			<h2>DELIVERY</h2>
 			<div className="leftLower">
 				<p>DELIVERY TIMINGS 11:00 AM - 9:00 PM</p>
-				<p>Monday - FRIDAY</p>
+				<p>MONDAY- FRIDAY</p>
 			</div>
 		</div>
 	);
