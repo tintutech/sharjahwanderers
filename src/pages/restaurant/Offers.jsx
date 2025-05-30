@@ -11,7 +11,7 @@ let card1 = {
 	url: image1,
 	title: "SUNDAY BRUNCH OFFERS",
 	description:
-		"Lorem ipsum sit eveniet officia saepe cumque Laboriosam maxime reprehenderit explicabo vitae at impedit Numquam nobis in",
+		"Lorriosam maxime reprehenderit explicabo vitae at impedit Numquam nobis in",
 	timing: ["SUNDAY", "9:00 AM - 2:00 PM"],
 };
 
@@ -19,7 +19,7 @@ let card2 = {
 	url: image2,
 	title: "BUSINESS LUNCH OFFER AED 45/PERSON",
 	description:
-		"Lorem ipsum sit eveniet officia saepe cumque Laboriosam maxime reprehenderit explicabo vitae at impedit Numquam nobis in",
+		"Lororiosam maxime reprehenderit explicabo vitae at impedit Numquam nobis in",
 	timing: ["MONDAY - FRIDAY", "11:00 AM - 4:00 PM"],
 };
 
@@ -27,7 +27,7 @@ let card3 = {
 	url: image3,
 	title: "HAPPY HOUR",
 	description:
-		"Lorem ipsum sit eveniet officia saepe cumque Laboriosam maxime reprehenderit explicabo vitae at impedit Numquam nobis in",
+		"Lorue Laboriosam maxime reprehenderit explicabo vitae at impedit Numquam nobis in",
 	timing: ["MONDAY - FRIDAY", "5:00 PM - 8:00 PM"],
 };
 
@@ -35,7 +35,7 @@ let card4 = {
 	url: image4,
 	title: "SUNDAY BRUNCH OFFERS",
 	description:
-		"Lorem ipsum sit eveniet officia saepe cumque Laboriosam maxime reprehenderit explicabo vitae at impedit Numquam nobis in",
+		"Lorosam maxime reprehenderit explicabo vitae at impedit Numquam nobis in",
 	timing: ["SUNDAY", "9:00 AM - 2:00 PM"],
 };
 
@@ -43,7 +43,7 @@ let card5 = {
 	url: image5,
 	title: "SUNDAY BRUNCH OFFERS",
 	description:
-		"Lorem ipsum sit eveniet officia saepe cumque Laboriosam maxime reprehenderit explicabo vitae at impedit Numquam nobis in",
+		"Lorriosam maxime reprehenderit explicabo vitae at impedit Numquam nobis in",
 	timing: ["SUNDAY", "9:00 AM - 2:00 PM"],
 };
 
@@ -51,26 +51,60 @@ let card6 = {
 	url: image6,
 	title: "SUNDAY BRUNCH OFFERS",
 	description:
-		"Lorem ipsum sit eveniet officia saepe cumque Laboriosam maxime reprehenderit explicabo vitae at impedit Numquam nobis in",
+		"Lorosam maxime reprehenderit explicabo vitae at impedit Numquam nobis in",
 	timing: ["SUNDAY", "9:00 AM - 2:00 PM"],
+};
+
+let catering1 = {
+	p1: "We offer catering services for events hosted within Club premises* and private venues for events and parties of all sizes.",
+	p2: "From corporate events, birthday parties and sports events!",
+	p3: "All catering requests should be done atleast 72 hours before event date.",
+	downloadLink: "#",
+};
+
+let catering2 = {
+	p1: "Let one of our events representatives help plan your unique event with us!",
+	link: "#",
+	disclaimer: "*VENUE HIRE IS SUBJECT TO AVAILABILITY.",
 };
 
 let cards = [card1, card2, card3, card4, card5, card6];
 
 function ReturnCards({ e }) {
 	return (
-		<>
-			<div className="card">
-				<img src={e.url} />
+		<div className="card">
+			<img src={e.url} />
+			<div>
+				<h3>{e.title}</h3>
+				<p>{e.description}</p>
+				<p>{e.timing[0]}</p>
+				<p>{e.timing[1]}</p>
+				<a href="#">CLAIM OFFER</a>
+			</div>
+		</div>
+	);
+}
+
+function Catering() {
+	return (
+		<div className="catering">
+			<div className="rightContents">
 				<div>
-					<h3>{e.title}</h3>
-					<p>{e.description}</p>
-					<p>{e.timing[0]}</p>
-					<p>{e.timing[1]}</p>
-					<a href="#">CLAIM OFFER</a>
+					<h2>CATERING</h2>
+					<p>{catering1.p1}</p>
+					<p>{catering1.p2}</p>
+					<p>{catering1.p3}</p>
+					<a href={catering1.downloadLink}>DOWNLOAD MENU</a>
+				</div>
+				<div>
+					<div className="topCard">
+						<p>{catering2.p2}</p>
+						<a href={catering2.link}>CATERING INQUIRY</a>
+					</div>
+					<p className="disclaimer">{catering2.disclaimer}</p>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 }
 
