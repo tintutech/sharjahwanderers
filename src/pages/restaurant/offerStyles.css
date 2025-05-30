@@ -1,8 +1,43 @@
 #restaurant .offers {
+	max-width: 1024px;
+	padding: 20px;
+	margin: 50px auto;
+
+	h2 {
+		color: #f1ccb0;
+		font-size: 2em;
+		font-weight: 300;
+		letter-spacing: 0.1em;
+		margin-bottom: 50px;
+	}
+	h3 {
+		font-size: 1.15em;
+		font-weight: 500;
+		height: 70px;
+		margin-bottom: 10px;
+	}
+
+	.offerContainer {
+		display: flex;
+		justify-content: space-between;
+		overflow-x: auto;
+		overflow-y: hidden;
+		gap: 20px;
+		scrollbar-color: gray black;
+		scrollbar-width: thin;
+		padding-bottom: 20px;
+	}
 	img {
 		width: 100%;
+		aspect-ratio: 1.5/1;
+		object-fit: cover;
 	}
 	.card {
-		max-width: 300px;
+		width: 310px;
+		background-color: #032f34;
+		flex-shrink: 0;
+	}
+	.card div {
+		padding: 20px;
 	}
 }

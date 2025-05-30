@@ -63,7 +63,7 @@ function ReturnCards({ e }) {
 			<div className="card">
 				<img src={e.url} />
 				<div>
-					<h2>{e.title}</h2>
+					<h3>{e.title}</h3>
 					<p>{e.description}</p>
 					<p>{e.timing[0]}</p>
 					<p>{e.timing[1]}</p>
