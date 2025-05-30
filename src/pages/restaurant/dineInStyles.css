@@ -6,6 +6,7 @@
 		display: flex;
 		gap: 50px;
 		align-items: center;
+		margin-bottom: 50px;
 	}
 	h2 {
 		color: #f1ccb0;
@@ -15,27 +16,35 @@
 		color: #6cc9ca;
 	}
 	.galleryContainer {
-		margin: 100px 20px;
-		display: grid;
+		margin: 0 20px;
+		display: none;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		gap: 40px;
 	}
 	img {
 		width: 100%;
 		object-fit: cover;
+		margin-bottom: 30px;
 	}
-	.galleryContainer.full {
+	.download {
 		display: block;
-		max-width: 100%;
-	}
-	.galleryContainer.full img {
-		margin-bottom: 40px;
+		padding: 15px 25px;
 	}
 	embed {
-		padding: 10px;
+		padding: 10px 25px;
 		display: block;
 		width: 100%;
-		aspect-ratio: 2/1;
+		aspect-ratio: 2/1.2;
+	}
+}
+
+@media (max-width: 770px) {
+	.dineInSection {
+		embed {
+			display: none;
+		}
+		.galleryContainer {
+			display: block;
+		}
 	}
 }
 
