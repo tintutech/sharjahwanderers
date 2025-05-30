@@ -4,6 +4,7 @@ import TopSection from "./TopSection.jsx";
 import DineIn from "./DineIn.jsx";
 import Delivery from "./Delivery.jsx";
 import Offers from "./Offers.jsx";
+import Catering from "./Catering.jsx";
 
 import "./endQuoteStyles.css";
 import "./restaurantStyles.css";
@@ -18,6 +19,7 @@ export default function Restaurant() {
 			<DineIn />
 			<Delivery />
 			<Offers />
+			<Catering />
 			<div className="endQuote">
 				<p>Not all those who wander are lost</p>
 				<a href="#">Pay us a Visit</a>

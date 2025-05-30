@@ -24,11 +24,8 @@
 		overflow-y: hidden;
 		gap: 20px;
 		scrollbar-color: #9494944d #032f34;
-		scrollbar-width: none;
-		padding-bottom: 20px;
-	}
-	.offerContainer:hover {
 		scrollbar-width: thin;
+		padding-bottom: 20px;
 	}
 	img {
 		width: 100%;
