@@ -1,6 +1,7 @@
 import image1 from "/delivery/image1.jpg";
 import image2 from "/delivery/image2.jpg";
 import image3 from "/delivery/image3.jpg";
+import pdf from "/delivery.pdf";
 
 import "./deliveryStyles.css";
 
@@ -45,6 +46,10 @@ export default function Delivery() {
 				<RightSection />
 			</div>
 			<ReturnImages />
+			<embed type="application/pdf" src={pdf} />
+			<a className="download" href={pdf} download>
+				DOWNLOAD MENU
+			</a>
 		</div>
 	);
 }
