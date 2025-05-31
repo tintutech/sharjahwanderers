@@ -32,7 +32,7 @@ export default function DineIn() {
 			<ReturnImages />
 			<embed type="application/pdf" src={pdf} />
 			<a className="download" href={pdf} download>
-				Download Menu
+				DOWNLOAD MENU
 			</a>
 		</div>
 	);

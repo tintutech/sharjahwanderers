@@ -1,4 +1,5 @@
 import CateringCarousel from "./CateringCarousel.jsx";
+import "./cateringStyles.css";
 
 let catering1 = {
 	p1: "We offer catering services for events hosted within Club premises* and private venues for events and parties of all sizes.",
@@ -16,16 +17,18 @@ let catering2 = {
 export default function Catering() {
 	return (
 		<div className="catering">
-			<CateringCarousel />
+			<div className="carousel">
+				<CateringCarousel />
+			</div>
 			<div className="rightContents">
-				<div>
+				<div className="left">
 					<h2>CATERING</h2>
 					<p>{catering1.p1}</p>
 					<p>{catering1.p2}</p>
 					<p>{catering1.p3}</p>
 					<a href={catering1.downloadLink}>DOWNLOAD MENU</a>
 				</div>
-				<div>
+				<div className="right">
 					<div className="topCard">
 						<p>{catering2.p1}</p>
 						<a href={catering2.link}>CATERING INQUIRY</a>

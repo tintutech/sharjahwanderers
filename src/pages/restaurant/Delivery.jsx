@@ -44,6 +44,7 @@ export default function Delivery() {
 				<LeftSection />
 				<RightSection />
 			</div>
+			<ReturnImages />
 		</div>
 	);
 }
