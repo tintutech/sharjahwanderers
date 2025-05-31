@@ -34,7 +34,7 @@
 		filter: brightness(60%);
 	}
 	.card {
-		width: 310px;
+		width: 300px;
 		background-color: #032f34;
 		flex-shrink: 0;
 	}
