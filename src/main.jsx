@@ -1,17 +1,16 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-import Home from "./Home.jsx";
-import AboutMembership from "./pages/aboutMembership/AboutMembership.jsx";
-import Restaurant from "./pages/restaurant/Restaurant.jsx";
-
 /*
+import Home from "./Home.jsx";
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
 		<Home />
 	</StrictMode>
 );
 
+
+import AboutMembership from "./pages/aboutMembership/AboutMembership.jsx";
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
 		<AboutMembership />
@@ -19,6 +18,7 @@ createRoot(document.getElementById("root")).render(
 );
 */
 
+import Restaurant from "./pages/restaurant/Restaurant.jsx";
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
 		<Restaurant />
