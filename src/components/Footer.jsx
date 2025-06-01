@@ -4,7 +4,9 @@ import "./endQuoteStyles.css";
 function LeftContents() {
 	return (
 		<div className="footerLeft">
-			<img src="/logo.svg" />
+			<a href="#">
+				<img src="/logo.svg" />
+			</a>
 			<div>
 				<h2 className="footerBold">Sharjah Wanderers Sports Club</h2>
 				<p>Samman,</p>
@@ -14,13 +16,13 @@ function LeftContents() {
 			<div className="contact">
 				<h3>Get in touch</h3>
 				<p>
-					<img /> : +97100000000
+					<img src="/phone.svg" /> : +97100000000
 				</p>
 				<p>
-					<img /> : +97100000000
+					<img src="/whatsapp.svg" /> : +97100000000
 				</p>
 				<p>
-					<img /> : info@Sharjahwsc.com
+					<img src="/mail.svg" /> : info@Sharjahwsc.com
 				</p>
 			</div>
 			<div className="map">
@@ -62,15 +64,13 @@ function RightContents() {
 					<a href="#">ABOUT</a>
 					<a href="#">MEMBERSHIP</a>
 					<a href="#">EVENTS & OFFERS</a>
-					<a href="#">Restaurant</a>
+					<a href="#">RESTAURANT</a>
 					<a href="#">SALON & SPA</a>
 					<a href="#">FACILITIES</a>
-					<a href="#">Contact</a>
+					<a href="#">CONTACT</a>
 				</div>
 				<div>
-					<a href="#" className="boldText">
-						FACILITIES
-					</a>
+					<p>FACILITIES</p>
 					<a href="#">RUGBY FIELD</a>
 					<a href="#">SWIMMING POOL</a>
 					<a href="#">FOOTBALL FIELD</a>
@@ -79,9 +79,7 @@ function RightContents() {
 					<a href="#">TRAINING & CLASSES</a>
 				</div>
 				<div>
-					<a href="#" className="boldText">
-						RESTAURANT
-					</a>
+					<p>RESTAURANT</p>
 					<a href="#">DINE-IN</a>
 					<a href="#">DELIVERY</a>
 					<a href="#">CATERING</a>
