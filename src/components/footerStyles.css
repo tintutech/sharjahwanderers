@@ -3,10 +3,18 @@
 	width: 100%;
 	background-color: black;
 	padding: 50px;
+	padding-bottom: 30px;
+
 	* {
 		/*
 		outline: 1px solid red;
 		*/
+	}
+	> p {
+		text-align: center;
+		margin-top: 150px;
+		font-size: 1em;
+		font-weight: 400;
 	}
 }
 
@@ -15,12 +23,11 @@
 	display: grid;
 	max-width: 1024px;
 	margin: 0 auto;
-	grid-template-columns: 1fr 1fr;
-	gap: 100px;
+	grid-template-columns: 1fr 2fr;
+	gap: 150px;
 }
 
 .footerLeft {
-	max-width: 250px;
 	h2 {
 		font-size: 1.4em;
 		font-weight: 500;
@@ -66,13 +73,24 @@
 	padding: 10px;
 }
 
+.footerRight {
+	max-width: 800px;
+}
+
 .footerRight .cards {
+	.boldText {
+		font-weight: 600;
+	}
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	font-size: 0.9em;
+	grid-template-columns: repeat(auto-fit, minmax(164px, 1fr));
 	gap: 20px;
 	a {
 		display: block;
 		margin-top: 15px;
+	}
+	div {
+		margin-top: 20px;
 	}
 }
 
