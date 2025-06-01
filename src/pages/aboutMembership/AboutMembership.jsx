@@ -17,10 +17,6 @@ export default function AboutMembership() {
 			<div className="middleSection">
 				<Membership />
 				<FAQ />
-				<div className="endQuote">
-					<p>Not all those who wander are lost</p>
-					<a href="#">Pay us a Visit</a>
-				</div>
 			</div>
 			<Footer />
 		</div>
