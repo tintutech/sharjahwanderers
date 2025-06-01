@@ -58,24 +58,40 @@ function RightContents() {
 			</div>
 			<div className="cards">
 				<div>
-					<a href="#">Home</a>
-					<a href="#">Salon & Spa</a>
-					<a href="#">Membership</a>
+					<a href="#">HOME</a>
+					<a href="#">ABOUT</a>
+					<a href="#">MEMBERSHIP</a>
+					<a href="#">EVENTS & OFFERS</a>
 					<a href="#">Restaurant</a>
-					<a href="#">Events</a>
-					<a href="#">Offers</a>
+					<a href="#">SALON & SPA</a>
+					<a href="#">FACILITIES</a>
 					<a href="#">Contact</a>
 				</div>
 				<div>
-					<a href="#">Facilities</a>
-					<a href="#">Home</a>
-					<a href="#">Home</a>
-					<a href="#">Home</a>
-					<a href="#">Home</a>
-					<a href="#">Home</a>
-					<a href="#">Home</a>
+					<a href="#" className="boldText">
+						FACILITIES
+					</a>
+					<a href="#">RUGBY FIELD</a>
+					<a href="#">SWIMMING POOL</a>
+					<a href="#">FOOTBALL FIELD</a>
+					<a href="#">TENNIS COURT</a>
+					<a href="#">GYM</a>
+					<a href="#">TRAINING & CLASSES</a>
+				</div>
+				<div>
+					<a href="#" className="boldText">
+						RESTAURANT
+					</a>
+					<a href="#">DINE-IN</a>
+					<a href="#">DELIVERY</a>
+					<a href="#">CATERING</a>
 				</div>
 			</div>
+			<form action="#" method="POST">
+				<p>Subscribe to our newsletter</p>
+				<input type="text" placeholder="name@email.com"></input>
+				<button type="submit">SUBSCRIBE</button>
+			</form>
 		</div>
 	);
 }
@@ -93,6 +109,7 @@ export default function Footer() {
 					<LeftContents />
 					<RightContents />
 				</div>
+				<p>SHARJAH WANDERERS SPORTS CLUB</p>
 			</div>
 		</>
 	);
