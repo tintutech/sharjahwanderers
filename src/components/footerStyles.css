@@ -46,11 +46,21 @@
 		margin-bottom: 15px;
 	}
 	.contact p {
-		margin-top: 10px;
+		margin-top: 15px;
 	}
+	.contact img {
+		filter: brightness(0) saturate(100%) invert(89%) sepia(100%) saturate(2%)
+			hue-rotate(208deg) brightness(113%) contrast(101%);
+		width: 20px;
+		display: inline;
+		position: relative;
+		top: 5px;
+		margin-right: 10px;
+	}
+
 	.map h3 {
 		margin: 10px 0;
-		margin-top: 40px;
+		margin-top: 60px;
 	}
 	.map a {
 		display: flex;
