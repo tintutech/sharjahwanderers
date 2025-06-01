@@ -3,33 +3,70 @@
 	width: 100%;
 	background-color: black;
 	padding: 50px;
+	* {
+		/*
+		outline: 1px solid red;
+		*/
+	}
 }
 
 .footerCards {
 	padding: 10px;
 	display: grid;
-	max-width: 720px;
+	max-width: 1024px;
 	margin: 0 auto;
 	grid-template-columns: 1fr 1fr;
-	gap: 50px;
-	.footerBold {
-		font-weight: bold;
-	}
+	gap: 100px;
 }
 
 .footerLeft {
+	max-width: 250px;
+	h2 {
+		font-size: 1.4em;
+		font-weight: 500;
+		margin-bottom: 15px;
+	}
+	p {
+		font-size: 1.1em;
+	}
 	img {
 		display: block;
-		width: 200px;
+		width: 150px;
 		margin: 0 auto;
 	}
 	> * {
-		margin-top: 25px;
+		margin-top: 30px;
+	}
+	h3 {
+		font-size: 1.2em;
+		font-weight: 500;
+		margin-bottom: 15px;
+	}
+	.contact p {
+		margin-top: 10px;
+	}
+	.map h3 {
+		margin-bottom: 5px;
+	}
+	.map a {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+	}
+	.map span {
+		font-size: 0.8em;
+	}
+	iframe {
+		width: 100%;
+		aspect-ratio: 1/1;
 	}
 }
 
-.footerRight {
+.footerRight > div {
 	padding: 10px;
+}
+
+.footerRight .cards {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
