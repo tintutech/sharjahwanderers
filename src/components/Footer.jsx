@@ -1,4 +1,5 @@
 import "./footerStyles.css";
+import "./endQuoteStyles.css";
 
 function LeftContents() {
 	return (
@@ -48,11 +49,18 @@ function RightContents() {
 
 export default function Footer() {
 	return (
-		<div className="footer">
-			<div className="footerCards">
-				<LeftContents />
-				<RightContents />
+		<>
+			<div className="endQuote">
+				<p>Not all those who wander are lost</p>
+				<a href="#">Pay us a Visit</a>
 			</div>
-		</div>
+
+			<div className="footer">
+				<div className="footerCards">
+					<LeftContents />
+					<RightContents />
+				</div>
+			</div>
+		</>
 	);
 }
