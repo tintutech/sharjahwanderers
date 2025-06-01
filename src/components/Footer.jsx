@@ -47,13 +47,13 @@ function RightContents() {
 			<div className="socials">
 				<div className="links">
 					<a href="#">
-						<img />
+						<img src="/facebook.svg" />
 					</a>
 					<a href="#">
-						<img />
+						<img src="/instagram.svg" />
 					</a>
 					<a href="#">
-						<img />
+						<img src="/twitter.svg" />
 					</a>
 				</div>
 				<p>Follow us on social media</p>
