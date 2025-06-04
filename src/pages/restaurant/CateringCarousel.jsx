@@ -27,7 +27,7 @@ export default function CateringCarousel() {
 	useEffect(() => {
 		setInterval(() => {
 			slideChange(image, changeImage);
-		}, 1000);
+		}, 5000);
 	}, []);
 	return <img src={image} />;
 }
