@@ -19,8 +19,4 @@ createRoot(document.getElementById("root")).render(
 */
 
 import Restaurant from "./pages/restaurant/Restaurant.jsx";
-createRoot(document.getElementById("root")).render(
-	<StrictMode>
-		<Restaurant />
-	</StrictMode>
-);
+createRoot(document.getElementById("root")).render(<Restaurant />);
