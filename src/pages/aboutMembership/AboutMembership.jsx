@@ -7,17 +7,21 @@ import FAQ from "./FAQ.jsx";
 import Membership from "./Membership.jsx";
 
 export default function AboutMembership() {
-	return (
-		<div id="aboutMembership">
-			<div className="topSection">
-				<Nav />
-				<About />
+	try {
+		return (
+			<div id="aboutMembership">
+				<div className="topSection">
+					<Nav />
+					<About />
+				</div>
+				<div className="middleSection">
+					<Membership />
+					<FAQ />
+				</div>
+				<Footer />
 			</div>
-			<div className="middleSection">
-				<Membership />
-				<FAQ />
-			</div>
-			<Footer />
-		</div>
-	);
+		);
+	} catch (err) {
+		console.log(err);
+	}
 }
