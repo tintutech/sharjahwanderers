@@ -16,7 +16,10 @@ createRoot(document.getElementById("root")).render(
 		<AboutMembership />
 	</StrictMode>
 );
-*/
 
 import Restaurant from "./pages/restaurant/Restaurant.jsx";
 createRoot(document.getElementById("root")).render(<Restaurant />);
+*/
+
+import Facilities from "/src/pages/facilities/Facilities.jsx";
+createRoot(document.getElementById("root")).render(<Facilities />);
