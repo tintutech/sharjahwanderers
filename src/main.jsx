@@ -9,6 +9,7 @@ createRoot(document.getElementById("root")).render(
 	</StrictMode>
 );
 
+*/
 
 import AboutMembership from "./pages/aboutMembership/AboutMembership.jsx";
 createRoot(document.getElementById("root")).render(
@@ -17,9 +18,10 @@ createRoot(document.getElementById("root")).render(
 	</StrictMode>
 );
 
+/*
 import Restaurant from "./pages/restaurant/Restaurant.jsx";
 createRoot(document.getElementById("root")).render(<Restaurant />);
-*/
 
 import Facilities from "/src/pages/facilities/Facilities.jsx";
 createRoot(document.getElementById("root")).render(<Facilities />);
+*/

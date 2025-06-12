@@ -1,5 +1,6 @@
 import Nav from "/src/components/Nav.jsx";
 import Footer from "/src/components/Footer.jsx";
+import "./facilitiesStyles.css";
 
 export default function Facilities() {
 	return (
