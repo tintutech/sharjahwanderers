@@ -50,9 +50,10 @@ let spa = [
 ];
 
 function ReturnCards({ title, cardList, booking }) {
+	let n = 0;
 	let cards = cardList.map((e) => {
 		return (
-			<div className="card">
+			<div key={n++} className="card">
 				<img src={e.img} />
 				<div className="cardContents">
 					<h3>{e.title}</h3>
@@ -64,23 +65,21 @@ function ReturnCards({ title, cardList, booking }) {
 	});
 
 	return (
-		<>
+		<div className={title.toLowerCase()}>
 			<div className="topSection">
 				<h2>{title}</h2>
 				<a href={booking}>BOOKING</a>
 			</div>
 			{cards}
-		</>
+		</div>
 	);
 }
 
 export default function SecondSection() {
 	return (
 		<>
-			<div className="salon">
-				<ReturnCards title="SALON" cardList={salon} booking="#" />
-			</div>
-			<div className="spa"></div>
+			<ReturnCards title="SALON" cardList={salon} booking="#" />
+			<ReturnCards title="SPA" cardList={spa} booking="#" />
 		</>
 	);
 }
