@@ -49,4 +49,38 @@ let spa = [
 	},
 ];
 
-export default function SecondSection() {}
+function ReturnCards({ title, cardList, booking }) {
+	let cards = cardList.map((e) => {
+		return (
+			<div className="card">
+				<img src={e.img} />
+				<div className="cardContents">
+					<h3>{e.title}</h3>
+					<p>{e.desc}</p>
+					<a href={e.url}>BOOK AN APPOINTMENT</a>
+				</div>
+			</div>
+		);
+	});
+
+	return (
+		<>
+			<div className="topSection">
+				<h2>{title}</h2>
+				<a href={booking}>BOOKING</a>
+			</div>
+			{cards}
+		</>
+	);
+}
+
+export default function SecondSection() {
+	return (
+		<>
+			<div className="salon">
+				<ReturnCards title="SALON" cardList={salon} booking="#" />
+			</div>
+			<div className="spa"></div>
+		</>
+	);
+}
