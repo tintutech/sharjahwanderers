@@ -48,3 +48,5 @@ let spa = [
 		url: "#",
 	},
 ];
+
+export default function SecondSection() {}
