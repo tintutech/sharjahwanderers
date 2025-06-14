@@ -10,15 +10,11 @@ createRoot(document.getElementById("root")).render(
 );
 
 import AboutMembership from "./pages/aboutMembership/AboutMembership.jsx";
-try {
 	createRoot(document.getElementById("root")).render(
 		<StrictMode>
 			<AboutMembership />
 		</StrictMode>
 	);
-} catch (err) {
-	console.log(err);
-}
 
 import Restaurant from "./pages/restaurant/Restaurant.jsx";
 createRoot(document.getElementById("root")).render(<Restaurant />);
@@ -28,8 +24,8 @@ createRoot(document.getElementById("root")).render(<Facilities />);
 */
 
 import SalonSpa from "./pages/salonSpa/SalonSpa.jsx";
-try {
-	createRoot(document.getElementById("root")).render(<SalonSpa />);
-} catch (err) {
-	console.log(err);
-}
+createRoot(document.getElementById("root")).render(
+	<StrictMode>
+		<SalonSpa />
+	</StrictMode>
+);
