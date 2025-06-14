@@ -6,6 +6,8 @@ import spa1 from "/spa/image1.jpg";
 import spa2 from "/spa/image2.jpg";
 import spa3 from "/spa/image3.jpg";
 
+import "./secondSectionStyles.css";
+
 let salon = [
 	{
 		img: salon1,
@@ -25,8 +27,48 @@ let salon = [
 		desc: "Consectetur eveniet alias voluptas amet vitae Atque enim blanditiis odit distinctio architecto! Neque ipsum eos.",
 		url: "#",
 	},
+	{
+		img: spa1,
+		title: "SCALP MASSAGE",
+		desc: "Ipsum eius repellat exercitationem architecto eveniet. Cumque adipisci vitae similique voluptate aliquid Dolores est eum.",
+		url: "#",
+	},
+
+	{
+		img: spa2,
+		title: "MANI & PEDI",
+		desc: "Adipisicing iste enim tempore id quos Mollitia obcaecati alias culpa harum vero voluptate Voluptatibus saepe",
+		url: "#",
+	},
+
+	{
+		img: spa3,
+		title: "LASH & EYEBROWS",
+		desc: "Adipisicing voluptate soluta quos inventore expedita error molestiae minima. Illum ea rerum modi ex rerum?",
+		url: "#",
+	},
 ];
 let spa = [
+	{
+		img: spa1,
+		title: "SCALP MASSAGE",
+		desc: "Ipsum eius repellat exercitationem architecto eveniet. Cumque adipisci vitae similique voluptate aliquid Dolores est eum.",
+		url: "#",
+	},
+
+	{
+		img: spa2,
+		title: "MANI & PEDI",
+		desc: "Adipisicing iste enim tempore id quos Mollitia obcaecati alias culpa harum vero voluptate Voluptatibus saepe",
+		url: "#",
+	},
+
+	{
+		img: spa3,
+		title: "LASH & EYEBROWS",
+		desc: "Adipisicing voluptate soluta quos inventore expedita error molestiae minima. Illum ea rerum modi ex rerum?",
+		url: "#",
+	},
 	{
 		img: spa1,
 		title: "SCALP MASSAGE",
@@ -70,7 +112,7 @@ function ReturnCards({ title, cardList, booking }) {
 				<h2>{title}</h2>
 				<a href={booking}>BOOKING</a>
 			</div>
-			{cards}
+			<div className="cardContainer">{cards}</div>
 		</div>
 	);
 }
