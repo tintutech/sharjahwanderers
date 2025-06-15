@@ -59,3 +59,18 @@
 		border-color: rgba(255, 255, 255, 0.5);
 	}
 }
+
+@media (max-width: 750px) {
+	#salonspa .thirdSection {
+		display: flex;
+		gap: 40px;
+		flex-direction: column-reverse;
+		.two {
+			flex-direction: column-reverse;
+			gap: 120px;
+		}
+		.membership {
+			max-width: 300px;
+		}
+	}
+}
