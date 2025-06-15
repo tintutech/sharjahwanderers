@@ -10,19 +10,19 @@ createRoot(document.getElementById("root")).render(
 );
 
 import AboutMembership from "./pages/aboutMembership/AboutMembership.jsx";
-	createRoot(document.getElementById("root")).render(
-		<StrictMode>
-			<AboutMembership />
-		</StrictMode>
-	);
+createRoot(document.getElementById("root")).render(
+	<StrictMode>
+		<AboutMembership />
+	</StrictMode>
+);
 
 import Restaurant from "./pages/restaurant/Restaurant.jsx";
 createRoot(document.getElementById("root")).render(<Restaurant />);
 
 import Facilities from "/src/pages/facilities/Facilities.jsx";
 createRoot(document.getElementById("root")).render(<Facilities />);
-*/
 
+*/
 import SalonSpa from "./pages/salonSpa/SalonSpa.jsx";
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
