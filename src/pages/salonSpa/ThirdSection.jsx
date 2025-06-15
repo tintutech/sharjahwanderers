@@ -4,12 +4,12 @@ import "./thirdSectionStyles.css";
 function Membership() {
 	return (
 		<div className="membership">
-			<h3>Membership</h3>
+			<h3>Psst, little secret.</h3>
 			<p>
-				Become part of the club, explore unique offers, and enjoy unparalleled
-				access to our exclusive club.
+				All members of Sharjah Wanderers Sports Club get informed on exclusive
+				discounts and offers from the Wandies Beauty Salon.
 			</p>
-			<a href="#">ACTION BUTTON</a>
+			<a href="#">Become a member?</a>
 		</div>
 	);
 }
