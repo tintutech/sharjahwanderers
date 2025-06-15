@@ -1,25 +1,25 @@
 let info = [
 	{
 		id: 0,
-		title: "Membership requirements",
+		title: "SALON & SPA QUESTIONS",
 		cardInfo:
 			"Ipsum laudantium dolore commodi voluptas autem. Voluptates molestiae voluptatem corrupti at nisi placeat a ipsa optio. Libero distinctio ducimus sed voluptas reprehenderit Praesentium hic aut",
 	},
 	{
 		id: 1,
-		title: "Membership requirements",
+		title: "SALON & SPA QUESTIONS",
 		cardInfo:
 			"Amet ab quidem quaerat repudiandae maxime Enim commodi molestias nobis sed unde. Adipisci pariatur tempora nobis sapiente iste reiciendis Culpa corporis suscipit neque odio dicta",
 	},
 	{
 		id: 2,
-		title: "Membership requirements",
+		title: "SALON & SPA QUESTIONS",
 		cardInfo:
 			"Ipsum laudantium dolore commodi voluptas autem. Voluptates molestiae voluptatem corrupti at nisi placeat a ipsa optio. Libero distinctio ducimus sed voluptas reprehenderit Praesentium hic aut",
 	},
 	{
 		id: 3,
-		title: "Membership requirements",
+		title: "SALON & SPA QUESTIONS",
 		cardInfo:
 			"Amet ab quidem quaerat repudiandae maxime Enim commodi molestias nobis sed unde. Adipisci pariatur tempora nobis sapiente iste reiciendis Culpa corporis suscipit neque odio dicta",
 	},
