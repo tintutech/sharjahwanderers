@@ -1,12 +1,8 @@
 #salonspa .thirdSection {
-	* {
-		outline: 1px solid red;
-	}
 	max-width: 940px;
 	padding: 20px;
 	margin: 0 auto;
 	margin-top: 80px;
-	display: flex;
 	.one {
 		max-width: 300px;
 	}
