@@ -1,0 +1,21 @@
+#salonspa .thirdSection {
+	* {
+		outline: 1px solid red;
+	}
+	max-width: 940px;
+	padding: 20px;
+	margin: 0 auto;
+	margin-top: 80px;
+	display: flex;
+	.one {
+		max-width: 300px;
+	}
+	.one p {
+		font-size: 0.9em;
+		letter-spacing: 0.1em;
+		font-weight: 300;
+	}
+	.one a {
+		color: #f1ccb0;
+	}
+}
