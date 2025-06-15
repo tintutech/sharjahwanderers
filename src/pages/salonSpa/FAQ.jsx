@@ -34,8 +34,9 @@ function toggleClass(e) {
 	} else {
 		curr = e.target;
 	}
-	let parentContainer =
-		curr.parentNode.parentNode.querySelectorAll(".card .cardUpper");
+	let parentContainer = curr.parentNode.parentNode.querySelectorAll(
+		".faqCard .faqCardUpper"
+	);
 	let contains;
 	if (curr.classList.contains("open")) {
 		contains = false;
