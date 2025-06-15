@@ -1,4 +1,5 @@
 import FAQ from "./FAQ.jsx";
+import "./thirdSectionStyles.css";
 
 export default function ThirdSection() {
 	return (

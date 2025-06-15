@@ -27,26 +27,6 @@ let salon = [
 		desc: "Consectetur eveniet alias voluptas amet vitae Atque enim blanditiis odit distinctio architecto! Neque ipsum eos.",
 		url: "#",
 	},
-	{
-		img: spa1,
-		title: "SCALP MASSAGE",
-		desc: "Ipsum eius repellat exercitationem architecto eveniet. Cumque adipisci vitae similique voluptate aliquid Dolores est eum.",
-		url: "#",
-	},
-
-	{
-		img: spa2,
-		title: "MANI & PEDI",
-		desc: "Adipisicing iste enim tempore id quos Mollitia obcaecati alias culpa harum vero voluptate Voluptatibus saepe",
-		url: "#",
-	},
-
-	{
-		img: spa3,
-		title: "LASH & EYEBROWS",
-		desc: "Adipisicing voluptate soluta quos inventore expedita error molestiae minima. Illum ea rerum modi ex rerum?",
-		url: "#",
-	},
 ];
 let spa = [
 	{
