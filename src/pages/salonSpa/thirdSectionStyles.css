@@ -1,4 +1,7 @@
 #salonspa .thirdSection {
+	* {
+		outline: 1px solid red;
+	}
 	max-width: 940px;
 	padding: 20px;
 	margin: 0 auto;
@@ -16,11 +19,17 @@
 	}
 	.two {
 		display: flex;
+		margin-top: 80px;
+		gap: 40px;
+		max-width: 800px;
+		align-items: center;
 	}
 }
 
 #salonspa .membership {
-	margin-top: 50px;
+	* {
+		outline: 1px solid red;
+	}
 	padding: 20px 40px;
 	width: 300px;
 	background: url("/membershipBackground.jpg");
@@ -31,8 +40,9 @@
 		font-weight: 400;
 	}
 	p {
-		margin-top: 10px;
+		margin-top: 20px;
 		font-weight: 300;
+		font-size: 0.9em;
 	}
 	a {
 		text-align: center;
@@ -42,6 +52,8 @@
 		padding: 10px 20px;
 		border: 2px solid black;
 		border-radius: 50px;
+		font-size: 0.9em;
+		font-weight: 300;
 		background-color: rgba(255, 255, 255, 0.2);
 		border-color: rgba(255, 255, 255, 0.1);
 		backdrop-filter: blur(8px);

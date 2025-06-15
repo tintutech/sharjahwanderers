@@ -24,9 +24,7 @@ export default function ThirdSection() {
 				</p>
 			</div>
 			<div className="two">
-				<div className="card">
-					<Membership />
-				</div>
+				<Membership />
 				<FAQ />
 			</div>
 		</div>
