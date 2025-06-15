@@ -1,3 +1,5 @@
+import "./firstSectionStyles.css";
+
 export default function FirstSection() {
 	return (
 		<div className="firstSection">
@@ -9,7 +11,7 @@ export default function FirstSection() {
 						Spa
 					</p>
 				</div>
-				<div className="rightCard">
+				<div className="right">
 					<a href="#">BOOK APPOINTMENT</a>
 					<p>Complimentary Barista Coffee with all appointments.</p>
 				</div>
