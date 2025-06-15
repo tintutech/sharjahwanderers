@@ -98,8 +98,8 @@ export default function Footer() {
 	return (
 		<>
 			<div className="endQuote">
-				<p>Not all those who wander are lost</p>
-				<a href="#">Pay us a Visit</a>
+				<p>Not all those who wander are lost,</p>
+				<a href="#">Pay us a Visit.</a>
 			</div>
 
 			<div className="footer">
