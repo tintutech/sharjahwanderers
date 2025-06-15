@@ -1,6 +1,19 @@
 import FAQ from "./FAQ.jsx";
 import "./thirdSectionStyles.css";
 
+function Membership() {
+	return (
+		<div className="membership">
+			<h3>Membership</h3>
+			<p>
+				Become part of the club, explore unique offers, and enjoy unparalleled
+				access to our exclusive club.
+			</p>
+			<a href="#">ACTION BUTTON</a>
+		</div>
+	);
+}
+
 export default function ThirdSection() {
 	return (
 		<div className="thirdSection">
@@ -11,7 +24,9 @@ export default function ThirdSection() {
 				</p>
 			</div>
 			<div className="two">
-				<div className="card"></div>
+				<div className="card">
+					<Membership />
+				</div>
 				<FAQ />
 			</div>
 		</div>

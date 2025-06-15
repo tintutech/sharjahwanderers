@@ -14,4 +14,39 @@
 	.one a {
 		color: #f1ccb0;
 	}
+	.two {
+		display: flex;
+	}
+}
+
+#salonspa .membership {
+	margin-top: 50px;
+	padding: 20px 40px;
+	width: 300px;
+	background: url("/membershipBackground.jpg");
+	background-position: center;
+	background-size: cover;
+	h3 {
+		font-size: 1.8em;
+		font-weight: 400;
+	}
+	p {
+		margin-top: 10px;
+		font-weight: 300;
+	}
+	a {
+		text-align: center;
+		display: block;
+		max-width: 220px;
+		margin: 40px auto;
+		padding: 10px 20px;
+		border: 2px solid black;
+		border-radius: 50px;
+		background-color: rgba(255, 255, 255, 0.2);
+		border-color: rgba(255, 255, 255, 0.1);
+		backdrop-filter: blur(8px);
+	}
+	a:hover {
+		border-color: rgba(255, 255, 255, 0.5);
+	}
 }
