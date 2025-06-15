@@ -7,7 +7,7 @@ export default function FirstSection() {
 				<div className="left">
 					<h2>WANDIES HAIR AND BEAUTY SALON</h2>
 					<p>
-						Get yourself a makeover or get rejunevated at the Wandies Salond and
+						Get yourself a makeover or get rejunevated at the Wandies Salon and
 						Spa
 					</p>
 				</div>
