@@ -27,9 +27,18 @@
 	}
 }
 
+#salonspa .cardContainer {
+	display: flex;
+	gap: 25px;
+	overflow: auto;
+	justify-content: space-between;
+	scrollbar-width: thin;
+	scrollbar-color: gray transparent;
+}
+
 #salonspa .card {
 	background-color: #000a0c;
-	width: 320px;
+	width: 280px;
 	flex-shrink: 0;
 	margin-bottom: 30px;
 	img {
@@ -40,13 +49,4 @@
 	.cardContents {
 		padding: 20px;
 	}
-}
-
-#salonspa .cardContainer {
-	display: flex;
-	gap: 35px;
-	overflow: auto;
-	justify-content: space-between;
-	scrollbar-width: thin;
-	scrollbar-color: gray transparent;
 }
