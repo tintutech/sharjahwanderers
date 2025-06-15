@@ -7,7 +7,7 @@ export default function ThirdSection() {
 			<div className="one">
 				<p>
 					FOR ANY INFORMATION IN REGARDS TO OUR SALON AND SPA SERVICES, KINDLY{" "}
-					<span>CONTACT US</span>
+					<a>CONTACT US</a>
 				</p>
 			</div>
 			<div className="two">
