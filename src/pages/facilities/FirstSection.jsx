@@ -1,3 +1,5 @@
+import "./firstSectionStyles.css";
+
 function Announcement() {}
 
 function Card() {
