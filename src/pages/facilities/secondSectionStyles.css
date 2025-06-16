@@ -1,11 +1,12 @@
 #facilities .secondSection {
 	max-width: 940px;
 	padding: 20px;
-	margin: 0 auto;
+	margin: 0px auto;
+	margin-top: 50px;
 	.cardContainer {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		gap: 20px;
+		gap: 30px;
 	}
 	.card {
 		padding: 10px 20px;
@@ -13,7 +14,7 @@
 		flex-direction: column;
 		justify-content: space-between;
 		background-origin: center;
-		height: 200px;
+		height: 180px;
 		position: relative;
 		overflow: hidden;
 		transition: all 0.3s ease;
@@ -36,15 +37,19 @@
 		display: none;
 	}
 
-	.card.show:nth-of-type(1) {
-		height: 300px;
+	.card.show {
+		height: 100%;
 	}
-	.card.show:nth-of-type(1) p {
+	.card.show p {
 		display: block;
 		margin-top: 20px;
+		overflow: hidden;
+		background-color: rgba(0, 0, 0, 0.4);
+		padding: 20px;
+		font-size: 1em;
 	}
 
-	.card.show:nth-of-type(1) img {
+	.card.show img {
 		width: 170%;
 		left: -60px;
 	}
@@ -56,24 +61,67 @@
 	.card div {
 		margin-top: auto;
 		text-align: right;
-		font-size: 5em;
-		font-weight: 200;
-		height: 100px;
+		font-size: 6.5em;
+		font-weight: 100;
+		height: 70px;
+		overflow: hidden;
+	}
+	.card div span {
+		position: relative;
+		top: -35px;
+	}
+
+	.card div span:hover {
+		cursor: pointer;
 	}
 	.card .minus {
 		display: none;
+	}
+	.endCard {
+		grid-column: 3;
+		padding: 20px 30px;
+		background-color: rgba(0, 0, 0, 0.3);
+		backdrop-filter: blur(20px);
+		border: 1px solid #6cc9ca26;
+	}
+	.endCard p {
+		font-size: 0.95em;
+		font-weight: 320;
+	}
+	.endCard a {
+		display: block;
+		background-color: #9494944d;
+		padding: 10px 15px;
+		max-width: 200px;
+		margin: 0 auto;
+		margin-top: 20px;
+		text-align: center;
+		border-radius: 10px;
 	}
 }
 
-#facilities .secondSection .open {
-	.card .plus {
+#facilities .secondSection .show {
+	p {
+		display: block;
+		margin-bottom: 20px;
+		transition: all 0.2s ease;
+	}
+	.plus {
 		display: none;
 	}
-
-	.card p {
+	.minus {
 		display: block;
 	}
-	.card .minus {
-		display: block;
+}
+
+@media (max-width: 850px) {
+	#facilities .secondSection .endCard {
+		grid-column: 2;
+	}
+}
+
+@media (max-width: 570px) {
+	#facilities .secondSection .endCard {
+		grid-column: 1;
 	}
 }
