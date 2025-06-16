@@ -6,6 +6,8 @@ import image5 from "/facilities/image5.jpg";
 import image6 from "/facilities/image6.jpg";
 import image8 from "/facilities/image8.jpg";
 
+import "./secondSectionStyles.css";
+
 let images = [image1, image2, image3, image4, image5, image6];
 
 let cardData = [
@@ -50,17 +52,14 @@ function Cards() {
 	let n = 0;
 	let cards = cardData.map((e) => {
 		return (
-			<div
-				key={n++}
-				className="cards"
-				style={{ background: `url(${e.image})` }}
-			>
+			<div key={n++} className="card show">
 				<h2>{e.title}</h2>
 				<p>{e.desc}</p>
 				<div>
 					<span className="plus">+</span>
-					<span className="minus">-</span>
+					<span className="minus">&#8722;</span>
 				</div>
+				<img src={e.image} />
 			</div>
 		);
 	});
