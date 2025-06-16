@@ -1,23 +1,24 @@
 #facilities .secondSection {
 	max-width: 940px;
+
 	padding: 20px;
 	margin: 0px auto;
 	margin-top: 50px;
 	.cardContainer {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 		gap: 30px;
 	}
 	.card {
+		position: relative;
 		padding: 10px 20px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		background-origin: center;
-		height: 180px;
-		position: relative;
+		height: 200px;
 		overflow: hidden;
-		transition: all 0.3s ease;
+		transition: all 0.4s ease;
 	}
 	.card img {
 		position: absolute;
@@ -26,27 +27,38 @@
 		object-fit: contain;
 		top: 0;
 		left: 0;
-		transition: all 0.3s ease;
+		transition: all 0.4s ease;
 	}
 	.card h2,
 	.card p,
 	.card div {
 		z-index: 2;
 	}
-	.card p {
-		display: none;
-	}
-
 	.card.show {
 		height: 100%;
+		transition: height 0.4s ease;
 	}
-	.card.show p {
-		display: block;
-		margin-top: 20px;
+	.card p {
+		height: 0;
 		overflow: hidden;
+		opacity: 0;
+		transition: height 0.4s ease;
+		transition: opacity 0.5s ease;
+	}
+
+	.card.show p {
+		height: 100%;
+		opacity: 1;
 		background-color: rgba(0, 0, 0, 0.4);
 		padding: 20px;
 		font-size: 1em;
+	}
+	.card.show .plus {
+		display: none;
+	}
+	.card.show .minus {
+		display: block;
+		top: -45px;
 	}
 
 	.card.show img {
@@ -100,27 +112,13 @@
 	}
 }
 
-#facilities .secondSection .show {
-	p {
-		display: block;
-		margin-bottom: 20px;
-		transition: all 0.2s ease;
-	}
-	.plus {
-		display: none;
-	}
-	.minus {
-		display: block;
-	}
-}
-
-@media (max-width: 850px) {
+@media (max-width: 940px) {
 	#facilities .secondSection .endCard {
 		grid-column: 2;
 	}
 }
 
-@media (max-width: 570px) {
+@media (max-width: 670px) {
 	#facilities .secondSection .endCard {
 		grid-column: 1;
 	}
