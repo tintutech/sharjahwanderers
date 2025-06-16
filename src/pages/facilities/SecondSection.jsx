@@ -50,22 +50,23 @@ let cardData = [
 
 function toggle(e) {
 	let temp;
-	if (e.target.nodeName.className == "card") {
+	if (e.target.nodeName == "P" || e.target.nodeName == "H2") {
+		temp = "";
+	} else if (e.target.className == "card") {
 		temp = e.target;
 	} else if (e.target.parentNode.className == "plusMinus") {
 		temp = e.target.parentNode.parentNode;
 	} else {
 		temp = e.target.parentNode;
 	}
-
-	temp.classList.toggle("show");
+	temp == "" ? null : temp.classList.toggle("show");
 }
 
 function Cards() {
 	let n = 0;
 	let cards = cardData.map((e) => {
 		return (
-			<div onClick={(e) => toggle(e)} key={n} id={n++} className="card">
+			<div onClick={(e) => toggle(e)} key={n++} className="card">
 				<h2>{e.title}</h2>
 				<p>{e.desc}</p>
 				<div className="plusMinus">
@@ -76,7 +77,18 @@ function Cards() {
 			</div>
 		);
 	});
-	return <div className="cardContainer">{cards}</div>;
+	return (
+		<div className="cardContainer">
+			{cards}
+			<div className="endCard">
+				<p>
+					Our facilities are available for events hire. Contact us for info on
+					how to host your next event!
+				</p>
+				<a href="#">CONTACT US</a>
+			</div>
+		</div>
+	);
 }
 
 export default function SecondSection() {
