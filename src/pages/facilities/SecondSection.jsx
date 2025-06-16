@@ -12,44 +12,49 @@ let cardData = [
 	{
 		title: "RUGBY FIELD",
 		desc: "Adipisicing odio optio et voluptas earum. Minus consequatur mollitia mollitia doloribus eum! Libero veniam rem",
-		image: image[0],
+		image: images[0],
 	},
 	{
 		title: "SWIMMING POOL",
 		desc: "Adipisicing odio optio et voluptas earum. Minus consequatur mollitia mollitia doloribus eum! Libero veniam rem",
-		image: image[1],
+		image: images[1],
 	},
 	{
 		title: "TENNIS COURT",
 		desc: "Adipisicing odio optio et voluptas earum. Minus consequatur mollitia mollitia doloribus eum! Libero veniam rem",
-		image: image[2],
+		image: images[2],
 	},
 	{
 		title: "FOOTBALL FIELD",
 		desc: "Adipisicing odio optio et voluptas earum. Minus consequatur mollitia mollitia doloribus eum! Libero veniam rem",
-		image: image[3],
+		image: images[3],
 	},
 	{
 		title: "PADEL COURT",
 		desc: "Adipisicing odio optio et voluptas earum. Minus consequatur mollitia mollitia doloribus eum! Libero veniam rem",
-		image: image[4],
+		image: images[4],
 	},
 	{
 		title: "FITNESS GYM",
 		desc: "Adipisicing odio optio et voluptas earum. Minus consequatur mollitia mollitia doloribus eum! Libero veniam rem",
-		image: image[5],
+		image: images[5],
 	},
 	{
 		title: "BATTING CAGE",
 		desc: "Adipisicing odio optio et voluptas earum. Minus consequatur mollitia mollitia doloribus eum! Libero veniam rem",
-		image: image[0],
+		image: images[0],
 	},
 ];
 
 function Cards() {
+	let n = 0;
 	let cards = cardData.map((e) => {
 		return (
-			<div className="cards" style={{ background: e.image }}>
+			<div
+				key={n++}
+				className="cards"
+				style={{ background: `url(${e.image})` }}
+			>
 				<h2>{e.title}</h2>
 				<p>{e.desc}</p>
 				<div>
@@ -60,4 +65,12 @@ function Cards() {
 		);
 	});
 	return <div className="cardContainer">{cards}</div>;
+}
+
+export default function SecondSection() {
+	return (
+		<div className="secondSection">
+			<Cards />
+		</div>
+	);
 }

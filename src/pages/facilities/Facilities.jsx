@@ -1,6 +1,8 @@
 import Nav from "/src/components/Nav.jsx";
 import Footer from "/src/components/Footer.jsx";
 import FirstSection from "./FirstSection.jsx";
+import SecondSection from "./SecondSection.jsx";
+
 import "./facilitiesStyles.css";
 
 // announcements
@@ -12,6 +14,7 @@ export default function Facilities() {
 		<div id="facilities">
 			<Nav />
 			<FirstSection />
+			<SecondSection />
 			<Footer />
 		</div>
 	);
