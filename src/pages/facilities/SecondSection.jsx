@@ -48,14 +48,27 @@ let cardData = [
 	},
 ];
 
+function toggle(e) {
+	let temp;
+	if (e.target.nodeName.className == "card") {
+		temp = e.target;
+	} else if (e.target.parentNode.className == "plusMinus") {
+		temp = e.target.parentNode.parentNode;
+	} else {
+		temp = e.target.parentNode;
+	}
+
+	temp.classList.toggle("show");
+}
+
 function Cards() {
 	let n = 0;
 	let cards = cardData.map((e) => {
 		return (
-			<div key={n++} className="card show">
+			<div onClick={(e) => toggle(e)} key={n} id={n++} className="card">
 				<h2>{e.title}</h2>
 				<p>{e.desc}</p>
-				<div>
+				<div className="plusMinus">
 					<span className="plus">+</span>
 					<span className="minus">&#8722;</span>
 				</div>
