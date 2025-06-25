@@ -91,10 +91,27 @@ function Cards() {
 	);
 }
 
+function TrainingCard() {
+	return (
+		<div className="training">
+			<h2>TRAINING & LESSONS.</h2>
+			<p>We offer private training and lessons within our facilities.</p>
+			<div>
+				<p>
+					Contact us for more information for personal training at our
+					facilities.
+				</p>
+				<a>Inquire Training</a>
+			</div>
+		</div>
+	);
+}
+
 export default function SecondSection() {
 	return (
 		<div className="secondSection">
 			<Cards />
+			<TrainingCard />
 		</div>
 	);
 }
