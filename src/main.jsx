@@ -18,11 +18,11 @@ createRoot(document.getElementById("root")).render(
 
 import Restaurant from "./pages/restaurant/Restaurant.jsx";
 createRoot(document.getElementById("root")).render(<Restaurant />);
-*/
+
+
 import Facilities from "/src/pages/facilities/Facilities.jsx";
 createRoot(document.getElementById("root")).render(<Facilities />);
 
-/*
 import SalonSpa from "./pages/salonSpa/SalonSpa.jsx";
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
@@ -30,3 +30,11 @@ createRoot(document.getElementById("root")).render(
 	</StrictMode>
 );
 */
+
+import OfferEvents from "./pages/offerEvents/OfferEvents.jsx";
+
+createRoot(document.getElementById("root")).render(
+	<StrictMode>
+		<OfferEvents />
+	</StrictMode>
+);
