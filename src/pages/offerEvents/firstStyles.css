@@ -1,0 +1,45 @@
+#offerEvents .first {
+	max-width: 920px;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#offerEvents .first .left {
+	max-width: 300px;
+	flex-wrap: wrap;
+	h2 {
+		color: #F1CCB0;
+		margin-bottom: 30px;
+	}
+	p {
+		font-weight: 450;
+		margin-bottom: 30px;
+	}
+	.bottomLinks a { 
+		font-weight: 600;
+		margin-right: 60px;
+	}
+
+}
+
+
+#offerEvents .first .innerCard{
+	max-width: 300px;
+	padding: 20px;
+	border: 1px solid #1a7475;
+	border-radius: 10px;
+	font-weight: 450;
+	a {
+		background-color: #9494944D;
+		display: block;
+		padding: 12px;
+		text-align: center;
+		border-radius: 30px;
+		margin: 0 10px;
+		margin-top: 15px;
+	}
+}
+
