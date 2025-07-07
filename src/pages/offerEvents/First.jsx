@@ -1,3 +1,5 @@
+import "./firstStyles.css";
+
 export default function First() {
 	return (
 		<div className="first">
@@ -9,7 +11,7 @@ export default function First() {
 					<a href="#">OFFERS</a>
 				</div>
 			</div>
-			<div className="right">
+			<div className="innerCard">
 				<p>Interested in hosting your event at one of our venues?</p>
 				<a href="#">Get in touch.</a>
 			</div>
