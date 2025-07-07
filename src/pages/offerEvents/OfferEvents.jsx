@@ -8,6 +8,7 @@ export default function OfferEvents() {
 	return (
 		<div id="offerEvents">
 			<Nav />
+			<First />
 			<Footer />
 		</div>
 	);
