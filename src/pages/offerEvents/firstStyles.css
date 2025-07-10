@@ -5,35 +5,37 @@
 	padding: 20px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 #offerEvents .first .left {
 	max-width: 300px;
-	flex-wrap: wrap;
 	h2 {
-		color: #F1CCB0;
+		color: #f1ccb0;
 		margin-bottom: 30px;
 	}
 	p {
 		font-weight: 450;
 		margin-bottom: 30px;
 	}
-	.bottomLinks a { 
+	.bottomLinks a {
 		font-weight: 600;
 		margin-right: 60px;
 	}
-
 }
 
-
-#offerEvents .first .innerCard{
+#offerEvents .first .innerCard {
 	max-width: 300px;
+	font-size: 0.9em;
+	max-height: 200px;
 	padding: 20px;
 	border: 1px solid #1a7475;
 	border-radius: 10px;
 	font-weight: 450;
+	background-color: #38373733;
 	a {
-		background-color: #9494944D;
+		background-color: #9494944d;
 		display: block;
 		padding: 12px;
 		text-align: center;
@@ -42,4 +44,3 @@
 		margin-top: 15px;
 	}
 }
-
