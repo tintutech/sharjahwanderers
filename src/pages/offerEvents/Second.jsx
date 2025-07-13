@@ -1,4 +1,5 @@
 import image1 from "/offerEvents/image1.jpg";
+import "./secondStyles.css";
 
 let data = [
 	{
@@ -12,14 +13,43 @@ let data = [
 			"Star wars themed night. At the Wanderers sports bar.",
 		],
 		link: "#",
+		linkTitle: "ATTEND EVENT",
 	},
 ];
 
 function Cards() {
-	let returnImages = images.map((e) => {
-		console.log(e);
-		return <div className="card"></div>;
+	let n = 0;
+	let returnCards = data.map((e) => {
+		let m = 0;
+		let cardInfo = e.cardContent.map((t) => {
+			return (
+				<div key={m++}>
+					<p>{t}</p>
+				</div>
+			);
+		});
+		console.log(e.img);
+		return (
+			<div key={"card" + n++} className="card">
+				<div className="first">
+					<img src={e.img} />
+					<div>
+						<div className="one">
+							<p className="month">{e.month}</p>
+							<p className="date">{e.date}</p>
+						</div>
+						<p className="two">{e.title}</p>
+					</div>
+				</div>
+				<div className="second">
+					<div className="top">{cardInfo}</div>
+					<a href={e.link}>{e.linkTitle}</a>
+				</div>
+			</div>
+		);
 	});
+
+	return <>{returnCards}</>;
 }
 
 export default function Second() {
