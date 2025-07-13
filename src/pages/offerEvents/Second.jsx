@@ -28,7 +28,6 @@ function Cards() {
 				</div>
 			);
 		});
-		console.log(e.img);
 		return (
 			<div key={"card" + n++} className="card">
 				<div className="first">
