@@ -27,25 +27,25 @@ export default function Navbar() {
 						<a href="/">HOME</a>
 					</li>
 					<li>
-						<a href="#">ABOUT</a>
+						<a href="/about">ABOUT</a>
 					</li>
 					<li>
-						<a href="#">MEMBERSHIP</a>
+						<a href="/membership">MEMBERSHIP</a>
 					</li>
 					<li>
-						<a href="#">EVENTS & OFFERS</a>
+						<a href="/events">EVENTS & OFFERS</a>
 					</li>
 					<li>
-						<a href="#">RESTAURANT</a>
+						<a href="/restaurant">RESTAURANT</a>
 					</li>
 					<li>
-						<a href="#">FACILITIES</a>
+						<a href="/facilities">FACILITIES</a>
 					</li>
 					<li>
-						<a href="#">SPA & SALON</a>
+						<a href="/salonspa">SPA & SALON</a>
 					</li>
 					<li>
-						<a href="#">CONTACT</a>
+						<a href="/contact">CONTACT</a>
 					</li>
 				</ul>
 				<a href="#">MEMBERS LOGIN</a>
@@ -75,13 +75,13 @@ export default function Navbar() {
 				<div className="bottomNav">
 					<ul>
 						<li>
-							<a href="#">ABOUT</a>
+							<a href="/about">ABOUT</a>
 						</li>
 						<li>
-							<a href="#">MEMBERSHIP</a>
+							<a href="/membership">MEMBERSHIP</a>
 						</li>
 						<li>
-							<a href="#">EVENTS & OFFERS</a>
+							<a href="/events">EVENTS & OFFERS</a>
 						</li>
 						<li>
 							<a href="/">
@@ -89,13 +89,13 @@ export default function Navbar() {
 							</a>
 						</li>
 						<li>
-							<a href="#">RESTAURANT</a>
+							<a href="/restaurant">RESTAURANT</a>
 						</li>
 						<li>
-							<a href="#">FACILITIES</a>
+							<a href="/facilities">FACILITIES</a>
 						</li>
 						<li>
-							<a href="#">SPA & SALON</a>
+							<a href="/salonspa">SPA & SALON</a>
 						</li>
 					</ul>
 				</div>

@@ -1,32 +1,27 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-
-/*
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Layout from "./pages/Layout";
 import Home from "./Home.jsx";
-createRoot(document.getElementById("root")).render(
-	<StrictMode>
-		<Home />
-	</StrictMode>
-);
-
 import AboutMembership from "./pages/aboutMembership/AboutMembership.jsx";
-createRoot(document.getElementById("root")).render(
-	<StrictMode>
-		<AboutMembership />
-	</StrictMode>
-);
-
 import Restaurant from "./pages/restaurant/Restaurant.jsx";
-createRoot(document.getElementById("root")).render(<Restaurant />);
-*/
 import Facilities from "/src/pages/facilities/Facilities.jsx";
-createRoot(document.getElementById("root")).render(<Facilities />);
-
-/*
 import SalonSpa from "./pages/salonSpa/SalonSpa.jsx";
-createRoot(document.getElementById("root")).render(
-	<StrictMode>
-		<SalonSpa />
-	</StrictMode>
-);
-*/
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/">
+          <Route index element={<Home />} />
+          <Route path="membership" element={<AboutMembership />} />
+          <Route path="restaurant" element={<Restaurant />} />
+          <Route path="facilities" element={<Facilities />} />
+          <Route path="salonspa" element={<SalonSpa />} />
+          {/* <Route path="*" element={<NoPage />} /> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
