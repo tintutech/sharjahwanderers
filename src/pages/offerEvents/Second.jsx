@@ -9,13 +9,6 @@ let data = [
 		title: "May the 4th be with you.",
 		cardContent: [
 			"May the 4th Be with you.",
-			"May the 4th Be with you.",
-			"May the 4th Be with you.",
-			"May the 4th Be with you.",
-			"May the 4th Be with you.",
-			"May the 4th Be with you.",
-			"May the 4th Be with you.",
-
 			"Star wars themed night. At the Wanderers sports bar.",
 		],
 		link: "#",
