@@ -30,8 +30,12 @@ function Cards() {
 		});
 		return (
 			<div key={"card" + n++} className="card">
-				<div className="first">
-					<img src={e.img} />
+				<div
+					style={{
+						backgroundImage: `url(${e.img})`,
+					}}
+					className="cardLeft"
+				>
 					<div>
 						<div className="one">
 							<p className="month">{e.month}</p>
@@ -40,8 +44,8 @@ function Cards() {
 						<p className="two">{e.title}</p>
 					</div>
 				</div>
-				<div className="second">
-					<div className="top">{cardInfo}</div>
+				<div className="cardRight">
+					<div className="content">{cardInfo}</div>
 					<a href={e.link}>{e.linkTitle}</a>
 				</div>
 			</div>
@@ -59,6 +63,8 @@ export default function Second() {
 				<a href="#">CALENDAR</a>
 			</div>
 			<div className="cardContainer">
+				<Cards />
+				<Cards />
 				<Cards />
 			</div>
 		</div>
