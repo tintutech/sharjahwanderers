@@ -24,7 +24,7 @@
 
 	.cardContainer {
 		margin-top: 30px;
-		padding-bottom: 20px;
+		padding-bottom: 50px;
 		display: flex;
 		overflow: auto;
 		gap: 20px;
@@ -33,18 +33,55 @@
 	}
 
 	.card {
+		outline: 1px solid red;
 		flex-shrink: 0;
 		width: 700px;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1.1fr;
 	}
 
 	.card .cardLeft {
 		background-repeat: no-repeat;
 		background-position: center;
+		background-size: cover;
 		aspect-ratio: 1/1;
 		position: relative;
 		overflow: hidden;
+		padding: 20px;
+	}
+
+	.card .cardLeft > div {
+		gap: 20px;
+		display: flex;
+	}
+
+	.card .cardLeft .one {
+		width: 80px;
+	}
+	.card .cardLeft .one p {
+		width: 100;
+		text-align: center;
+		padding: 3px;
+	}
+
+	.card .cardLeft .two {
+		background-color: rgba(0, 0, 0, 40%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		backdrop-filter: blur(20px);
+	}
+
+	.card .cardLeft .date {
+		background-color: #00000059;
+		font-size: 1.5em;
+	}
+
+	.card .cardLeft .month {
+		font-size: 1.1em;
+		color: black;
+		background-color: #d9d9d9;
 	}
 
 	.card .cardRight {
