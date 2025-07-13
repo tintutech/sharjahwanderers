@@ -1,0 +1,22 @@
+#offerEvents .second {
+	max-width: 920px;
+	padding: 20px;
+	margin: 50px auto;
+	.top {
+		display: flex;
+		gap: 20px;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 500px;
+	}
+	.top h2 {
+		color: #f1ccb0;
+		font-weight: 300;
+		font-size: 1.5em;
+		max-width: 200px;
+	}
+
+	.top a {
+		color: #6cc9ca;
+	}
+}
