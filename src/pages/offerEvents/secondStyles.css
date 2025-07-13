@@ -2,6 +2,7 @@
 	max-width: 920px;
 	padding: 20px;
 	margin: 50px auto;
+
 	.top {
 		display: flex;
 		gap: 20px;
@@ -9,6 +10,7 @@
 		align-items: center;
 		max-width: 500px;
 	}
+
 	.top h2 {
 		color: #f1ccb0;
 		font-weight: 300;
@@ -18,5 +20,49 @@
 
 	.top a {
 		color: #6cc9ca;
+	}
+
+	.cardContainer {
+		margin-top: 30px;
+		padding-bottom: 20px;
+		display: flex;
+		overflow: auto;
+		gap: 20px;
+		scrollbar-color: lightgray transparent;
+		scrollbar-width: thin;
+	}
+
+	.card {
+		flex-shrink: 0;
+		width: 700px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.card .cardLeft {
+		background-repeat: no-repeat;
+		background-position: center;
+		aspect-ratio: 1/1;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.card .cardRight {
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.card .cardRight a {
+		max-width: 250px;
+		text-align: center;
+		background-color: #d9d9d91a;
+		padding: 15px;
+		border: 1px solid #636363;
+		border-radius: 30px;
+	}
+
+	.card .content p {
+		margin-bottom: 30px;
 	}
 }
