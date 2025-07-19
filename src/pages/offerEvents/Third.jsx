@@ -1,13 +1,15 @@
 import image1 from "/offerEvents/image1.jpg";
+import "./thirdStyles.css";
 
 let data = [
 	{
 		img: image1,
 		title: "PROMO TITLE",
 		description: [
-			"Consectetur nostrum est eveniet rem necessitatibus assumenda consectetur cumque fugiat, quasi eius vel? Laudantium blanditiis.",
-			"Consectetur dolor at odio voluptatem maiores Porro necessitatibus nesciunt perspiciatis",
+			"Consectetur nostrum est eveniet rem necessitatibus",
+			"Consectetur dolor at odio",
 		],
+		link: "#",
 	},
 ];
 
@@ -23,6 +25,7 @@ function Cards() {
 				<div className="lowerCard">
 					<h3>{e.title}</h3>
 					{para}
+					<a href={e.link}>BOOK A TABLE</a>
 				</div>
 			</div>
 		);
@@ -35,6 +38,9 @@ export default function Third() {
 		<div className="third">
 			<h2>CURRENT OFFERS AND PROMOTIONS</h2>
 			<div className="cardContainer">
+				<Cards />
+				<Cards />
+				<Cards />
 				<Cards />
 			</div>
 		</div>
