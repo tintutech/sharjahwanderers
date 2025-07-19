@@ -15,12 +15,13 @@ let data = [
 
 function Cards() {
 	let returnCard = data.map((e) => {
+		let n = 0;
+		let m = 0;
 		let para = e.description.map((p) => {
-			console.log(p);
-			return <p>{p}</p>;
+			return <p key={m++}>{p}</p>;
 		});
 		return (
-			<div className="card">
+			<div key={n++} className="card">
 				<img src={e.img} />
 				<div className="lowerCard">
 					<h3>{e.title}</h3>
