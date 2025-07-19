@@ -1,4 +1,5 @@
 import "./aboutMembershipStyles.css";
+import '../../components/endQuoteStyles.css'
 
 import Nav from "../../components/Nav.jsx";
 import Footer from "../../components/Footer.jsx";
