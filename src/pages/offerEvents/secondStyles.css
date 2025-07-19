@@ -102,3 +102,19 @@
 		margin-bottom: 30px;
 	}
 }
+
+@media (max-width: 768px) {
+	#offerEvents .second .cardContainer {
+		gap: 60px;
+	}
+
+	#offerEvents .second .card {
+		display: block;
+		width: 280px;
+	}
+	#offerEvents .second .card .cardLeft > div {
+		height: 100%;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
