@@ -50,4 +50,36 @@
 		margin-top: 30px;
 		margin-bottom: 10px;
 	}
+	.membershipCard {
+		max-width: 300px;
+		padding: 20px 50px;
+		margin: 0 10px;
+		background: url("/membershipBackground.jpg");
+		background-position: center;
+		background-size: cover;
+		h3 {
+			font-size: 1.8em;
+			font-weight: 400;
+		}
+		p {
+			margin-top: 10px;
+			font-weight: 300;
+		}
+		a {
+			text-align: center;
+			display: block;
+			max-width: 220px;
+			margin: 10px auto;
+			margin-top: 40px;
+			padding: 10px 20px;
+			border: 2px solid black;
+			border-radius: 50px;
+			background-color: rgba(255, 255, 255, 0.2);
+			border-color: rgba(255, 255, 255, 0.1);
+			backdrop-filter: blur(8px);
+		}
+		a:hover {
+			border-color: rgba(255, 255, 255, 0.5);
+		}
+	}
 }
