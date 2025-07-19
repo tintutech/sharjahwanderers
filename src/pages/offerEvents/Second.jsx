@@ -66,6 +66,10 @@ export default function Second() {
 				<Cards />
 				<Cards />
 			</div>
+			<div className="innerCard">
+				<p>Interested in hosting your event at one of our venues?</p>
+				<a href="#">Get in touch.</a>
+			</div>
 		</div>
 	);
 }
