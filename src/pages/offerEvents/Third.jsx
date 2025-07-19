@@ -33,6 +33,19 @@ function Cards() {
 	return returnCard;
 }
 
+function MembershipCard() {
+	return (
+		<div className="membershipCard">
+			<h3>Membership</h3>
+			<p>
+				Become part of the club, explore unique offers, and enjoy unparalleled
+				access to our exclusive club.
+			</p>
+			<a href="#">ACTION BUTTON</a>
+		</div>
+	);
+}
+
 export default function Third() {
 	return (
 		<div className="third">
@@ -44,6 +57,7 @@ export default function Third() {
 				<Cards />
 				<Cards />
 			</div>
+			<MembershipCard />
 		</div>
 	);
 }
