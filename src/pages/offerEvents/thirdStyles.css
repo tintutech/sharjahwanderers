@@ -1,0 +1,36 @@
+#offerEvents .third {
+	max-width: 920px;
+	padding: 20px;
+	margin: 0 auto;
+
+	h2 {
+		max-width: 250px;
+		margin-bottom: 50px;
+		font-weight: 300;
+		font-size: 1.6em;
+		color: #f1ccb0;
+	}
+	.cardContainer {
+		display: flex;
+		gap: 30px;
+		overflow: auto;
+		padding-bottom: 30px;
+		scrollbar-width: thin;
+		scrollbar-color: lightgray transparent;
+	}
+	.card {
+		flex-shrink: 0;
+		max-width: 270px;
+	}
+	img {
+		width: 100%;
+		aspect-ratio: 2/1.5;
+		object-fit: cover;
+	}
+	.lowerCard {
+		padding: 20px;
+		background-color: #000a0c;
+	}
+	.card h3 {
+	}
+}
