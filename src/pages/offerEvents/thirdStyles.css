@@ -12,15 +12,15 @@
 	}
 	.cardContainer {
 		display: flex;
-		gap: 30px;
+		gap: 60px;
 		overflow: auto;
-		padding-bottom: 30px;
+		padding-bottom: 50px;
 		scrollbar-width: thin;
 		scrollbar-color: lightgray transparent;
 	}
 	.card {
 		flex-shrink: 0;
-		max-width: 270px;
+		max-width: 280px;
 	}
 	img {
 		width: 100%;
@@ -28,9 +28,26 @@
 		object-fit: cover;
 	}
 	.lowerCard {
-		padding: 20px;
+		padding: 15px 20px;
 		background-color: #000a0c;
 	}
 	.card h3 {
+		font-weight: 380;
+		margin-bottom: 20px;
+	}
+	p {
+		font-weight: 300;
+		font-size: 0.9em;
+		margin-bottom: 10px;
+	}
+	.card a {
+		display: block;
+		background-color: #ffffff;
+		color: black;
+		max-width: 170px;
+		text-align: center;
+		padding: 8px;
+		margin-top: 30px;
+		margin-bottom: 10px;
 	}
 }
