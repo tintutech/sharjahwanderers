@@ -12,6 +12,7 @@ export default function OfferEvents() {
 			<Nav />
 			<First />
 			<Second />
+			<Third />
 			<Footer />
 		</div>
 	);
