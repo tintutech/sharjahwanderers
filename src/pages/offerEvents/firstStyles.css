@@ -44,3 +44,9 @@
 		margin-top: 15px;
 	}
 }
+
+@media (max-width: 768px) {
+	#offerEvents .first .innerCard {
+		display: none;
+	}
+}
