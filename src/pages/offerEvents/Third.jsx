@@ -1,4 +1,4 @@
-import image1 from "/offerEvents.jpg";
+import image1 from "/offerEvents/image1.jpg";
 
 let data = [
 	{
@@ -27,6 +27,7 @@ function Cards() {
 			</div>
 		);
 	});
+	return returnCard;
 }
 
 export default function Third() {
