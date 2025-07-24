@@ -29,7 +29,10 @@ import "./faqStyles.css";
 
 function toggleClass(e) {
 	let curr;
-	if (e.target.nodeName.toLowerCase() == "button") {
+	if (
+		e.target.nodeName.toLowerCase() == "button" ||
+		e.target.nodeName.toLowerCase() === "h3"
+	) {
 		curr = e.target.parentNode;
 	} else {
 		curr = e.target;
