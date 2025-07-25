@@ -142,3 +142,15 @@
 		display: block;
 	}
 }
+
+@media (max-width: 425px) {
+	#offerEvents .second .cardContainer {
+		gap: 20px;
+	}
+}
+
+@media (max-width: 350px) {
+	#offerEvents .second .card {
+		max-width: 250px;
+	}
+}
