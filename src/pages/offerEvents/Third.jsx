@@ -1,4 +1,7 @@
 import image1 from "/offerEvents/image1.jpg";
+
+import FAQ from "./FAQ.jsx";
+
 import "./thirdStyles.css";
 
 let data = [
@@ -58,7 +61,10 @@ export default function Third() {
 				<Cards />
 				<Cards />
 			</div>
-			<MembershipCard />
+			<div className="membershipFAQ">
+				<MembershipCard />
+				<FAQ />
+			</div>
 		</div>
 	);
 }
