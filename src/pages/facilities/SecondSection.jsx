@@ -93,7 +93,7 @@ function Cards() {
 
 function TrainingCard() {
 	return (
-		<div className="training">
+		<div id="training" className="training">
 			<h2>TRAINING & LESSONS.</h2>
 			<p>We offer private training and lessons within our facilities.</p>
 			<div>
