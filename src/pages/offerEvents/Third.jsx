@@ -61,7 +61,7 @@ export default function Third() {
 				<Cards />
 				<Cards />
 			</div>
-			<div className="membershipFAQ">
+			<div className="memFaq">
 				<MembershipCard />
 				<FAQ />
 			</div>

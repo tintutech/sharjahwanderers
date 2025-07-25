@@ -1,16 +1,10 @@
-#FAQ {
+#offerEvents #FAQ {
 	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 60px;
-	max-width: 720px;
 	margin-top: 50px;
-	padding: 50px;
-	padding-bottom: 0;
+	display: block;
+	max-width: 720px;
 	h2 {
 		color: #d2a98a;
-		position: relative;
-		top: 35px;
 		font-size: 1.4em;
 		font-weight: 400;
 		font-style: italic;
