@@ -47,7 +47,14 @@
 			display: none;
 		}
 		.galleryContainer {
-			display: block;
+			display: flex;
+			align-items: flex-start;
+			overflow: auto;
+			gap: 20px;
+
+			img {
+				max-width: 280px;
+			}
 		}
 	}
 }
@@ -60,6 +67,9 @@
 		}
 		.galleryContainer {
 			margin: 100px 10px;
+			img {
+				max-width: 250px;
+			}
 		}
 		embed {
 			padding: 5px;
