@@ -39,7 +39,7 @@ export default function firstSection() {
 					</p>
 					<div className="links">
 						<a href="#">FACILITIES</a>
-						<a href="#">TRAINING</a>
+						<a href="#training">TRAINING</a>
 					</div>
 				</div>
 				<Card />
