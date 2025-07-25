@@ -1,4 +1,4 @@
-#salonSpa .FAQ {
+#salonspa .FAQ {
 	margin: 0 auto;
 	gap: 60px;
 	max-width: 450px;
@@ -67,7 +67,7 @@
 	}
 }
 @media (max-width: 750px) {
-	.FAQ {
+	#salonspa .FAQ {
 		max-width: 600px;
 		display: block;
 		h2 {
@@ -77,7 +77,7 @@
 }
 
 @media (max-width: 420px) {
-	.FAQ {
+	#salonspa .FAQ {
 		padding: 20px;
 		.faqCardInfo {
 			padding-right: 0;

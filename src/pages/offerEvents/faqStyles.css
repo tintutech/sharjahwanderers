@@ -68,7 +68,7 @@
 	}
 }
 @media (max-width: 750px) {
-	#FAQ {
+	#offerEvents #FAQ {
 		max-width: 600px;
 		display: block;
 		h2 {
@@ -78,7 +78,7 @@
 }
 
 @media (max-width: 420px) {
-	#FAQ {
+	#offerEvents #FAQ {
 		padding: 20px;
 		padding-bottom: 0;
 		.FAQcardInfo {

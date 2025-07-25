@@ -74,7 +74,7 @@
 	}
 }
 @media (max-width: 750px) {
-	#FAQ {
+	#facilities #FAQ {
 		max-width: 600px;
 		display: block;
 		h2 {
@@ -84,7 +84,7 @@
 }
 
 @media (max-width: 420px) {
-	#FAQ {
+	#facilities #FAQ {
 		padding: 20px;
 		padding-bottom: 0;
 		.FAQcardInfo {
