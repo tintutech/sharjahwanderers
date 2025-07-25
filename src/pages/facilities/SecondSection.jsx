@@ -6,6 +6,8 @@ import image5 from "/facilities/image5.jpg";
 import image6 from "/facilities/image6.jpg";
 import image8 from "/facilities/image8.jpg";
 
+import FAQ from "./FAQ.jsx";
+
 import "./secondSectionStyles.css";
 
 let images = [image1, image2, image3, image4, image5, image6];
@@ -112,6 +114,7 @@ export default function SecondSection() {
 		<div className="secondSection">
 			<Cards />
 			<TrainingCard />
+			<FAQ />
 		</div>
 	);
 }
