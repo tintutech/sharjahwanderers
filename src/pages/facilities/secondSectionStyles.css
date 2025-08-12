@@ -35,7 +35,7 @@
 		z-index: 2;
 	}
 	.card.show {
-		height: 90%;
+		height: 100%;
 		transition: height 0.4s ease;
 	}
 	.card p {
@@ -58,7 +58,7 @@
 	}
 	.card.show .minus {
 		display: block;
-		top: -50px;
+		top: -45px;
 	}
 
 	.card.show img {

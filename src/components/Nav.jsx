@@ -61,7 +61,7 @@ export default function Navbar() {
 			</div>
 			<div className="desktopNav">
 				<div className="topNav">
-					<a href="#">
+					<a href="/">
 						<img src="/home.png" />
 					</a>
 					<div className="rightNavContents">

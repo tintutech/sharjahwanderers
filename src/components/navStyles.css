@@ -53,8 +53,9 @@
 }
 
 .mobileNav {
-	padding: 30px;
+	padding: 150px 50px;
 	display: none;
+	margin-bottom: 60px;
 }
 
 .openWindow {
@@ -151,5 +152,6 @@
 @media (max-width: 450px) {
 	.mobileNav {
 		padding: 30px;
+		padding-top: 100px;
 	}
 }
