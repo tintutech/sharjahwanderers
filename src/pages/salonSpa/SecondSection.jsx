@@ -78,8 +78,10 @@ function ReturnCards({ title, cardList, booking }) {
 			<div key={n++} className="card">
 				<img src={e.img} />
 				<div className="cardContents">
-					<h3>{e.title}</h3>
-					<p>{e.desc}</p>
+					<div>
+						<h3>{e.title}</h3>
+						<p>{e.desc}</p>
+					</div>
 					<a href={e.url}>BOOK AN APPOINTMENT</a>
 				</div>
 			</div>
