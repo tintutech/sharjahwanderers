@@ -1,6 +1,7 @@
 .dineInSection {
 	max-width: 1024px;
 	margin: 50px auto;
+	margin-botton: 0px;
 	.dineInTop {
 		margin: 20px;
 		display: flex;
