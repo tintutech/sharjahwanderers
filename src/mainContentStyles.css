@@ -47,7 +47,8 @@
 	}
 
 	.leftCard div:nth-of-type(2) {
-		justify-self: end;
+		display: flex;
+		justify-content: space-between;
 	}
 	.rightCard {
 		position: relative;
