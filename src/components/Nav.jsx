@@ -14,9 +14,12 @@ export default function Navbar() {
 	return (
 		<div className="navBar">
 			<div className="openWindow hidden">
-				<button onClick={closeWindow} className="close">
-					<img src="/multiply.svg" />
-				</button>
+				<div className="closeDiv">
+					<div></div>
+					<button onClick={closeWindow} className="close">
+						<img src="/multiply.svg" />
+					</button>
+				</div>
 				<ul>
 					<li>
 						<a href="/">
