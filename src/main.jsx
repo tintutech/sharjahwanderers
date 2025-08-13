@@ -7,4 +7,4 @@ import OfferEvents from "./pages/offerEvents/OfferEvents.jsx";
 import Restaurant from "./pages/restaurant/Restaurant.jsx";
 import SalonSpa from "./pages/salonSpa/SalonSpa.jsx";
 
-createRoot(document.getElementById("root")).render(<Facilities />);
+createRoot(document.getElementById("root")).render(<SalonSpa />);
