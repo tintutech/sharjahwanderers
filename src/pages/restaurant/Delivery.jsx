@@ -23,9 +23,7 @@ function RightSection() {
 	return (
 		<div className="rightSection">
 			<h3>SUNDAY ROAST AVAILABLE</h3>
-			<a className="detailsBtn" href="#">
-				ASK FOR DETAILS
-			</a>
+			<button className="detailsBtn">ASK FOR DETAILS</button>
 		</div>
 	);
 }

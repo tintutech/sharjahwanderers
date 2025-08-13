@@ -39,17 +39,19 @@
 		backdrop-filter: blur(5px);
 		max-height: 110px;
 	}
-	.rightSection a {
+	.rightSection button {
 		display: block;
 		max-width: 300px;
 		font-size: 0.75em;
 		font-weight: 300;
+		margin: 0 auto;
+		color: white;
 		padding: 10px 20px;
 		border: 1px solid rgba(255, 255, 255, 0.2);
 		background-color: rgba(0, 0, 0, 0.35);
 		border-radius: 40px;
 	}
-	.rightSection a:hover {
+	.rightSection button:hover {
 		border-color: rgba(255, 255, 255, 0.5);
 	}
 	.galleryContainer {

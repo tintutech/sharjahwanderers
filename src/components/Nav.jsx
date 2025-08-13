@@ -13,6 +13,7 @@ function closeWindow() {
 export default function Navbar() {
 	return (
 		<div className="navBar">
+			<dialog className="fullWindow"></dialog>
 			<div className="openWindow hidden">
 				<div className="closeDiv">
 					<div></div>
