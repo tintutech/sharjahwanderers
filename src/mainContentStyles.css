@@ -234,10 +234,6 @@
 	#home .leftCard > div > div:nth-of-type(1) {
 		padding: 5px;
 	}
-
-	#home .leftCard h1 {
-		text-align: center;
-	}
 	#home #offerevents {
 		padding-left: 0;
 		padding-right: 0;
