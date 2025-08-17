@@ -1,25 +1,25 @@
 let info = [
 	{
 		id: 0,
-		title: "SALON & SPA QUESTIONS",
+		title: "Membership requirements",
 		cardInfo:
 			"Ipsum laudantium dolore commodi voluptas autem. Voluptates molestiae voluptatem corrupti at nisi placeat a ipsa optio. Libero distinctio ducimus sed voluptas reprehenderit Praesentium hic aut",
 	},
 	{
 		id: 1,
-		title: "SALON & SPA QUESTIONS",
+		title: "Membership requirements",
 		cardInfo:
 			"Amet ab quidem quaerat repudiandae maxime Enim commodi molestias nobis sed unde. Adipisci pariatur tempora nobis sapiente iste reiciendis Culpa corporis suscipit neque odio dicta",
 	},
 	{
 		id: 2,
-		title: "SALON & SPA QUESTIONS",
+		title: "Membership requirements",
 		cardInfo:
 			"Ipsum laudantium dolore commodi voluptas autem. Voluptates molestiae voluptatem corrupti at nisi placeat a ipsa optio. Libero distinctio ducimus sed voluptas reprehenderit Praesentium hic aut",
 	},
 	{
 		id: 3,
-		title: "SALON & SPA QUESTIONS",
+		title: "Membership requirements",
 		cardInfo:
 			"Amet ab quidem quaerat repudiandae maxime Enim commodi molestias nobis sed unde. Adipisci pariatur tempora nobis sapiente iste reiciendis Culpa corporis suscipit neque odio dicta",
 	},
@@ -38,7 +38,7 @@ function toggleClass(e) {
 		curr = e.target;
 	}
 	let parentContainer = curr.parentNode.parentNode.querySelectorAll(
-		".faqCard .faqCardUpper"
+		".FAQcard .FAQcardUpper"
 	);
 	let contains;
 	if (curr.classList.contains("open")) {
@@ -70,21 +70,21 @@ function toggleClass(e) {
 function ReturnCards() {
 	const cards = info.map((i) => {
 		return (
-			<div key={i.id} className="faqCard">
-				<div onClick={toggleClass} className="faqCardUpper">
+			<div key={i.id} className="FAQcard">
+				<div onClick={toggleClass} className="FAQcardUpper">
 					<h3>{i.title}</h3>
 					<button>+</button>
 				</div>
-				<div className="faqCardInfo hiddenFaqCard">
+				<div className="FAQcardInfo ">
 					<p>{i.cardInfo}</p>
 				</div>
 			</div>
 		);
 	});
 	return (
-		<div className="FAQ">
+		<div id="FAQ">
 			<h2>Frequently asked questions</h2>
-			<div className="faqCardContainer">{cards}</div>
+			<div>{cards}</div>
 		</div>
 	);
 }
