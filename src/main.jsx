@@ -6,5 +6,6 @@ import Facilities from "./pages/facilities/Facilities.jsx";
 import OfferEvents from "./pages/offerEvents/OfferEvents.jsx";
 import Restaurant from "./pages/restaurant/Restaurant.jsx";
 import SalonSpa from "./pages/salonSpa/SalonSpa.jsx";
+import Contact from "./pages/contact/Contact.jsx";
 
-createRoot(document.getElementById("root")).render(<Restaurant />);
+createRoot(document.getElementById("root")).render(<Contact />);
