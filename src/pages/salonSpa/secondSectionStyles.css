@@ -47,8 +47,13 @@
 		aspect-ratio: 1.25/1;
 	}
 	.cardContents {
+		min-height: 290px;
 		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
+
 	h3 {
 		font-size: 1.5em;
 		font-weight: 400;
@@ -70,5 +75,6 @@
 		color: black;
 		max-width: 230px;
 		text-align: center;
+		margin: 0 auto;
 	}
 }
