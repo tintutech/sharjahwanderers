@@ -10,9 +10,9 @@
 	box-sizing: border-box;
 }
 
-#contact{
-	background: url("/desktopBackground.png");
-	background-size: cover;
+#contact {
+	background: url("/pagesBackground.png");
+	background-size: contain;
 	font-family: "Inter", sans-serif;
 	color: var(--text-color);
 }
@@ -32,6 +32,6 @@ a:hover {
 
 @media (max-width: 450px) {
 	#contact {
-		background: url("/mobileBackground.png");
+		background: url("/pagesBackground.png");
 	}
 }
