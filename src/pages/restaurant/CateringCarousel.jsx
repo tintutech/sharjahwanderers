@@ -12,7 +12,6 @@ import { useState, useEffect } from "react";
 let n = 0;
 function slideChange(s, setState) {
 	let state = s;
-	console.log(n);
 	if (n == images.length - 1) {
 		n = 0;
 	} else {

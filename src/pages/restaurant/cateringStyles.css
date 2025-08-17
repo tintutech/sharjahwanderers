@@ -38,7 +38,7 @@
 	}
 	.left a {
 		display: block;
-		margin-top: 50px;
+		margin-top: 20px;
 		color: #6cc9ca;
 	}
 	.right {
@@ -77,7 +77,7 @@
 	.right .disclaimer {
 		margin-left: 10px;
 		margin-top: 50px;
-		font-size: 0.9em;
+		font-size: 0.75em;
 	}
 }
 

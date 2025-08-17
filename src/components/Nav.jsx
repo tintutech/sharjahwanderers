@@ -13,10 +13,14 @@ function closeWindow() {
 export default function Navbar() {
 	return (
 		<div className="navBar">
+			<dialog className="fullWindow"></dialog>
 			<div className="openWindow hidden">
-				<button onClick={closeWindow} className="close">
-					<img src="/multiply.svg" />
-				</button>
+				<div className="closeDiv">
+					<div></div>
+					<button onClick={closeWindow} className="close">
+						<img src="/multiply.svg" />
+					</button>
+				</div>
 				<ul>
 					<li>
 						<a href="/">
@@ -61,7 +65,7 @@ export default function Navbar() {
 			</div>
 			<div className="desktopNav">
 				<div className="topNav">
-					<a href="/">
+					<a href="#">
 						<img src="/home.png" />
 					</a>
 					<div className="rightNavContents">

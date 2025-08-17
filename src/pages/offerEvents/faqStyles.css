@@ -1,17 +1,18 @@
-#salonspa .FAQ {
+#offerEvents #FAQ {
 	margin: 0 auto;
-	gap: 60px;
-	max-width: 450px;
+	margin-top: 50px;
+	display: block;
+	max-width: 720px;
 	h2 {
 		color: #d2a98a;
-		font-size: 2em;
-		font-weight: 200;
+		font-size: 1.4em;
+		font-weight: 400;
 		font-style: italic;
 		letter-spacing: 0.15em;
 		margin-bottom: 40px;
 	}
 
-	.faqCard {
+	.FAQcard {
 		padding-bottom: 10px;
 		max-width: 500px;
 	}
@@ -20,7 +21,7 @@
 		font-size: 0.85em;
 		font-weight: 350;
 	}
-	.faqCardUpper {
+	.FAQcardUpper {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -42,7 +43,7 @@
 		cursor: pointer;
 	}
 
-	.faqCardInfo {
+	.FAQcardInfo {
 		max-height: 0px;
 		opacity: 0;
 		overflow: hidden;
@@ -52,7 +53,7 @@
 			opacity 0.75s ease-out,
 			max-height 0.5s linear;
 	}
-	.faqCardInfo p {
+	.FAQcardInfo p {
 		font-size: 0.85em;
 		font-weight: 300;
 		line-height: 1.25em;
@@ -61,13 +62,13 @@
 		padding-bottom: 30px;
 	}
 
-	.open + .faqCardInfo {
+	.open + .FAQcardInfo {
 		max-height: 300px;
 		opacity: 1;
 	}
 }
 @media (max-width: 750px) {
-	#salonspa .FAQ {
+	#offerEvents #FAQ {
 		max-width: 600px;
 		display: block;
 		h2 {
@@ -77,9 +78,10 @@
 }
 
 @media (max-width: 420px) {
-	#salonspa .FAQ {
+	#offerEvents #FAQ {
 		padding: 20px;
-		.faqCardInfo {
+		padding-bottom: 0;
+		.FAQcardInfo {
 			padding-right: 0;
 		}
 	}

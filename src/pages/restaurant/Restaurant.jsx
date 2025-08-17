@@ -5,6 +5,7 @@ import DineIn from "./DineIn.jsx";
 import Delivery from "./Delivery.jsx";
 import Offers from "./Offers.jsx";
 import Catering from "./Catering.jsx";
+import FAQ from "./FAQ.jsx";
 
 import "./restaurantStyles.css";
 
@@ -19,6 +20,7 @@ export default function Restaurant() {
 			<Delivery />
 			<Offers />
 			<Catering />
+			<FAQ />
 			<Footer />
 		</div>
 	);

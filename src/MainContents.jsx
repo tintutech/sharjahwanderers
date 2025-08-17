@@ -53,6 +53,7 @@ function About() {
 						<a href="">Learn More</a>
 					</div>
 					<div>
+						<div></div>
 						<ul>
 							<li>
 								<img className="tick" src="/tick.svg" />

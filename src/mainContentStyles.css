@@ -13,7 +13,6 @@
 		font-size: 3em;
 		font-weight: 500;
 		letter-spacing: 0.1em;
-		margin-bottom: 60px;
 	}
 	h3 {
 		font-weight: 500;
@@ -48,7 +47,8 @@
 	}
 
 	.leftCard div:nth-of-type(2) {
-		justify-self: end;
+		display: flex;
+		justify-content: space-between;
 	}
 	.rightCard {
 		position: relative;
@@ -233,6 +233,10 @@
 @media (max-width: 450px) {
 	#home .leftCard > div > div:nth-of-type(1) {
 		padding: 5px;
+	}
+
+	#home .leftCard h1 {
+		text-align: center;
 	}
 	#home #offerevents {
 		padding-left: 0;
