@@ -1,4 +1,7 @@
 .deliverySection {
+	* {
+		outline: 1px solid red;
+	}
 	max-width: 1024px;
 	padding: 20px;
 	margin: 0 auto;
@@ -14,10 +17,19 @@
 		font-size: 1.8em;
 		font-weight: 300;
 		letter-spacing: 0.1em;
-		margin-bottom: 50px;
+	}
+	.deliveryTitle {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 20px;
+		gap: 20px;
+	}
+	.deliveryTitle a {
+		color: #6cc9ca;
 	}
 	.leftLower {
-		max-width: 300px;
+		max-width: 320px;
 		gap: 30px;
 		display: flex;
 		font-size: 0.9em;
@@ -79,7 +91,7 @@
 @media (max-width: 670px) {
 	.deliverySection .topSection {
 		flex-direction: column;
-		gap: 50px;
+		gap: 20px;
 		align-items: center;
 	}
 }
@@ -109,7 +121,6 @@
 			gap: 40px;
 		}
 		.galleryContainer {
-			margin: 100px 10px;
 			img {
 				max-width: 250px;
 			}

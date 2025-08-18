@@ -10,7 +10,10 @@ let images = [image1, image2, image3];
 function LeftSection() {
 	return (
 		<div className="leftSection">
-			<h2>DELIVERY</h2>
+			<div className="deliveryTitle">
+				<h2>DELIVERY</h2>
+				<a href="#">ORDER NOW</a>
+			</div>
 			<div className="leftLower">
 				<p>DELIVERY TIMINGS 11:00 AM - 9:00 PM</p>
 				<p>MONDAY- FRIDAY</p>
