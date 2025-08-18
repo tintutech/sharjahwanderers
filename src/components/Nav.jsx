@@ -71,7 +71,7 @@ export default function Navbar() {
 					<div className="rightNavContents">
 						<a href="#">
 							members login
-							<img src="./enter.svg" />
+							<img src="/enter.svg" />
 						</a>
 						<a href="#">contact</a>
 					</div>
