@@ -22,7 +22,12 @@ export default function About() {
 					Sharjah Wanderers Sports Club, includes the only licensed wet bar
 					facility at their Clubhouse, in Sharjah.
 				</p>
-				<a href="#">WIKI</a>
+				<a
+					href="https://en.wikipedia.org/wiki/Sharjah_Wanderers"
+					target="_blank"
+				>
+					WIKI
+				</a>
 			</div>
 		</div>
 	);

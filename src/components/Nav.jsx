@@ -13,7 +13,7 @@ function closeWindow() {
 export default function Navbar() {
 	return (
 		<div className="navBar">
-			<dialog className="fullWindow"></dialog>
+			<dialog id="fullWindow"></dialog>
 			<div className="openWindow hidden">
 				<div className="closeDiv">
 					<div></div>
@@ -73,7 +73,7 @@ export default function Navbar() {
 							members login
 							<img src="/enter.svg" />
 						</a>
-						<a href="#">contact</a>
+						<a href="/contact">contact</a>
 					</div>
 				</div>
 				<div className="bottomNav">

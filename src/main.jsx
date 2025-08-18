@@ -7,6 +7,7 @@ import Restaurant from "./pages/restaurant/Restaurant.jsx";
 import Facilities from "/src/pages/facilities/Facilities.jsx";
 import SalonSpa from "./pages/salonSpa/SalonSpa.jsx";
 import OfferEvents from "./pages/offerEvents/OfferEvents.jsx";
+import Contact from "./pages/contact/Contact.jsx";
 
 export default function App() {
 	return (
@@ -20,6 +21,7 @@ export default function App() {
 					<Route path="facilities" element={<Facilities />} />
 					<Route path="salonspa" element={<SalonSpa />} />
 					<Route path="events" element={<OfferEvents />} />
+					<Route path="contact" element={<Contact />} />
 
 					{/* <Route path="*" element={<NoPage />} /> */}
 				</Route>
