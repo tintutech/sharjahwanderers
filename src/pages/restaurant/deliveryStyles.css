@@ -1,7 +1,4 @@
 .deliverySection {
-	* {
-		outline: 1px solid red;
-	}
 	max-width: 1024px;
 	padding: 20px;
 	margin: 0 auto;
@@ -85,6 +82,19 @@
 		display: block;
 		width: 100%;
 		aspect-ratio: 2/1.2;
+	}
+	.deliveryInfo {
+		max-width: 420px;
+	}
+	.deliveryInfo div {
+		margin-top: 20px;
+	}
+	.deliveryInfo p {
+		font-weight: 350;
+		letter-spacing: 0.1em;
+	}
+	.deliveryInfo span {
+		font-weight: 400;
 	}
 }
 

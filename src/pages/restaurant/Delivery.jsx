@@ -39,6 +39,28 @@ function ReturnImages() {
 	return <div className="galleryContainer">{imgHTML}</div>;
 }
 
+function DeliveryInfo() {
+	return (
+		<div className="deliveryInfo">
+			<div>
+				<p>WHATSAPP YOUR ORDER AND LOCATION</p>
+			</div>
+			<div>
+				<p>
+					We deliver to Sharjah and Ajman. Please allow 40-60 minutes from the
+					time of order acceptance.
+				</p>
+			</div>
+			<div>
+				<p>
+					DELIVERY FEE : <span>AED 10.00</span>
+				</p>
+				<p>for all orders.</p>
+			</div>
+		</div>
+	);
+}
+
 export default function Delivery() {
 	return (
 		<div className="deliverySection">
@@ -51,6 +73,7 @@ export default function Delivery() {
 			<a className="download" href={pdf} download>
 				DOWNLOAD MENU
 			</a>
+			<DeliveryInfo />
 		</div>
 	);
 }
