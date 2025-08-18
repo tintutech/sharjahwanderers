@@ -2,6 +2,7 @@ import Nav from "/src/components/Nav.jsx";
 import Form from "/src/components/Form.jsx";
 
 import Footer from "/src/components/Footer.jsx";
+import "./generalContactStyles.css";
 import "./contactStyles.css";
 
 export default function Contact() {
