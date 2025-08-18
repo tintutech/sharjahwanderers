@@ -88,7 +88,7 @@ function Experience() {
 						<p>{data.cardOne.paraOne}</p>
 						<p>{data.cardOne.paraTwo}</p>
 					</div>
-					<a href="#">EXPLORE</a>
+					<a href="/restaurant">EXPLORE</a>
 				</div>
 				<div className="card">
 					<div>
@@ -96,7 +96,7 @@ function Experience() {
 						<p>{data.cardTwo.paraOne}</p>
 						<p>{data.cardTwo.paraTwo}</p>
 					</div>
-					<a href="#">EXPLORE</a>
+					<a href="/facilities">EXPLORE</a>
 				</div>
 				<div className="card">
 					<div>
@@ -105,7 +105,7 @@ function Experience() {
 						<p>{data.cardThree.paraOne}</p>
 						<p>{data.cardThree.paraTwo}</p>
 					</div>{" "}
-					<a href="#">EXPLORE</a>
+					<a href="/salonspa">EXPLORE</a>
 				</div>
 			</div>
 		</div>
