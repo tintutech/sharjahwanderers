@@ -48,38 +48,6 @@
 	display: none;
 }
 
-#contact form {
-	max-width: 500px;
-	margin: 0 auto;
-	input,
-	select,
-	textarea {
-		padding: 8px 15px;
-		margin-bottom: 10px;
-		background-color: #d9d9d9;
-		width: 100%;
-	}
-	textarea {
-		resize: none;
-		height: 200px;
-	}
-}
-
-#contact form button {
-	display: block;
-	background-color: #00000033;
-	padding: 10px 40px;
-	color: inherit;
-	backdrop-filter: blur();
-	margin: 0 auto;
-	border: 1px solid #ffffff14;
-	border-radius: 5px;
-}
-#contact form button:hover {
-	border-color: rgba(100, 100, 100);
-	cursor: pointer;
-}
-
 @media (max-width: 740px) {
 	#contact .contactForm {
 		gap: 30px;

@@ -1,3 +1,5 @@
+import "./formComponentStyles.css";
+
 export default function FormComponent() {
 	return (
 		<form action="" method="POST" className="form">
