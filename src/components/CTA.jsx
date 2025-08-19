@@ -7,7 +7,10 @@ function Dialog() {
 		<div className="dialogCTA">
 			<div className="top">
 				<h2>CONTACT</h2>
-				<button className="close">
+				<button
+					onClick={() => document.querySelector("#fullWindow").close()}
+					className="close"
+				>
 					<img src="/multiply.svg" />
 				</button>
 			</div>
