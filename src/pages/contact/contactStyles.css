@@ -1,15 +1,17 @@
 #contact .contactForm {
 	max-width: 800px;
 	margin: 0 auto;
+	margin-top: 50px;
 	padding: 20px;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 150px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 200px;
 }
 
 #contact .left {
+	max-width: 300px;
+	margin: 0 auto;
 	height: 100%;
-	max-width: 250px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -41,15 +43,45 @@
 }
 
 #contact form {
+	max-width: 500px;
+	margin: 0 auto;
 	input,
+	select,
 	textarea {
 		padding: 8px 15px;
 		margin-bottom: 10px;
 		background-color: #d9d9d9;
+		width: 100%;
 	}
 	textarea {
-		background-color: #d9d9d9;
 		resize: none;
 		height: 200px;
+	}
+}
+
+#contact form button {
+	display: block;
+	background-color: #00000033;
+	padding: 10px 40px;
+	color: inherit;
+	backdrop-filter: blur();
+	margin: 0 auto;
+	border: 1px solid #ffffff14;
+	border-radius: 5px;
+}
+#contact form button:hover {
+	border-color: rgba(100, 100, 100);
+	cursor: pointer;
+}
+
+@media (max-width: 740px) {
+	#contact .contactForm {
+		gap: 30px;
+	}
+}
+
+@media (max-width: 570px) {
+	.meanwhile {
+		display: none;
 	}
 }
