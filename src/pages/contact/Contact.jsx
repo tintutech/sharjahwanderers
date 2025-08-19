@@ -1,5 +1,5 @@
 import Nav from "/src/components/Nav.jsx";
-import Form from "/src/components/Form.jsx";
+import Form from "./Form.jsx";
 
 import Footer from "/src/components/Footer.jsx";
 import "./generalContactStyles.css";
