@@ -26,20 +26,26 @@
 		letter-spacing: 0.1em;
 		font-weight: 320;
 	}
+}
+#contact .contactForm .info {
+	* {
+		letter-spacing: 0.2em;
+	}
+	font-weight: 350;
 	a {
 		display: block;
 		margin-top: 15px;
+		font-weight: 400;
 	}
 	a span {
 		position: relative;
 		top: -3px;
 		margin-left: 2px;
-		font-weight: 600;
 	}
+}
 
-	.meanwhile {
-		font-size: 0.85em;
-	}
+#contact .contactForm .info.lowerMeanwhile {
+	display: none;
 }
 
 #contact form {
@@ -81,7 +87,12 @@
 }
 
 @media (max-width: 570px) {
-	.meanwhile {
+	#contact .contactForm .meanwhile {
 		display: none;
+	}
+	#contact .contactForm .info.lowerMeanwhile {
+		display: block;
+		margin: 0 auto;
+		margin-top: 10px;
 	}
 }

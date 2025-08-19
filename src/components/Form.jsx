@@ -7,7 +7,7 @@ export default function Form() {
 					<p>Leave us a note.</p>
 					<p>We’ll get back to you as soon as we can.</p>
 				</div>
-				<div className="meanwhile">
+				<div className="info meanwhile">
 					<p>Meanwhile, check out</p>
 					<a href="/membership">
 						MEMBERSHIP INFO <span>&#x2192;</span>
@@ -39,6 +39,18 @@ export default function Form() {
 				></textarea>
 				<button type="submit">SEND INQUIRY</button>
 			</form>
+			<div className="info lowerMeanwhile">
+				<p>Meanwhile, check out</p>
+				<a href="/membership">
+					MEMBERSHIP INFO <span>&#x2192;</span>
+				</a>
+				<a href="/facilities">
+					Facilities <span>&#x2192;</span>
+				</a>
+				<a href="/events">
+					Events <span>&#x2192;</span>
+				</a>
+			</div>
 		</div>
 	);
 }
