@@ -1,18 +1,23 @@
 import ReactDOM from "react-dom/client";
 import FormComponent from "./FormComponent.jsx";
+import "./CTAStyles.css";
 
 function Dialog() {
 	return (
 		<div className="dialogCTA">
-			<div>
+			<div className="top">
 				<h2>CONTACT</h2>
-				<p></p>
+				<button className="close">
+					<img src="/multiply.svg" />
+				</button>
 			</div>
-			<div>
+			<div className="lower">
 				<p>Leave us a note.</p>
 				<p>We’ll get back to you as soon as we can.</p>
 			</div>
-			<FormComponent />;
+			<FormComponent />
+			<p>Sharjah Wanderers </p>
+			<p>Sports Club</p>
 		</div>
 	);
 }
