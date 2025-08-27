@@ -2,7 +2,7 @@ import "./formComponentStyles.css";
 
 export default function FormComponent() {
 	return (
-		<form action="" method="POST" className="form">
+		<form action="new_page.json" target="_blank" method="POST" className="form">
 			<input type="text" name="name" placeholder="NAME" />
 			<input type="tel" name="phone" placeholder="PHONE" />
 			<input type="mail" name="email" placeholder="E-MAIL" />

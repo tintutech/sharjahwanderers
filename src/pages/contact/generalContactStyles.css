@@ -11,7 +11,7 @@
 }
 
 #contact {
-	background: url("/pagesBackground.png");
+	background: url("/palmTreesTest.png");
 	background-size: contain;
 	font-family: "Inter", sans-serif;
 	color: var(--text-color);
@@ -28,10 +28,4 @@ a {
 
 a:hover {
 	text-shadow: 0 0 10px gray;
-}
-
-@media (max-width: 450px) {
-	#contact {
-		background: url("/pagesBackground.png");
-	}
 }

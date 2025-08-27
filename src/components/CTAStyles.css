@@ -51,11 +51,24 @@
 #fullWindow {
 	margin: 0 auto;
 	margin-top: 40px;
-	background: #1c258c;
+	background: url("/contactOverlay.svg");
 	border: none;
 	color: white;
 }
 
 #fullWindow::backdrop {
 	background: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 450px) {
+	.dialogCTA {
+		max-width: 450px;
+		margin-top: 0px;
+	}
+
+	#fullWindow {
+		margin: 0px 0px;
+		max-width: 450px;
+		max-height: 100svh;
+	}
 }
