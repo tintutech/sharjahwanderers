@@ -147,6 +147,7 @@ function Guestbook() {
 		</div>
 	);
 }
+import CTA from "./components/CTA.jsx";
 
 function Membership() {
 	return (
@@ -156,7 +157,7 @@ function Membership() {
 				Become part of the club, explore unique offers, and enjoy unparalleled
 				access to our exclusive club.
 			</p>
-			<a href="#">ACTION BUTTON</a>
+			<a onClick={CTA}>ACTION BUTTON</a>
 		</div>
 	);
 }

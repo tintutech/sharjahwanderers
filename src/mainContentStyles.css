@@ -158,6 +158,9 @@
 	align-items: end;
 	margin-top: 100px;
 	margin-bottom: 50px;
+	a:hover {
+		cursor: pointer;
+	}
 }
 
 #home #guestbookMembership .guest {
