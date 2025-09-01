@@ -63,11 +63,10 @@
 @media (max-width: 350px) {
 	.dineInSection {
 		.dineInTop {
-			margin: 10px;
+			margin: 20px;
 			gap: 40px;
 		}
 		.galleryContainer {
-			margin: 100px 10px;
 			img {
 				max-width: 250px;
 			}

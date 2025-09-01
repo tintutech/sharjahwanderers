@@ -60,29 +60,29 @@ function RightContents() {
 			</div>
 			<div className="cards">
 				<div>
-					<a href="#">HOME</a>
-					<a href="#">ABOUT</a>
-					<a href="#">MEMBERSHIP</a>
-					<a href="#">EVENTS & OFFERS</a>
-					<a href="#">RESTAURANT</a>
-					<a href="#">SALON & SPA</a>
-					<a href="#">FACILITIES</a>
-					<a href="#">CONTACT</a>
+					<a href="/">HOME</a>
+					<a href="/about">ABOUT</a>
+					<a href="/membership">MEMBERSHIP</a>
+					<a href="/events">EVENTS & OFFERS</a>
+					<a href="/restaurant">RESTAURANT</a>
+					<a href="/salonspa">SALON & SPA</a>
+					<a href="/facilities">FACILITIES</a>
+					<a href="/contact">CONTACT</a>
 				</div>
 				<div>
 					<p>FACILITIES</p>
-					<a href="#">RUGBY FIELD</a>
-					<a href="#">SWIMMING POOL</a>
-					<a href="#">FOOTBALL FIELD</a>
-					<a href="#">TENNIS COURT</a>
-					<a href="#">GYM</a>
-					<a href="#">TRAINING & CLASSES</a>
+					<a href="/facilities">RUGBY FIELD</a>
+					<a href="/facilities">SWIMMING POOL</a>
+					<a href="/facilities">FOOTBALL FIELD</a>
+					<a href="/facilities">TENNIS COURT</a>
+					<a href="/facilities">GYM</a>
+					<a href="/facilities">TRAINING & CLASSES</a>
 				</div>
 				<div>
 					<p>RESTAURANT</p>
-					<a href="#">DINE-IN</a>
-					<a href="#">DELIVERY</a>
-					<a href="#">CATERING</a>
+					<a href="/restaurant">DINE-IN</a>
+					<a href="/restaurant">DELIVERY</a>
+					<a href="/restaurant">CATERING</a>
 				</div>
 			</div>
 			<form action="#" method="POST">

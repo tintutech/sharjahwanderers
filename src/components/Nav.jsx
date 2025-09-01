@@ -13,7 +13,7 @@ function closeWindow() {
 export default function Navbar() {
 	return (
 		<div className="navBar">
-			<dialog className="fullWindow"></dialog>
+			<dialog id="fullWindow"></dialog>
 			<div className="openWindow hidden">
 				<div className="closeDiv">
 					<div></div>
@@ -52,7 +52,7 @@ export default function Navbar() {
 						<a href="/contact">CONTACT</a>
 					</li>
 				</ul>
-				<a href="#">MEMBERS LOGIN</a>
+				<a href="http://sharjahwanderers.clubm.mobi/">MEMBERS LOGIN</a>
 				<p>Sharjah Wanderers Sports Club</p>
 			</div>
 			<div className="mobileNav">
@@ -65,15 +65,15 @@ export default function Navbar() {
 			</div>
 			<div className="desktopNav">
 				<div className="topNav">
-					<a href="#">
+					<a href="/">
 						<img src="/home.png" />
 					</a>
 					<div className="rightNavContents">
-						<a href="#">
+						<a href="http://sharjahwanderers.clubm.mobi/">
 							members login
-							<img src="./enter.svg" />
+							<img src="/enter.svg" />
 						</a>
-						<a href="#">contact</a>
+						<a href="/contact">contact</a>
 					</div>
 				</div>
 				<div className="bottomNav">

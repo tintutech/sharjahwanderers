@@ -5,6 +5,7 @@ import image4 from "/facilities/image4.jpg";
 import image5 from "/facilities/image5.jpg";
 import image6 from "/facilities/image6.jpg";
 import image8 from "/facilities/image8.jpg";
+import CTA from "../../components/CTA.jsx";
 
 import FAQ from "./FAQ.jsx";
 
@@ -87,7 +88,7 @@ function Cards() {
 					Our facilities are available for events hire. Contact us for info on
 					how to host your next event!
 				</p>
-				<a href="#">CONTACT US</a>
+				<a onClick={CTA}>CONTACT US</a>
 			</div>
 		</div>
 	);
@@ -103,7 +104,7 @@ function TrainingCard() {
 					Contact us for more information for personal training at our
 					facilities.
 				</p>
-				<a>Inquire Training</a>
+				<a onClick={CTA}>Inquire Training</a>
 			</div>
 		</div>
 	);

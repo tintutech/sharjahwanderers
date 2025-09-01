@@ -53,20 +53,22 @@
 		margin-top: 10px;
 		font-weight: 300;
 	}
-	a {
+	button {
 		text-align: center;
 		display: block;
 		max-width: 220px;
 		margin: 40px auto;
+		font-size: 1em;
 		margin-top: 80px;
 		padding: 10px 20px;
 		border: 2px solid black;
 		border-radius: 50px;
+		color: white;
 		background-color: rgba(255, 255, 255, 0.2);
 		border-color: rgba(255, 255, 255, 0.1);
 		backdrop-filter: blur(8px);
 	}
-	a:hover {
+	button:hover {
 		border-color: rgba(255, 255, 255, 0.5);
 	}
 }

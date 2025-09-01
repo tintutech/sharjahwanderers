@@ -49,6 +49,9 @@ function Card2() {
 		</div>
 	);
 }
+
+import CTA from "/src/components/CTA.jsx";
+
 function Card3() {
 	return (
 		<div className="membershipCard">
@@ -57,7 +60,7 @@ function Card3() {
 				Become part of the club, explore unique offers, and enjoy unparalleled
 				access to our exclusive club.
 			</p>
-			<a href="#">ACTION BUTTON</a>
+			<button onClick={CTA}>ACTION BUTTON</button>
 		</div>
 	);
 }
