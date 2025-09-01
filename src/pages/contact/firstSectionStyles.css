@@ -1,0 +1,73 @@
+#salonspa .firstSection {
+	max-width: 940px;
+	padding: 20px;
+	margin: 0 auto;
+	margin-top: 70px;
+	.top {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-bottom: 40px;
+		gap: 10px;
+	}
+	.left {
+		max-width: 350px;
+		padding-bottom: 20px;
+	}
+
+	.left p {
+		font-size: 1.15em;
+		font-weight: 300;
+		font-style: italic;
+	}
+	.right {
+		width: 280px;
+		flex-shrink: 0;
+		background-color: #38373733;
+		border: 1px solid rgba(108, 201, 202, 0.3);
+		border-radius: 5px;
+		padding: 15px;
+	}
+	.right a {
+		display: block;
+		background-color: #9494944d;
+		padding: 8px;
+		max-width: 240px;
+		margin: 0 auto;
+		margin-bottom: 5px;
+		border-radius: 30px;
+		text-align: center;
+		font-size: 0.8em;
+		font-weight: 350;
+	}
+	.right p {
+		font-size: 0.85em;
+		font-weight: 400;
+		letter-spacing: 0.05em;
+		line-height: 1.5em;
+	}
+	h2 {
+		font-weight: 600;
+		font-size: 1.7em;
+		letter-spacing: 0.15em;
+		margin-bottom: 35px;
+	}
+	.lower {
+		max-width: 250px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.lower a {
+		margin-top: 10px;
+		font-size: 0.95em;
+	}
+}
+
+@media (max-width: 620px) {
+	#salonspa .firstSection .top {
+		flex-direction: column;
+		> * {
+			margin: 0 auto;
+		}
+	}
+}
