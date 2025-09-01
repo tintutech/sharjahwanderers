@@ -1,6 +1,7 @@
 import image1 from "/offerEvents/image1.jpg";
 
 import FAQ from "./FAQ.jsx";
+import CTA from "../../components/CTA.jsx";
 
 import "./thirdStyles.css";
 
@@ -45,7 +46,7 @@ function MembershipCard() {
 				Become part of the club, explore unique offers, and enjoy unparalleled
 				access to our exclusive club.
 			</p>
-			<a href="#">ACTION BUTTON</a>
+			<button onClick={CTA}>ACTION BUTTON</button>
 		</div>
 	);
 }

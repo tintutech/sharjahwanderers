@@ -66,11 +66,12 @@
 			margin-top: 10px;
 			font-weight: 300;
 		}
-		a {
+		button {
 			text-align: center;
 			display: block;
 			max-width: 220px;
 			margin: 10px auto;
+			color: inherit;
 			margin-top: 40px;
 			padding: 10px 20px;
 			border: 2px solid black;
@@ -79,8 +80,9 @@
 			border-color: rgba(255, 255, 255, 0.1);
 			backdrop-filter: blur(8px);
 		}
-		a:hover {
+		button:hover {
 			border-color: rgba(255, 255, 255, 0.5);
+			cursor: pointer;
 		}
 	}
 	.memFaq {

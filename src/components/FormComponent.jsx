@@ -17,7 +17,7 @@ export default function FormComponent() {
 			</select>
 			<textarea
 				name="noteMessage"
-				placeholder="NOTE MESSAGE (200 WORDS)"
+				placeholder="NOTE MESSAGE (200 CHARACTERS)"
 			></textarea>
 			<button type="submit">SEND INQUIRY</button>
 		</form>
