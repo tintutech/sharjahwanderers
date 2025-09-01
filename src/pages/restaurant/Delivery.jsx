@@ -13,7 +13,12 @@ function LeftSection() {
 		<div className="leftSection">
 			<div className="deliveryTitle">
 				<h2>DELIVERY</h2>
-				<a href="#">ORDER NOW</a>
+				<a
+					href="https://api.whatsapp.com/send/?phone=971585522046&text=I%27d+like+to+place+an+order&type=phone_number&app_absent=0"
+					target="_blank"
+				>
+					ORDER NOW
+				</a>
 			</div>
 			<div className="leftLower">
 				<p>DELIVERY TIMINGS 11:00 AM - 9:00 PM</p>
