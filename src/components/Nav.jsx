@@ -1,4 +1,5 @@
 import "./navStyles.css";
+import whatsapp from "/whatsapp.svg";
 
 function openWindow() {
 	let open = document.querySelector(".openWindow");
@@ -13,6 +14,15 @@ function closeWindow() {
 export default function Navbar() {
 	return (
 		<div className="navBar">
+			<div className="whatsapp-fixed">
+				<p>Contact us!</p>
+				<a
+					href="https://api.whatsapp.com/send/?phone=971585311419&text=Thank+you+for+contacting+Sharjah+Wanderers+Sports+Club%2C+how+can+we+help+you%3F&type=phone_number&app_absent=0"
+					target="_blank"
+				>
+					<img src={whatsapp} />
+				</a>
+			</div>
 			<dialog id="fullWindow"></dialog>
 			<div className="openWindow hidden">
 				<div className="closeDiv">
