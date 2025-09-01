@@ -1,5 +1,6 @@
 import CateringCarousel from "./CateringCarousel.jsx";
 import "./cateringStyles.css";
+import CTA from "../../components/CTA.jsx";
 
 let catering1 = {
 	p1: "We offer catering services for events hosted within Club premises* and private venues for events and parties of all sizes.",
@@ -31,7 +32,7 @@ export default function Catering() {
 				<div className="right">
 					<div className="topCard">
 						<p>{catering2.p1}</p>
-						<a href={catering2.link}>CATERING INQUIRY</a>
+						<a onClick={CTA}>CATERING INQUIRY</a>
 					</div>
 					<p className="disclaimer">{catering2.disclaimer}</p>
 				</div>

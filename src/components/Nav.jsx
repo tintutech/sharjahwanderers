@@ -52,7 +52,7 @@ export default function Navbar() {
 						<a href="/contact">CONTACT</a>
 					</li>
 				</ul>
-				<a href="#">MEMBERS LOGIN</a>
+				<a href="http://sharjahwanderers.clubm.mobi/">MEMBERS LOGIN</a>
 				<p>Sharjah Wanderers Sports Club</p>
 			</div>
 			<div className="mobileNav">
@@ -69,7 +69,7 @@ export default function Navbar() {
 						<img src="/home.png" />
 					</a>
 					<div className="rightNavContents">
-						<a href="#">
+						<a href="http://sharjahwanderers.clubm.mobi/">
 							members login
 							<img src="/enter.svg" />
 						</a>

@@ -12,7 +12,12 @@ export default function FirstSection() {
 					</p>
 				</div>
 				<div className="right">
-					<a href="#">BOOK APPOINTMENT</a>
+					<a
+						href="https://www.fresha.com/a/wandies-hair-and-beauty-salon-sharjah-sharjah-wanderers-sports-club-bvv369l7"
+						target="_blank"
+					>
+						BOOK APPOINTMENT
+					</a>
 					<p>Complimentary Barista Coffee with all appointments.</p>
 				</div>
 			</div>

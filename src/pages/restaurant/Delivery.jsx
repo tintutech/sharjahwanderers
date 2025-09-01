@@ -2,6 +2,7 @@ import image1 from "/delivery/image1.jpg";
 import image2 from "/delivery/image2.jpg";
 import image3 from "/delivery/image3.jpg";
 import pdf from "/delivery.pdf";
+import CTA from "../../components/CTA.jsx";
 
 import "./deliveryStyles.css";
 
@@ -26,7 +27,9 @@ function RightSection() {
 	return (
 		<div className="rightSection">
 			<h3>SUNDAY ROAST AVAILABLE</h3>
-			<button className="detailsBtn">ASK FOR DETAILS</button>
+			<button onClick={CTA} className="detailsBtn">
+				ASK FOR DETAILS
+			</button>
 		</div>
 	);
 }

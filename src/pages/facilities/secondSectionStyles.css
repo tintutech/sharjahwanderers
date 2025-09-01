@@ -1,6 +1,10 @@
 #facilities .secondSection {
 	max-width: 940px;
 
+	a:hover {
+		cursor: pointer;
+	}
+
 	padding: 20px;
 	margin: 0px auto;
 	margin-top: 50px;
@@ -36,7 +40,6 @@
 	}
 	.card.show {
 		height: 90%;
-		transition: height 0.4s ease;
 	}
 	.card p {
 		height: 0;

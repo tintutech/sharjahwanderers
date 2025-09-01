@@ -15,6 +15,10 @@
 	background-size: cover;
 	font-family: "Inter", sans-serif;
 	color: var(--text-color);
+	a:hover,
+	button:hover {
+		cursor: pointer;
+	}
 }
 
 li {
