@@ -1,4 +1,5 @@
 import "./firstStyles.css";
+import CTA from "../../components/CTA.jsx";
 
 export default function First() {
 	return (
@@ -13,7 +14,7 @@ export default function First() {
 			</div>
 			<div className="innerCard">
 				<p>Interested in hosting your event at one of our venues?</p>
-				<a href="#">Get in touch.</a>
+				<a onClick={CTA}>Get in touch.</a>
 			</div>
 		</div>
 	);

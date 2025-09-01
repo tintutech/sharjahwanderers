@@ -76,6 +76,9 @@
 		border-radius: 20px;
 		font-weight: 350;
 	}
+	.facilitiesCard a:hover {
+		cursor: pointer;
+	}
 }
 
 @media (max-width: 640px) {

@@ -1,4 +1,5 @@
 import "./firstSectionStyles.css";
+import CTA from "../../components/CTA.jsx";
 
 function Announcement() {
 	return (
@@ -21,7 +22,7 @@ function Card() {
 				Our facilities are available for events hire. Contact us for info on how
 				to host your next event!{" "}
 			</p>
-			<a href="#">CONTACT EVENTS</a>
+			<a onClick={CTA}>CONTACT EVENTS</a>
 		</div>
 	);
 }
