@@ -30,7 +30,7 @@ export default function DineIn() {
 				<p>BOOK A TABLE?</p>
 			</div>
 			<ReturnImages />
-			<embed type="application/pdf" src={pdf} />
+			<embed type="application/pdf" src={pdf + "#toolbar=0"} />
 			<a className="download" href={pdf} download>
 				DOWNLOAD MENU
 			</a>

@@ -77,7 +77,7 @@ export default function Delivery() {
 				<RightSection />
 			</div>
 			<ReturnImages />
-			<embed type="application/pdf" src={pdf} />
+			<embed type="application/pdf" src={pdf + "#toolbar=0"} />
 			<a className="download" href={pdf} download>
 				DOWNLOAD MENU
 			</a>
