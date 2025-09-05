@@ -1,9 +1,15 @@
+import { useEffect, useState } from 'react'
+
 import image1 from "/offerEvents/image1.jpg";
 
 import FAQ from "./FAQ.jsx";
 import CTA from "../../components/CTA.jsx";
 
 import "./thirdStyles.css";
+
+import { getPromotionalCards } from '../../contentful.js';
+
+import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 
 let data = [
 	{
@@ -16,27 +22,6 @@ let data = [
 		link: "#",
 	},
 ];
-
-function Cards() {
-	let returnCard = data.map((e) => {
-		let n = 0;
-		let m = 0;
-		let para = e.description.map((p) => {
-			return <p key={m++}>{p}</p>;
-		});
-		return (
-			<div key={n++} className="card">
-				<img src={e.img} />
-				<div className="lowerCard">
-					<h3>{e.title}</h3>
-					{para}
-					<a href={e.link}>BOOK A TABLE</a>
-				</div>
-			</div>
-		);
-	});
-	return returnCard;
-}
 
 function MembershipCard() {
 	return (
@@ -51,16 +36,38 @@ function MembershipCard() {
 	);
 }
 
+const RenderPromoCards = ({ promoCards, isLoading }) => {
+	if (isLoading) return <p>Loading...</p>
+	return (
+		<>
+			{promoCards?.map((card, index) => (
+				<div key={index} className="card">
+					<img src={card?.fields?.promoImage?.fields?.file?.url || card?.fields?.promoTitle} />
+					<div className="lowerCard">
+						<h3>{card?.fields?.promoTitle}</h3>
+						<p><div dangerouslySetInnerHTML={{ __html: documentToHtmlString(card?.fields?.promoDescription) }} /></p>
+						<a href={card?.link || '#'}>BOOK A TABLE</a>
+					</div>
+				</div>
+			))}
+		</>
+	)
+}
+
 export default function Third() {
+	const [promoCards, setPromoCards] = useState([])
+	const [isLoading, setLoading] = useState(true)
+	useEffect(() => {
+		getPromotionalCards().then(data => {
+			setPromoCards(data)
+			setLoading(false)
+		})
+	}, [])
 	return (
 		<div className="third">
 			<h2>CURRENT OFFERS AND PROMOTIONS</h2>
 			<div className="cardContainer">
-				<Cards />
-				<Cards />
-				<Cards />
-				<Cards />
-				<Cards />
+				<RenderPromoCards promoCards={promoCards} isLoading={isLoading} />
 			</div>
 			<div className="memFaq">
 				<MembershipCard />
