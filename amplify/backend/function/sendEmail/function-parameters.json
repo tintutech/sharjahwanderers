@@ -1,3 +1,5 @@
 {
-  "lambdaLayers": []
+  "lambdaLayers": [],
+  "runtime": "nodejs18.x",
+  "permissions": {}
 }

@@ -1,3 +1,7 @@
+import { useEffect, useState } from 'react';
+import {RenderPromoCards} from './components/RenderPromoCards.jsx';
+import { getPromotionalCards } from './contentful.js';
+
 import "./mainContentStyles.css";
 
 const data = {
@@ -112,26 +116,6 @@ function Experience() {
 	);
 }
 
-function Events() {
-	return (
-		<div id="offerevents">
-			<h2>OFFERS & EVENTS</h2>
-			<div className="eventContainer">
-				<img src="/placeholderImage.jpg" />
-				<div className="offerCard">
-					<h3>PROMO TITLE</h3>
-					<p>
-						Sit praesentium blanditiis deleniti deserunt eligendi. Odio adipisci
-						iusto maiores dolorem ratione. Quis nisi facilis officia animi
-						libero! Magni possimus at aut consectetur amet? Voluptatum
-					</p>
-					<a href="#">BOOK A TABLE</a>
-				</div>
-			</div>
-		</div>
-	);
-}
-
 function Guestbook() {
 	return (
 		<div className="guest">
@@ -172,12 +156,25 @@ function GuestbookMembership() {
 }
 
 export default function MainContents() {
+	const [promoCards, setPromoCards] = useState([])
+	const [isLoading, setLoading] = useState(true)
+	useEffect(() => {
+		getPromotionalCards().then(data => {
+			setPromoCards(data)
+			setLoading(false)
+		})
+	}, [])
 	return (
 		<>
 			<div className="mainContainer">
 				<About />
 				<Experience />
-				<Events />
+				<div id="offerevents">
+					<h2>OFFERS & EVENTS</h2>
+					<div className="eventContainer">
+						<RenderPromoCards promoCards={promoCards} isLoading={isLoading} />
+					</div>
+				</div>
 				<GuestbookMembership />
 			</div>
 		</>

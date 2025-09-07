@@ -1,59 +1,70 @@
-const awsServerlessExpress = require('aws-serverless-express');
-const app = require('./app');
+/* Amplify Params - DO NOT EDIT
+	ENV
+	REGION
+Amplify Params - DO NOT EDIT */// const AWS = require('aws-sdk');
+const { SESClient, SendEmailCommand } = require("@aws-sdk/client-ses");
 
-/**
- * @type {import('http').Server}
- */
-const server = awsServerlessExpress.createServer(app);
 
-/**
- * @type {import('@types/aws-lambda').APIGatewayProxyHandler}
- */
-// exports.handler = (event, context) => {
-//   console.log(`EVENT: ${JSON.stringify(event)}`);
-//   return awsServerlessExpress.proxy(server, event, context, 'PROMISE').promise;
-// };
+// Configure SES (replace region with your SES region)
+// const ses = new AWS.SES({ region: 'us-east-1' });
 
-const AWS = require("aws-sdk");
-const ses = new AWS.SES({ region: "us-east-1" }); // change region
+const ses = new SESClient({ region: "us-east-1" });
 
+// Lambda handler
 exports.handler = async (event) => {
-  const params = {
-    Destination: {
-      ToAddresses: [event.to], // recipient email
-    },
-    Message: {
-      Body: {
-        Text: { Data: event.body },
-      },
-      Subject: { Data: event.subject },
-    },
-    Source: "tintutech@gmail.com", // must be SES verified
-  };
+  console.log('Event received:', event);
 
-  try {
-    await ses.sendEmail(params).promise();
-    // return { statusCode: 200, body: "Email sent!" };
+  // Handle CORS preflight request
+  if (event.httpMethod === "OPTIONS") {
     return {
       statusCode: 200,
       headers: {
-        "Access-Control-Allow-Origin": "*",  // or your app domain
+        "Access-Control-Allow-Origin": "*", // Allow your domain in production
         "Access-Control-Allow-Headers": "Content-Type",
-        "Access-Control-Allow-Methods": "OPTIONS,POST"
+        "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
       },
-      body: JSON.stringify({ message: "Email sent successfully!" }),
+      body: ""
+    };
+  }
+
+  try {
+    // Parse request body
+    const { toEmail, subject, message } = JSON.parse(event.body);
+
+    const params = {
+      Destination: { ToAddresses: [toEmail] },
+      Message: {
+        Body: { Text: { Charset: "UTF-8", Data: message } },
+        Subject: { Charset: "UTF-8", Data: subject },
+      },
+      Source: "tintutech@gmail.com", // Replace with SES verified email
+    };
+
+    // Send email via SES
+    // await ses.sendEmail(params).promise();
+
+    const command = new SendEmailCommand(params);
+    await ses.send(command);
+
+    return {
+      statusCode: 200,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type",
+        "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
+      },
+      body: JSON.stringify({ message: "Email sent successfully!" })
     };
   } catch (err) {
-    // return { statusCode: 500, body: err.message };
+    console.error(err);
     return {
       statusCode: 500,
       headers: {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Headers": "Content-Type",
-        "Access-Control-Allow-Methods": "OPTIONS,POST"
+        "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
       },
-      body: JSON.stringify({ error: error.message }),
+      body: JSON.stringify({ error: err.message })
     };
   }
 };
-
