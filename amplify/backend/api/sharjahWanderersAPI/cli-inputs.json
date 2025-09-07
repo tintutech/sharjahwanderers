@@ -1,8 +1,8 @@
 {
   "version": 1,
   "paths": {
-    "/email": {
-      "name": "/email",
+    "/sharjahWanderersAPI": {
+      "name": "/sharjahWanderersAPI",
       "lambdaFunction": "sendEmail",
       "permissions": {
         "setting": "open"

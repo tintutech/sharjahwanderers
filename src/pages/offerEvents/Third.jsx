@@ -9,7 +9,7 @@ import "./thirdStyles.css";
 
 import { getPromotionalCards } from '../../contentful.js';
 
-import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+import {RenderPromoCards} from '../../components/RenderPromoCards';
 
 let data = [
 	{
@@ -36,23 +36,23 @@ function MembershipCard() {
 	);
 }
 
-const RenderPromoCards = ({ promoCards, isLoading }) => {
-	if (isLoading) return <p>Loading...</p>
-	return (
-		<>
-			{promoCards?.map((card, index) => (
-				<div key={index} className="card">
-					<img src={card?.fields?.promoImage?.fields?.file?.url || card?.fields?.promoTitle} />
-					<div className="lowerCard">
-						<h3>{card?.fields?.promoTitle}</h3>
-						<p><div dangerouslySetInnerHTML={{ __html: documentToHtmlString(card?.fields?.promoDescription) }} /></p>
-						<a href={card?.link || '#'}>BOOK A TABLE</a>
-					</div>
-				</div>
-			))}
-		</>
-	)
-}
+// const RenderPromoCards = ({ promoCards, isLoading }) => {
+// 	if (isLoading) return <p>Loading...</p>
+// 	return (
+// 		<>
+// 			{promoCards?.map((card, index) => (
+// 				<div key={index} className="card">
+// 					<img src={card?.fields?.promoImage?.fields?.file?.url || card?.fields?.promoTitle} />
+// 					<div className="lowerCard">
+// 						<h3>{card?.fields?.promoTitle}</h3>
+// 						<p><div dangerouslySetInnerHTML={{ __html: documentToHtmlString(card?.fields?.promoDescription) }} /></p>
+// 						<a href={card?.link || '#'}>BOOK A TABLE</a>
+// 					</div>
+// 				</div>
+// 			))}
+// 		</>
+// 	)
+// }
 
 export default function Third() {
 	const [promoCards, setPromoCards] = useState([])
@@ -66,9 +66,7 @@ export default function Third() {
 	return (
 		<div className="third">
 			<h2>CURRENT OFFERS AND PROMOTIONS</h2>
-			<div className="cardContainer">
-				<RenderPromoCards promoCards={promoCards} isLoading={isLoading} />
-			</div>
+			<RenderPromoCards promoCards={promoCards} isLoading={isLoading} />
 			<div className="memFaq">
 				<MembershipCard />
 				<FAQ />

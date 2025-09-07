@@ -15,7 +15,7 @@
       "function": {
         "sendEmail": {
           "deploymentBucketName": "amplify-sharjahwanderers-dev-960b6-deployment",
-          "s3Key": "amplify-builds/sendEmail-59305146367a61766868-build.zip"
+          "s3Key": "amplify-builds/sendEmail-307269644351746c6536-build.zip"
         }
       },
       "api": {
