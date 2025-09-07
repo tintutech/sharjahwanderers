@@ -11,8 +11,6 @@ let data = [
 			"May the 4th Be with you.",
 			"Star wars themed night. At the Wanderers sports bar.",
 		],
-		link: "#",
-		linkTitle: "ATTEND EVENT",
 	},
 ];
 
@@ -45,7 +43,6 @@ function Cards() {
 				</div>
 				<div className="cardRight">
 					<div className="content">{cardInfo}</div>
-					<a href={e.link}>{e.linkTitle}</a>
 				</div>
 			</div>
 		);
@@ -59,7 +56,7 @@ export default function Second() {
 		<div className="second">
 			<div className="top">
 				<h2>UPCOMING EVENTS</h2>
-				<a href="#">CALENDAR</a>
+				<a href="#">ATTEND EVENT</a>
 			</div>
 			<div className="cardContainer">
 				<Cards />
