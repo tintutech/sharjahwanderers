@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-sharjahwanderers-dev-960b6-authRole",
+      "UnauthRoleArn": "arn:aws:iam::277435593052:role/amplify-sharjahwanderers-dev-960b6-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::277435593052:role/amplify-sharjahwanderers-dev-960b6-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-sharjahwanderers-dev-960b6-deployment",
+      "UnauthRoleName": "amplify-sharjahwanderers-dev-960b6-unauthRole",
+      "StackName": "amplify-sharjahwanderers-dev-960b6",
+      "StackId": "arn:aws:cloudformation:us-east-1:277435593052:stack/amplify-sharjahwanderers-dev-960b6/baee49d0-8bdc-11f0-9ba0-12b4032d70c5",
+      "AmplifyAppId": "d1zawqis8s7xrb"
+    },
+    "categories": {
+      "function": {
+        "sendEmail": {
+          "deploymentBucketName": "amplify-sharjahwanderers-dev-960b6-deployment",
+          "s3Key": "amplify-builds/sendEmail-59305146367a61766868-build.zip"
+        }
+      },
+      "api": {
+        "sharjahWanderersAPI": {}
+      }
+    }
+  }
+}

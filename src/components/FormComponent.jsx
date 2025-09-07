@@ -1,34 +1,56 @@
+import { post } from "aws-amplify/api";
 import Swal from 'sweetalert2';
 // import "./formComponentStyles.css";
 import "./Contact.css";
 
 export default function FormComponent() {
 	const onSubmit = async (event) => {
-        event.preventDefault();
-        const formData = new FormData(event.target);
+		event.preventDefault();
+		// const formData = new FormData(event.target);
 
-        formData.append("access_key", "38e7f6db-2af6-4ec2-905a-a846e6ff1d9f");
+		// formData.append("access_key", "38e7f6db-2af6-4ec2-905a-a846e6ff1d9f");
 
-        const object = Object.fromEntries(formData);
-        const json = JSON.stringify(object);
+		// const object = Object.fromEntries(formData);
+		// const json = JSON.stringify(object);
 
-        const res = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json"
-            },
-            body: json
-        }).then((res) => res.json());
+		// const res = await fetch("https://api.web3forms.com/submit", {
+		//     method: "POST",
+		//     headers: {
+		//         "Content-Type": "application/json",
+		//         Accept: "application/json"
+		//     },
+		//     body: json
+		// }).then((res) => res.json());
 
-        if (res.success) {
-            Swal.fire({
-                title: "Success!",
-                text: "Message sent successfully!",
-                icon: "success"
-            });
-        }
-    };
+		try {
+	// 		const response = await get({
+    //     apiName: 'im-api',
+    //     path: `/users/${user.username}`
+    //   });
+			// const response = await post("sharjahWanderersAPI", "/sendEmail", {
+			const response = await post({apiName: "sharjahWanderersAPI", path: "/sendEmail", options: {
+				body: {
+					to: "tintutech@gmail.com",
+					subject: "Hello from React",
+					message: "This is a test email via AWS SES + Amplify",
+				},
+			}});
+			if (response.success) {
+				Swal.fire({
+					title: "Success!",
+					text: "Message sent successfully!",
+					icon: "success"
+				});
+			}
+		} catch (err) {
+			console.error("Error sending email:", err);
+			Swal.fire({
+				title: "Failed!",
+				text: "Message failed to send!",
+				icon: "failed"
+			});
+		}
+	};
 	return (
 		// <form action="new_page.json" target="_blank" method="POST" className="form">
 		// 	<input type="text" name="name" placeholder="NAME" />
