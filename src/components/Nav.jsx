@@ -1,6 +1,5 @@
 import "./navStyles.css";
 import whatsapp from "/whatsapp.svg";
-import { HashLink } from "react-router-hash-link";
 
 function openWindow() {
 	let open = document.querySelector(".openWindow");
