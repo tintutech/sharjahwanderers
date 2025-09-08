@@ -3,7 +3,7 @@ let info = [
 		id: 0,
 		title: "What are the membership requirements?",
 		cardInfo:
-			"Every prospective member should first apply to be a member through here. We will require your valid Emirates ID to verify your identity and may request you to schedule a meeting in person if required prior to granting membership to our club.  A membership fee should be paid upon approval prior to use of our facilities. We are strict with the membership criteria, and no exceptions can be granted for any specific individuals. We expect our members to be in good standing with our club to maintain continued status and eligibility to reapply.",
+			"Every prospective member should first apply to be a member by clicking the link above. We will require your valid Emirates ID to verify your identity and may request you to schedule a meeting in person if required prior to granting membership to our club.  A membership fee should be paid upon approval prior to use of our facilities. We are strict with the membership criteria, and no exceptions can be granted for any specific individuals. We expect our members to be in good standing with our club to maintain continued status and eligibility to reapply.",
 	},
 	{
 		id: 1,
@@ -22,6 +22,7 @@ let info = [
 		title: "Membership for Diving Club?",
 		cardInfo:
 			"You get a unified membership with a discounted rate with the diving club, inquire with us to check if you qualify for the unified membership with SWSC and BSAC diving club.",
+		link: "http://bsac406.com/",
 	},
 ];
 
@@ -65,7 +66,6 @@ function toggleClass(e) {
 		currButton.textContent = "+";
 	}
 }
-
 function ReturnCards() {
 	const cards = info.map((i) => {
 		return (
