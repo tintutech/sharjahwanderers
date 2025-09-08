@@ -48,8 +48,9 @@
 }
 
 #aboutMembership .membershipFees {
-	background-color: #031313;
+	background-color: rgba(3, 19, 19, 0.7);
 	padding: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
 	* {
 		font-size: 0.95em;
 		font-weight: 350;
@@ -70,6 +71,7 @@
 	th {
 		padding: 10px 5px;
 		color: #f1ccb0;
+		text-align: left;
 	}
 	p {
 		margin: 15px 5px;
@@ -112,7 +114,7 @@
 
 @media (max-width: 768px) {
 	#aboutMembership .membershipDetails {
-		flex-direction: column;
+		flex-direction: column-reverse;
 		gap: 50px;
 		align-items: center;
 		> * {
