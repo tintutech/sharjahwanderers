@@ -1,27 +1,21 @@
 let info = [
 	{
 		id: 0,
-		title: "Membership requirements",
+		title: "Can non members hire pitch facilities?",
 		cardInfo:
-			"Ipsum laudantium dolore commodi voluptas autem. Voluptates molestiae voluptatem corrupti at nisi placeat a ipsa optio. Libero distinctio ducimus sed voluptas reprehenderit Praesentium hic aut",
+			"Yes, and will have to pay additional non-member fees for usage, contact the front desk for more information, and Pitch hires.",
 	},
 	{
 		id: 1,
-		title: "Membership requirements",
+		title: "Can Pitch facilities be used for events?",
 		cardInfo:
-			"Amet ab quidem quaerat repudiandae maxime Enim commodi molestias nobis sed unde. Adipisci pariatur tempora nobis sapiente iste reiciendis Culpa corporis suscipit neque odio dicta",
+			"All Venue and Pitch facilities can be used for venue hires, prior to confirmation from management and the Pitch hire. Fill out the form in the contact page",
 	},
 	{
 		id: 2,
-		title: "Membership requirements",
+		title: "How to access Private Training and classes?",
 		cardInfo:
-			"Ipsum laudantium dolore commodi voluptas autem. Voluptates molestiae voluptatem corrupti at nisi placeat a ipsa optio. Libero distinctio ducimus sed voluptas reprehenderit Praesentium hic aut",
-	},
-	{
-		id: 3,
-		title: "Membership requirements",
-		cardInfo:
-			"Amet ab quidem quaerat repudiandae maxime Enim commodi molestias nobis sed unde. Adipisci pariatur tempora nobis sapiente iste reiciendis Culpa corporis suscipit neque odio dicta",
+			"All private training of the relevant facilities, are handled by the respective trainers of the specific facility subject to associated fees for Private training. All members get weekly members classes and training as per available schedule through the members portal.",
 	},
 ];
 
