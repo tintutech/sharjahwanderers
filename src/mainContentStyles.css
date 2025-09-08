@@ -242,8 +242,10 @@
 		text-align: center;
 	}
 	#home #offerevents {
-		padding-left: 0;
-		padding-right: 0;
+		padding: 10px;
+		.card {
+			max-width: 250px;
+		}
 	}
 	#home #experience {
 		padding: 20px;
@@ -260,11 +262,6 @@
 
 @media (max-width: 790px) {
 	#home #about {
-		flex-direction: column;
-	}
-
-	#home .eventContainer {
-		align-items: center;
 		flex-direction: column;
 	}
 }
