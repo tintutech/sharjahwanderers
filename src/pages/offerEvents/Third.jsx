@@ -19,7 +19,6 @@ let data = [
 			"Consectetur nostrum est eveniet rem necessitatibus",
 			"Consectetur dolor at odio",
 		],
-		link: "#",
 	},
 ];
 

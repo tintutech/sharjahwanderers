@@ -1,38 +1,39 @@
 .cardContainerPromo {
-    display: flex;
-    gap: 60px;
-    overflow: auto;
-    padding-bottom: 50px;
-    scrollbar-width: thin;
-    scrollbar-color: lightgray transparent;
+	display: flex;
+	gap: 60px;
+	overflow: auto;
+	padding-bottom: 50px;
+	scrollbar-width: thin;
+	scrollbar-color: lightgray transparent;
 
-    .card {
-        flex-shrink: 0;
-        max-width: 280px;
-    }
+	.card {
+		flex-shrink: 0;
+		max-width: 280px;
+	}
 
-    img {
-        width: 100%;
-        aspect-ratio: 2/1.5;
-        object-fit: cover;
-    }
+	img {
+		width: 100%;
+		aspect-ratio: 2/1.5;
+		object-fit: cover;
+	}
 
-    .lowerCard {
-        padding: 15px 20px;
-        background-color: #000a0c;
-    }
+	.lowerCard {
+		padding: 15px 20px;
+		background-color: #000a0c;
+		min-height: 250px;
+	}
 
-    .card h3 {
-        font-weight: 380;
-        margin-bottom: 20px;
-    }
+	.card h3 {
+		font-weight: 380;
+		margin-bottom: 20px;
+	}
 
-    p {
-        font-weight: 300;
-        font-size: 0.9em;
-        margin-bottom: 10px;
-    }
-
+	p {
+		font-weight: 300;
+		font-size: 0.9em;
+		margin-bottom: 10px;
+	}
+	/*
     .card a {
         display: block;
         background-color: #ffffff;
@@ -43,16 +44,17 @@
         margin-top: 30px;
         margin-bottom: 10px;
     }
+		*/
 }
 
 @media (max-width: 425px) {
-    .cardContainer {
-        gap: 20px;
-    }
+	.cardContainer {
+		gap: 20px;
+	}
 }
 
 @media (max-width: 350px) {
-    .card {
-        max-width: 250px;
-    }
+	.card {
+		max-width: 250px;
+	}
 }
