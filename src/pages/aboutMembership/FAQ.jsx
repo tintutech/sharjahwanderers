@@ -66,6 +66,10 @@ function toggleClass(e) {
 		currButton.textContent = "+";
 	}
 }
+
+function CheckLink(i) {
+	console.log(i.link);
+}
 function ReturnCards() {
 	const cards = info.map((i) => {
 		return (
@@ -76,6 +80,7 @@ function ReturnCards() {
 				</div>
 				<div className="cardInfo hiddenCard">
 					<p>{i.cardInfo}</p>
+					<CheckLink i={i} />
 				</div>
 			</div>
 		);
