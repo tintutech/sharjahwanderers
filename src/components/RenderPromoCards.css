@@ -9,6 +9,7 @@
 	.card {
 		flex-shrink: 0;
 		max-width: 280px;
+		border: 1px solid rgba(255, 255, 255, 0.5);
 	}
 
 	img {
@@ -20,7 +21,9 @@
 	.lowerCard {
 		padding: 15px 20px;
 		background-color: #000a0c;
-		min-height: 280px;
+		height: 250px;
+		scrollbar-width: thin;
+		overflow: auto;
 	}
 
 	.card h3 {

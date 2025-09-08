@@ -19,13 +19,11 @@ let salon = [
 		img: salon2,
 		title: "MANI & PEDI",
 		desc: "Amet aliquid dolorem voluptatem amet ex Obcaecati iure obcaecati qui velit repudiandae Nihil nobis repudiandae",
-		url: "#",
 	},
 	{
 		img: salon3,
 		title: "LASH & BROWS",
 		desc: "Consectetur eveniet alias voluptas amet vitae Atque enim blanditiis odit distinctio architecto! Neque ipsum eos.",
-		url: "#",
 	},
 ];
 let spa = [
@@ -33,21 +31,18 @@ let spa = [
 		img: spa1,
 		title: "SCALP MASSAGE",
 		desc: "Ipsum eius repellat exercitationem architecto eveniet. Cumque adipisci vitae similique voluptate aliquid Dolores est eum.",
-		url: "#",
 	},
 
 	{
 		img: spa2,
 		title: "MANI & PEDI",
 		desc: "Adipisicing iste enim tempore id quos Mollitia obcaecati alias culpa harum vero voluptate Voluptatibus saepe",
-		url: "#",
 	},
 
 	{
 		img: spa3,
 		title: "LASH & EYEBROWS",
 		desc: "Adipisicing voluptate soluta quos inventore expedita error molestiae minima. Illum ea rerum modi ex rerum?",
-		url: "#",
 	},
 ];
 
@@ -62,12 +57,6 @@ function ReturnCards({ title, cardList, booking }) {
 						<h3>{e.title}</h3>
 						<p>{e.desc}</p>
 					</div>
-					<a
-						href="https://www.fresha.com/a/wandies-hair-and-beauty-salon-sharjah-sharjah-wanderers-sports-club-bvv369l7"
-						target="_blank"
-					>
-						BOOK AN APPOINTMENT
-					</a>
 				</div>
 			</div>
 		);

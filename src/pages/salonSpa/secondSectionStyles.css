@@ -37,6 +37,7 @@
 }
 
 #salonspa .card {
+	border: 1px solid rgba(255, 255, 255, 0.5);
 	background-color: #000a0c;
 	width: 290px;
 	flex-shrink: 0;
@@ -47,7 +48,7 @@
 		aspect-ratio: 1.25/1;
 	}
 	.cardContents {
-		min-height: 290px;
+		min-height: 200px;
 		padding: 20px;
 		display: flex;
 		flex-direction: column;
