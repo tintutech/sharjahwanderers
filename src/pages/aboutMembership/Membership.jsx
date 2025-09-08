@@ -2,9 +2,7 @@ import "./membershipStyles.css";
 let data1 = {
 	title: "MEMBERSHIP INFO",
 	paragraphs: [
-		"Our membership is the best way to get ",
-
-		"Lorem ipsum dolor sit amet consectetur. Ac vel ac leo non facilisi odio.",
+		"Being a member at our Private club gives you exclusive access to clubhouse, facilities and members only benefits.",
 	],
 };
 
@@ -15,8 +13,6 @@ let data2 = {
 		"Discounted rates for facilities hire.",
 		"Members only social events and invites.",
 		"Fitness classes, and training classes included*.",
-		"PERKS NUMBER 5",
-		"PERKS NUMBER 6",
 	],
 	disclaimer: "*does not include private training. ",
 };
@@ -54,13 +50,41 @@ import CTA from "/src/components/CTA.jsx";
 
 function Card3() {
 	return (
-		<div className="membershipCard">
-			<h3>Membership</h3>
-			<p>
-				Become part of the club, explore unique offers, and enjoy unparalleled
-				access to our exclusive club.
-			</p>
-			<button onClick={CTA}>ACTION BUTTON</button>
+		<div className="membershipDetails">
+			<div className="membershipCard">
+				<h3>Membership</h3>
+				<p>
+					Become part of the club, explore unique offers, and enjoy unparalleled
+					access to our exclusive club.
+				</p>
+				<button onClick={CTA}>ACTION BUTTON</button>
+			</div>
+			<div className="membershipFees">
+				<h3>MEMBERSHIP FEES</h3>
+				<table>
+					<tr>
+						<th>DURATION</th>
+						<th>INDIVIDUAL</th>
+						<th>FAMILY</th>
+					</tr>
+					<tr>
+						<td>3 MONTH</td>
+						<td>AED 950</td>
+						<td>AED 1900</td>
+					</tr>
+					<tr>
+						<td>6 MONTH</td>
+						<td>AED 1450</td>
+						<td>AED 2900</td>
+					</tr>
+					<tr>
+						<td>12 Month</td>
+						<td>AED 2300</td>
+						<td>AED 4600</td>
+					</tr>
+				</table>
+				<p>Installment options available.</p>
+			</div>
 		</div>
 	);
 }
@@ -71,8 +95,8 @@ export default function Membership() {
 			<div id="membership">
 				<Card1 />
 				<Card2 />
-				<Card3 />
 			</div>
+			<Card3 />
 		</>
 	);
 }
