@@ -1,20 +1,25 @@
 import "./membershipStyles.css";
+import tick from "/tick.png";
+
 let data1 = {
 	title: "MEMBERSHIP INFO",
 	paragraphs: [
-		"Being a member at our Private club gives you exclusive access to clubhouse, facilities and members only benefits.",
+		"Membership to our club gives you complete access to the club facilities, Unrestricted access to the clubhouse, Fitness classes*, unique events and special members only offers.",
+		"You get to be part of a unique expat community within Sharjah, with like-minded community members and community engagement within our exclusive private club.",
+		"Work, Train, Play and Pamper yourself within our club. Your Home away from Home.",
 	],
+	disclaimer: "*Members fitness classes only. Private Training not included.",
 };
 
 let data2 = {
-	title: "BENEFITS INCLUDE:",
+	title: "Perks of Being a Wanderer.",
 	benefits: [
-		"Unrestricted access to the club.",
-		"Discounted rates for facilities hire.",
-		"Members only social events and invites.",
-		"Fitness classes, and training classes included*.",
+		"Unrestricted Club Access.",
+		"Members Fitness Classes",
+		"Discounted Facilities & Venue Hire",
+		"Members-Only social events.",
+		"Private & Exclusive access.",
 	],
-	disclaimer: "*does not include private training. ",
 };
 
 function Card1() {
@@ -27,6 +32,7 @@ function Card1() {
 		<div className="first card">
 			<h2>{data1.title}</h2>
 			{paragraphs}
+			<p className="disclaimer">{data1.disclaimer}</p>
 		</div>
 	);
 }
@@ -34,14 +40,20 @@ function Card1() {
 function Card2() {
 	let n = 0;
 	let paragraphs = data2.benefits.map((e) => {
-		return <p key={n++}>{e}</p>;
+		return (
+			<p className="perks" key={n++}>
+				<img src={tick} />
+				<span>{e}</span>
+			</p>
+		);
 	});
 
 	return (
 		<div className="second card">
-			<h3>{data2.title}</h3>
+			<h3>
+				Perks of Being a <span>Wanderer</span>.
+			</h3>
 			{paragraphs}
-			<p className="disclaimer">{data2.disclaimer}</p>
 		</div>
 	);
 }

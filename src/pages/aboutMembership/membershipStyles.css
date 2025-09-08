@@ -11,8 +11,15 @@
 		padding-bottom: 0;
 	}
 	.card h3 {
-		font-weight: 400;
+		letter-spacing: 0.1em;
+		font-weight: 200;
 		margin-bottom: 40px;
+		font-style: italic;
+	}
+	.card h3 span {
+		font-weight: 400;
+		color: #f1ccb0;
+		font-style: normal;
 	}
 	.card h2 {
 		color: #f1ccb0;
@@ -24,12 +31,18 @@
 		font-size: 1.1em;
 		color: black;
 	}
-	.card p {
-		font-size: 0.9em;
-		margin-bottom: 30px;
-		font-weight: 300;
+	.perks {
+		display: flex;
+		gap: 10px;
 	}
-	.second.card {
+	p img {
+		width: 18px;
+		margin-right: 5px;
+		align-self: flex-start;
+		margin-top: 2px;
+	}
+	.card p {
+		margin-bottom: 20px;
 	}
 	.second.card p {
 		padding-left: 10px;
