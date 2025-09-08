@@ -1,27 +1,27 @@
 let info = [
 	{
 		id: 0,
-		title: "Membership requirements",
+		title: "What are the membership requirements?",
 		cardInfo:
-			"Ipsum laudantium dolore commodi voluptas autem. Voluptates molestiae voluptatem corrupti at nisi placeat a ipsa optio. Libero distinctio ducimus sed voluptas reprehenderit Praesentium hic aut",
+			"Every prospective member should first apply to be a member through here. We will require your valid Emirates ID to verify your identity and may request you to schedule a meeting in person if required prior to granting membership to our club.  A membership fee should be paid upon approval prior to use of our facilities. We are strict with the membership criteria, and no exceptions can be granted for any specific individuals. We expect our members to be in good standing with our club to maintain continued status and eligibility to reapply.",
 	},
 	{
 		id: 1,
-		title: "Membership requirements",
+		title: "What are the membership benefits?",
 		cardInfo:
-			"Amet ab quidem quaerat repudiandae maxime Enim commodi molestias nobis sed unde. Adipisci pariatur tempora nobis sapiente iste reiciendis Culpa corporis suscipit neque odio dicta",
+			"Every member gets access to the club facilities, unrestricted access to the clubhouse and discounted rates for venue and pitch hires as well as events. Members are also provided with Fitness Classes, and You get a unified membership with a discounted rate with the diving club, inquire with us to check if you qualify for the unified membership with SWSC and The Diving Club.",
 	},
 	{
 		id: 2,
-		title: "Membership requirements",
+		title: "Membership pricing?",
 		cardInfo:
-			"Ipsum laudantium dolore commodi voluptas autem. Voluptates molestiae voluptatem corrupti at nisi placeat a ipsa optio. Libero distinctio ducimus sed voluptas reprehenderit Praesentium hic aut",
+			"We offer membership pricings for Single Adults and Family Memberships, for the period of 3 months, 6 months, and 12 months membership. Installment payments can be provided for all membership tiers. Refer to the Membership Pricing Chart above.",
 	},
 	{
 		id: 3,
-		title: "Membership requirements",
+		title: "Membership for Diving Club?",
 		cardInfo:
-			"Amet ab quidem quaerat repudiandae maxime Enim commodi molestias nobis sed unde. Adipisci pariatur tempora nobis sapiente iste reiciendis Culpa corporis suscipit neque odio dicta",
+			"You get a unified membership with a discounted rate with the diving club, inquire with us to check if you qualify for the unified membership with SWSC and BSAC diving club.",
 	},
 ];
 

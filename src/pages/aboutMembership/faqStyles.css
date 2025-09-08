@@ -19,7 +19,7 @@
 	}
 
 	.card {
-		padding-bottom: 0px;
+		padding-bottom: 20px;
 		max-width: 500px;
 	}
 	h3 {
@@ -53,10 +53,10 @@
 		max-height: 0px;
 		opacity: 0;
 		overflow: hidden;
-		transition: max-height 1s ease-out;
+		transition: max-height 0.5s ease-out;
 		padding-right: 50px;
 		transition:
-			opacity 0.75s ease-out,
+			opacity 0.5s ease-out,
 			max-height 0.5s linear;
 	}
 	.cardInfo p {
@@ -69,7 +69,7 @@
 	}
 
 	.open + .cardInfo {
-		max-height: 300px;
+		max-height: 550px;
 		opacity: 1;
 	}
 }
