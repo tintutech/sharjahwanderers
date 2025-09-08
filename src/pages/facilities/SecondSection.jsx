@@ -12,7 +12,7 @@ import FAQ from "./FAQ.jsx";
 
 import "./secondSectionStyles.css";
 
-let images = [image1, image2, image3, image4, image5, image6, image7];
+let images = [image1, image2, image3, image4, image5, image6, image7, image8];
 
 let cardData = [
 	{
@@ -48,12 +48,12 @@ let cardData = [
 	{
 		title: "CRICKET NETS",
 		desc: "Three Cricket nets for batting practices.",
-		image: images[0],
+		image: images[6],
 	},
 	{
 		title: "YOGA STUDIO",
 		desc: "Three Yoga classes are available every week for Members.",
-		image: images[6],
+		image: images[7],
 	},
 ];
 
