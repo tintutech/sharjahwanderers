@@ -2,7 +2,7 @@ import Nav from "/src/components/Nav.jsx";
 import Footer from "/src/components/Footer.jsx";
 import FirstSection from "./FirstSection.jsx";
 import SecondSection from "./SecondSection.jsx";
-import { Title } from "../../components/ReactTitle.jsx";
+import Title from "../../components/ReactTitle.jsx";
 import "./facilitiesStyles.css";
 
 // announcements

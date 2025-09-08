@@ -9,7 +9,7 @@ import "./offerEventsStyles.css";
 export default function OfferEvents() {
 	return (
 		<div id="offerEvents">
-			<Title title="Offers and Events" />
+			<Title title="Events and Offers" />
 			<Nav />
 			<First />
 			<Second />

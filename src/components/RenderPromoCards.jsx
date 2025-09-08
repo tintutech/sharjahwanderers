@@ -15,13 +15,11 @@ export const RenderPromoCards = ({ promoCards, isLoading }) => {
 					/>
 					<div className="lowerCard">
 						<h3>{card?.fields?.promoTitle}</h3>
-						<p>
-							<div
-								dangerouslySetInnerHTML={{
-									__html: documentToHtmlString(card?.fields?.promoDescription),
-								}}
-							/>
-						</p>
+						<div
+							dangerouslySetInnerHTML={{
+								__html: documentToHtmlString(card?.fields?.promoDescription),
+							}}
+						/>
 					</div>
 				</div>
 			))}

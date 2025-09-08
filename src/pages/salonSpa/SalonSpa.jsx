@@ -9,7 +9,7 @@ import "./salonSpaStyles.css";
 export default function SalonSpa() {
 	return (
 		<div id="salonspa">
-			<Title title="Salon and Spa" />
+			<Title title="Spa and Salon" />
 			<Nav />
 			<FirstSection />
 			<SecondSection />

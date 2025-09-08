@@ -4,7 +4,7 @@ import Footer from "/src/components/Footer.jsx";
 import "./generalContactStyles.css";
 import "./contactStyles.css";
 
-import { Title } from "../../components/ReactTitle.jsx";
+import Title from "../../components/ReactTitle.jsx";
 
 export default function Contact() {
 	return (
