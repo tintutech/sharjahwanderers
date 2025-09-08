@@ -13,14 +13,19 @@ export default function About() {
 					expats who required a rugby pitch and community center.
 				</p>
 				<p>
-					The name “Sharjah Wanderers”, derived from the initial use for Rugby
-					games, and commonly used moniker by the Rugby teams in England who go
-					by “Wanderers” when representing the team.
+					Today the club is home to the eponymous{" "}
+					<a href="https://www.instagram.com/sharjahrugby/">
+						Sharjah Wanderers Rugby team
+					</a>{" "}
+					and{" "}
+					<a href="https://www.instagram.com/sharjah_gaels/">
+						Sharjah Gaels GAA
+					</a>
+					.
 				</p>
-				<p>Today, the club is home to the Sharjah Wanderers Rugby team.</p>
 				<p>
-					Sharjah Wanderers Sports Club, includes the only licensed wet bar
-					facility at their Clubhouse, in Sharjah.
+					Sharjah Wanderers Sports Club has the only licensed bar at their
+					Clubhouse, in Sharjah.
 				</p>
 				<a
 					href="https://en.wikipedia.org/wiki/Sharjah_Wanderers"
