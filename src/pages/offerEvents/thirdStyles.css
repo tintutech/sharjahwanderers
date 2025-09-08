@@ -16,7 +16,7 @@
 		overflow: auto;
 		padding-bottom: 50px;
 		height: 100%;
-		scrollbar-width: thin;
+		scrollbar-width: 500px;
 		scrollbar-color: lightgray transparent;
 	}
 	.card {
