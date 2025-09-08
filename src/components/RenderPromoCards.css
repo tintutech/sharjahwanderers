@@ -1,6 +1,6 @@
 .cardContainerPromo {
 	display: flex;
-	gap: 60px;
+	gap: 30px;
 	overflow: auto;
 	padding-bottom: 50px;
 	scrollbar-width: thin;
@@ -51,8 +51,8 @@
 }
 
 @media (max-width: 425px) {
-	.cardContainer {
-		gap: 10px;
+	.cardContainerPromo {
+		gap: 20px;
 	}
 }
 
