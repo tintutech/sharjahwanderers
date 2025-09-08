@@ -62,26 +62,30 @@ function Card3() {
 			<div className="membershipFees">
 				<h3>MEMBERSHIP FEES</h3>
 				<table>
-					<tr>
-						<th>DURATION</th>
-						<th>INDIVIDUAL</th>
-						<th>FAMILY</th>
-					</tr>
-					<tr>
-						<td>3 MONTH</td>
-						<td>AED 950</td>
-						<td>AED 1900</td>
-					</tr>
-					<tr>
-						<td>6 MONTH</td>
-						<td>AED 1450</td>
-						<td>AED 2900</td>
-					</tr>
-					<tr>
-						<td>12 Month</td>
-						<td>AED 2300</td>
-						<td>AED 4600</td>
-					</tr>
+					<thead>
+						<tr>
+							<th>DURATION</th>
+							<th>INDIVIDUAL</th>
+							<th>FAMILY</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>3 MONTH</td>
+							<td>AED 950</td>
+							<td>AED 1900</td>
+						</tr>
+						<tr>
+							<td>6 MONTH</td>
+							<td>AED 1450</td>
+							<td>AED 2900</td>
+						</tr>
+						<tr>
+							<td>12 Month</td>
+							<td>AED 2300</td>
+							<td>AED 4600</td>
+						</tr>
+					</tbody>
 				</table>
 				<p>Installment options available.</p>
 			</div>

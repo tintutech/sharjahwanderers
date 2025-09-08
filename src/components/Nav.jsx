@@ -45,9 +45,7 @@ export default function Navbar() {
 						<a href="/about">ABOUT</a>
 					</li>
 					<li>
-						<HashLink smooth to="/membership#membership">
-							MEMBERSHIP
-						</HashLink>
+						<a href="/membership">MEMBERSHIP</a>
 					</li>
 					<li>
 						<a href="/events">EVENTS & OFFERS</a>
@@ -95,9 +93,9 @@ export default function Navbar() {
 							<a href="/about">ABOUT</a>
 						</li>
 						<li>
-							<HashLink smooth to="/membership#membership">
+							<a href="/membership">
 								MEMBERSHIP
-							</HashLink>
+							</a>
 						</li>
 						<li>
 							<a href="/events">EVENTS & OFFERS</a>
