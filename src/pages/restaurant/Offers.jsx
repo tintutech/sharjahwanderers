@@ -66,7 +66,6 @@ function ReturnCards({ e }) {
 				<p>{e.description}</p>
 				<p>{e.timing[0]}</p>
 				<p>{e.timing[1]}</p>
-				<a href="#">CLAIM OFFER</a>
 			</div>
 		</div>
 	);
