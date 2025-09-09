@@ -86,8 +86,13 @@ export default function FormComponent() {
 					/>
 				</div>
 				<div className="input-box">
-					<select className="field" name="InquiryType" required>
-						<option value="" disabled selected hidden>
+					<select
+						className="field"
+						name="InquiryType"
+						defaultValue={""}
+						required
+					>
+						<option value="" disabled hidden>
 							INQUIRY TYPE
 						</option>
 						<option value="General Inquiry">General Inquiry</option>
