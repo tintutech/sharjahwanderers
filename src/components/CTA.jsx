@@ -8,7 +8,10 @@ function Dialog() {
 			<div className="top">
 				<h2>CONTACT</h2>
 				<button
-					onClick={() => document.querySelector("#fullWindow").close()}
+					onClick={() => {
+						document.querySelector("#fullWindow").close();
+						document.querySelector("html").classList.remove("stopScroll");
+					}}
 					className="close"
 				>
 					<img src="/multiply.svg" />
@@ -29,4 +32,5 @@ export default function CTA() {
 	let dialogRoot = ReactDOM.createRoot(document.getElementById("fullWindow"));
 	dialogRoot.render(<Dialog />);
 	document.getElementById("fullWindow").showModal();
+	document.querySelector("html").classList.add("stopScroll");
 }
