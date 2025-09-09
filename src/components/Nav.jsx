@@ -5,11 +5,13 @@ import { HashLink } from "react-router-hash-link";
 function openWindow() {
 	let open = document.querySelector(".openWindow");
 	open.classList.remove("hidden");
+	document.querySelector("html").classList.add("stopScroll");
 }
 
 function closeWindow() {
 	let open = document.querySelector(".openWindow");
 	open.classList.add("hidden");
+	document.querySelector("html").classList.remove("stopScroll");
 }
 
 export default function Navbar() {
