@@ -1,5 +1,6 @@
 import "./navStyles.css";
 import whatsapp from "/whatsapp.svg";
+import { HashLink } from "react-router-hash-link";
 
 function openWindow() {
 	let open = document.querySelector(".openWindow");
@@ -43,8 +44,10 @@ export default function Navbar() {
 					<li>
 						<a href="/about">ABOUT</a>
 					</li>
-					<li>
-						<a href="/membership">MEMBERSHIP</a>
+					<li onClick={closeWindow}>
+						<HashLink smooth to="/membership#membership">
+							MEMBERSHIP
+						</HashLink>
 					</li>
 					<li>
 						<a href="/events">EVENTS & OFFERS</a>
@@ -92,9 +95,9 @@ export default function Navbar() {
 							<a href="/about">ABOUT</a>
 						</li>
 						<li>
-							<a href="/membership">
+							<HashLink smooth to="/membership#membership">
 								MEMBERSHIP
-							</a>
+							</HashLink>
 						</li>
 						<li>
 							<a href="/events">EVENTS & OFFERS</a>
