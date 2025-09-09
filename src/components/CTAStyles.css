@@ -70,6 +70,6 @@
 	#fullWindow {
 		margin: 0px 0px;
 		max-width: 450px;
-		max-height: 100svh;
+		max-height: 100vh;
 	}
 }
