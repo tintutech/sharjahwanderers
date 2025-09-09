@@ -1,15 +1,15 @@
 import { post } from "aws-amplify/api";
-import Swal from 'sweetalert2';
+import Swal from "sweetalert2";
 // import "./formComponentStyles.css";
 import "./Contact.css";
 
 export default function FormComponent() {
 	const onSubmit = async (event) => {
 		event.preventDefault();
+		document.querySelector("#fullWindow").close();
 
 		try {
 			const formData = new FormData(event.target);
-
 
 			formData.append("access_key", "38e7f6db-2af6-4ec2-905a-a846e6ff1d9f");
 
@@ -19,9 +19,9 @@ export default function FormComponent() {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
-					Accept: "application/json"
+					Accept: "application/json",
 				},
-				body: json
+				body: json,
 			}).then((res) => res.json());
 			// const response = await post({apiName: "sharjahWanderersAPI", path: "/sendEmail", options: {
 			// 	body: {
@@ -34,7 +34,7 @@ export default function FormComponent() {
 				Swal.fire({
 					title: "Success!",
 					text: "Message sent successfully!",
-					icon: "success"
+					icon: "success",
 				});
 			}
 		} catch (err) {
@@ -42,29 +42,54 @@ export default function FormComponent() {
 			Swal.fire({
 				title: "Failed!",
 				text: "Message failed to send!",
-				icon: "failed"
+				icon: "failed",
 			});
 		}
 	};
 	return (
 		<section className="contactUS">
 			<form onSubmit={onSubmit}>
-				<h2>Contact Form</h2>
 				<div className="input-box">
-					<label>Full Name</label>
-					<input type="text" className="field" placeholder='Enter your name' name='name' required />
+					<input
+						type="text"
+						className="field"
+						placeholder="NAME"
+						name="name"
+						required
+					/>
 				</div>
 				<div className="input-box">
-					<label>Mobile Number</label>
-					<input type="text" className="field" placeholder='Enter your mobile' name='mobile' required />
+					<input
+						type="text"
+						className="field"
+						placeholder="PHONE"
+						name="mobile"
+						required
+					/>
 				</div>
 				<div className="input-box">
-					<label>Email Address</label>
-					<input type="email" className="field" placeholder='Enter your email' name='email' required />
+					<input
+						type="email"
+						className="field"
+						placeholder="E-MAIL"
+						name="email"
+						required
+					/>
 				</div>
 				<div className="input-box">
-					<label>Inquiry Type</label>
-					<select className="field" name='InquiryType'>
+					<input
+						type="text"
+						className="field"
+						placeholder="SUBJECT"
+						name="subject"
+						required
+					/>
+				</div>
+				<div className="input-box">
+					<select className="field" name="InquiryType" required>
+						<option value="" disabled selected hidden>
+							INQUIRY TYPE
+						</option>
 						<option value="General Inquiry">General Inquiry</option>
 						<option value="Membership Inquiry">Membership Inquiry</option>
 						<option value="Facilities Inquiry">Facilities Inquiry</option>
@@ -74,8 +99,12 @@ export default function FormComponent() {
 					</select>
 				</div>
 				<div className="input-box">
-					<label>Your Message</label>
-					<textarea name="message" className="field mess" placeholder='Enter your message' required></textarea>
+					<textarea
+						name="message"
+						className="field mess"
+						placeholder="Enter your message"
+						required
+					></textarea>
 				</div>
 				<button type="submit">Send Message</button>
 			</form>
