@@ -41,40 +41,41 @@ let data = [
 
 function Cards({ content, loading }) {
 	if (loading) return "loading...";
-	let returnCards = content?.map((e, index) => {
-		let date = new Date(e.fields?.eventDate);
-		let image = 'url("https:' + e.fields?.eventBanner?.fields?.file?.url + '"';
-		return (
-			<div key={index} className="card">
-				<div
-					style={{
-						background: image,
-					}}
-					className="cardLeft"
-				>
-					<div>
-						<div className="one">
-							<p className="month">{months[date.getMonth()]}</p>
-							<p className="date">{date.getDay()}</p>
+	return (
+		<>
+			{content?.map((e, index) => {
+				let date = new Date(e.fields?.eventDate);
+				let image =
+					'url("https:' + e.fields?.eventBanner?.fields?.file?.url + '"';
+				return (
+					<div key={index} className="card">
+						<div
+							style={{
+								background: image,
+							}}
+							className="cardLeft"
+						>
+							<div>
+								<div className="one">
+									<p className="month">{months[date.getMonth()]}</p>
+									<p className="date">{date.getDay()}</p>
+								</div>
+								<p className="two">{e.fields?.eventName}</p>
+							</div>
 						</div>
-						<p className="two">{e.fields?.eventName}</p>
+						<div className="cardRight">
+							<div className="content">
+								{e.fields?.eventDescription?.content[0]?.content[0]?.value}
+							</div>
+						</div>
 					</div>
-				</div>
-				<div className="cardRight">
-					<div className="content">
-						{e.fields?.eventDescription?.content[0]?.content[0]?.value}
-					</div>
-				</div>
-			</div>
-		);
-	});
-
-	return <>{returnCards}</>;
+				);
+			})}
+		</>
+	);
 }
-let count = 0;
 
 export default function Second() {
-	console.log(++count);
 	const [eventCards, setEventCards] = useState([]);
 	const [isLoading, setLoading] = useState(true);
 	useEffect(() => {
@@ -82,7 +83,7 @@ export default function Second() {
 			setEventCards(e);
 			setLoading(false);
 		});
-	});
+	}, []);
 
 	return (
 		<div className="second">
