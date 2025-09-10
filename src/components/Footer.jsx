@@ -1,6 +1,8 @@
 import "./footerStyles.css";
 import "./endQuoteStyles.css";
 import placeholderMap from "/placeholderMap.png";
+import { HashLink } from "react-router-hash-link";
+
 function LeftContents() {
 	return (
 		<div className="footerLeft">
@@ -74,7 +76,9 @@ function RightContents() {
 				<div>
 					<a href="/">HOME</a>
 					<a href="/about">ABOUT</a>
-					<a href="/membership">MEMBERSHIP</a>
+					<HashLink smooth to="/membership#membership">
+						MEMBERSHIP
+					</HashLink>
 					<a href="/events">EVENTS & OFFERS</a>
 					<a href="/restaurant">RESTAURANT</a>
 					<a href="/salonspa">SALON & SPA</a>
