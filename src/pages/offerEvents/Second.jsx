@@ -72,7 +72,7 @@ function Cards({ content, loading }) {
 									{e.fields?.eventDescription?.content[0]?.content[0]?.value}
 								</div>
 							</div>
-							<div onClick={(e) => toggleView(e)}>
+							<div className="closeDiv" onClick={(e) => toggleView(e)}>
 								<div className="horizontal"></div>
 								<div className="vertical"></div>
 							</div>
