@@ -1,4 +1,5 @@
 import "./aboutStyles.css";
+import external from "/externalLink.svg";
 
 export default function About() {
 	return (
@@ -16,12 +17,13 @@ export default function About() {
 					Today the club is home to the eponymous{" "}
 					<a href="https://www.instagram.com/sharjahrugby/">
 						Sharjah Wanderers Rugby team
-					</a>{" "}
+					</a>
+					<img src={external} />
 					and{" "}
 					<a href="https://www.instagram.com/sharjah_gaels/">
 						Sharjah Gaels GAA
 					</a>
-					.
+					<img src={external} />.
 				</p>
 				<p>
 					Sharjah Wanderers Sports Club has the only licensed bar at their

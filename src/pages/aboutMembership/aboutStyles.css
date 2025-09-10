@@ -40,7 +40,14 @@
 	p a {
 		display: inline;
 		font-weight: 350;
-		text-decoration: underline;
+	}
+	p img {
+		width: 20px;
+		filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(7500%)
+			hue-rotate(119deg) brightness(103%) contrast(101%);
+		margin-right: 5px;
+		position: relative;
+		top: 4px;
 	}
 }
 
