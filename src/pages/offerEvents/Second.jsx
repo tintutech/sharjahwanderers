@@ -45,6 +45,7 @@ function Cards({ content, loading }) {
 		<>
 			{content?.map((e, index) => {
 				let date = new Date(e.fields?.eventDate);
+				let day = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
 				let image =
 					'url("https:' + e.fields?.eventBanner?.fields?.file?.url + '"';
 				return (
@@ -58,7 +59,7 @@ function Cards({ content, loading }) {
 							<div>
 								<div className="one">
 									<p className="month">{months[date.getMonth()]}</p>
-									<p className="date">{date.getDay()}</p>
+									<p className="date">{day}</p>
 								</div>
 								<p className="two">{e.fields?.eventName}</p>
 							</div>
