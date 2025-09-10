@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 
 import image1 from "/offerEvents/image1.jpg";
 
@@ -7,9 +7,9 @@ import CTA from "../../components/CTA.jsx";
 
 import "./thirdStyles.css";
 
-import { getPromotionalCards } from '../../contentful.js';
+import { getPromotionalCards } from "../../contentful.js";
 
-import {RenderPromoCards} from '../../components/RenderPromoCards';
+import { RenderPromoCards } from "../../components/RenderPromoCards";
 
 let data = [
 	{
@@ -54,14 +54,14 @@ function MembershipCard() {
 // }
 
 export default function Third() {
-	const [promoCards, setPromoCards] = useState([])
-	const [isLoading, setLoading] = useState(true)
+	const [promoCards, setPromoCards] = useState([]);
+	const [isLoading, setLoading] = useState(true);
 	useEffect(() => {
-		getPromotionalCards().then(data => {
-			setPromoCards(data)
-			setLoading(false)
-		})
-	}, [])
+		getPromotionalCards().then((data) => {
+			setPromoCards(data);
+			setLoading(false);
+		});
+	}, []);
 	return (
 		<div className="third">
 			<h2>CURRENT OFFERS AND PROMOTIONS</h2>

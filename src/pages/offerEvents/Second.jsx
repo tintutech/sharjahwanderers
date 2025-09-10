@@ -1,48 +1,75 @@
 import image1 from "/offerEvents/image1.jpg";
 import "./secondStyles.css";
+import { getEventCards } from "/src/contentful.js";
+import { testData } from "./test.js";
 
+import { useEffect, useState } from "react";
+
+// getEventCards().then((e) => console.log(e));
+
+// image is testData?.fields?.eventBanner?.fields?.file?.url
+// title is testData?.fields?.eventname
+// desc is testData?.fields?.eventDescription?.content?[0].content?[0].value
+// date is testData?[0].fields?.eventDate
+
+let date = new Date(testData[0]?.fields?.eventDate);
+
+const months = [
+	"JAN",
+	"FEB",
+	"MAR",
+	"APR",
+	"MAY",
+	"JUN",
+	"JUL",
+	"AUG",
+	"SEP",
+	"OCT",
+	"NOV",
+	"DEC",
+];
+
+console.log(months[date.getMonth()]);
+console.log(date.getDate());
+
+/*
 let data = [
 	{
-		img: image1,
-		month: "MAY",
-		date: "04",
-		title: "May the 4th be with you.",
+		img: testData[0]?.fields?.eventBanner?.fields?.file?.url,
+		month: months[date.getMonth()],
+		date: date.getDay(),
+		title: testData[0]?.fields?.eventname,
 		cardContent: [
-			"May the 4th Be with you.",
-			"Star wars themed night. At the Wanderers sports bar.",
+			testData[0]?.fields?.eventDescription?content[0]?.content[0]?.value,
 		],
 	},
 ];
+*/
 
-function Cards() {
-	let n = 0;
-	let returnCards = data.map((e) => {
-		let m = 0;
-		let cardInfo = e.cardContent.map((t) => {
-			return (
-				<div key={m++}>
-					<p>{t}</p>
-				</div>
-			);
-		});
+function Cards({ content, loading }) {
+	if (loading) return "loading...";
+	let returnCards = content?.map((e, index) => {
+		let date = new Date(e.fields?.eventDate);
 		return (
-			<div key={"card" + n++} className="card">
+			<div key={index} className="card">
 				<div
 					style={{
-						backgroundImage: `url(${e.img})`,
+						backgroundImage: e.fields?.eventBanner?.fields?.file?.url,
 					}}
 					className="cardLeft"
 				>
 					<div>
 						<div className="one">
-							<p className="month">{e.month}</p>
-							<p className="date">{e.date}</p>
+							<p className="month">{months[date.getMonth()]}</p>
+							<p className="date">{date.getDay()}</p>
 						</div>
-						<p className="two">{e.title}</p>
+						<p className="two">{e.fields?.eventName}</p>
 					</div>
 				</div>
 				<div className="cardRight">
-					<div className="content">{cardInfo}</div>
+					<div className="content">
+						{e.fields?.eventDescription?.content[0]?.content[0]?.value}
+					</div>
 				</div>
 			</div>
 		);
@@ -52,6 +79,17 @@ function Cards() {
 }
 
 export default function Second() {
+	const [eventCards, setEventCards] = useState([]);
+	const [isLoading, setLoading] = useState(true);
+
+	useEffect(() => {
+		getEventCards().then((e) => {
+			console.log(e);
+			setEventCards(e);
+			setLoading(false);
+		});
+	});
+
 	return (
 		<div className="second">
 			<div className="top">
@@ -59,9 +97,7 @@ export default function Second() {
 				<a href="#">ATTEND EVENT</a>
 			</div>
 			<div className="cardContainer">
-				<Cards />
-				<Cards />
-				<Cards />
+				<Cards content={eventCards} loading={isLoading} />
 			</div>
 			<div className="innerCard">
 				<p>Interested in hosting your event at one of our venues?</p>
