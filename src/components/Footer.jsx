@@ -1,6 +1,6 @@
 import "./footerStyles.css";
 import "./endQuoteStyles.css";
-
+import placeholderMap from "/placeholderMap.png";
 function LeftContents() {
 	return (
 		<div className="footerLeft">
@@ -27,13 +27,19 @@ function LeftContents() {
 			</div>
 			<div className="map">
 				<h3>Find us.</h3>
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7211.932917234021!2d55.4157314745558!3d25.338906525947866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5969efe4f7b9%3A0x97e652f434bbab95!2sSharjah%20Wanderers%20Sports%20Club!5e0!3m2!1sen!2sus!4v1748784679349!5m2!1sen!2sus"
-					loading="lazy"
-					referrerPolicy="no-referrer-when-downgrade"
-					resizable="yes"
-				></iframe>
-				<a href="#">
+				<div className="iframeDiv">
+					<img className="placeholderMap" src={placeholderMap} />
+					<iframe
+						onLoad={(e) => {
+							document.querySelector(".placeholderMap").classList.add("hidden");
+						}}
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7211.932917234021!2d55.4157314745558!3d25.338906525947866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5969efe4f7b9%3A0x97e652f434bbab95!2sSharjah%20Wanderers%20Sports%20Club!5e0!3m2!1sen!2sus!4v1748784679349!5m2!1sen!2sus"
+						loading="lazy"
+						referrerPolicy="no-referrer-when-downgrade"
+						resizable="yes"
+					></iframe>
+				</div>
+				<a href="https://maps.app.goo.gl/UgQXD1eHRTmpYSSg7" target="_blank">
 					Get directions <span>&#9654;</span>
 				</a>
 			</div>
