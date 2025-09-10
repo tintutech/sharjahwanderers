@@ -28,7 +28,13 @@ function LeftContents() {
 			<div className="map">
 				<h3>Find us.</h3>
 				<div className="iframeDiv">
-					<img className="placeholderMap" src={placeholderMap} />
+					<img
+						onClick={() =>
+							window.open("https://maps.app.goo.gl/UgQXD1eHRTmpYSSg7")
+						}
+						className="placeholderMap"
+						src={placeholderMap}
+					/>
 					<iframe
 						onLoad={(e) => {
 							document.querySelector(".placeholderMap").classList.add("hidden");
