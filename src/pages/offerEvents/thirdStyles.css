@@ -10,47 +10,7 @@
 		font-size: 1.6em;
 		color: #f1ccb0;
 	}
-	.cardContainer {
-		display: flex;
-		gap: 60px;
-		overflow: auto;
-		padding-bottom: 50px;
-		height: 100%;
-		scrollbar-width: 500px;
-		scrollbar-color: lightgray transparent;
-	}
-	.card {
-		flex-shrink: 0;
-		max-width: 280px;
-	}
-	img {
-		width: 100%;
-		aspect-ratio: 2/1.5;
-		object-fit: cover;
-	}
-	.lowerCard {
-		padding: 15px 20px;
-		background-color: #000a0c;
-	}
-	.card h3 {
-		font-weight: 380;
-		margin-bottom: 20px;
-	}
-	p {
-		font-weight: 300;
-		font-size: 0.9em;
-		margin-bottom: 10px;
-	}
-	.card a {
-		display: block;
-		background-color: #ffffff;
-		color: black;
-		max-width: 170px;
-		text-align: center;
-		padding: 8px;
-		margin-top: 30px;
-		margin-bottom: 10px;
-	}
+
 	.membershipCard {
 		max-width: 300px;
 		max-height: 300px;
