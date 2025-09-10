@@ -1,9 +1,7 @@
+import { useEffect, useState } from "react";
 import image1 from "/offerEvents/image1.jpg";
 import "./secondStyles.css";
 import { getEventCards } from "/src/contentful.js";
-import { testData } from "./test.js";
-
-import { useEffect, useState } from "react";
 
 // getEventCards().then((e) => console.log(e));
 
@@ -11,8 +9,6 @@ import { useEffect, useState } from "react";
 // title is testData?.fields?.eventname
 // desc is testData?.fields?.eventDescription?.content?[0].content?[0].value
 // date is testData?[0].fields?.eventDate
-
-let date = new Date(testData[0]?.fields?.eventDate);
 
 const months = [
 	"JAN",
@@ -28,9 +24,6 @@ const months = [
 	"NOV",
 	"DEC",
 ];
-
-console.log(months[date.getMonth()]);
-console.log(date.getDate());
 
 /*
 let data = [
@@ -50,11 +43,12 @@ function Cards({ content, loading }) {
 	if (loading) return "loading...";
 	let returnCards = content?.map((e, index) => {
 		let date = new Date(e.fields?.eventDate);
+		let image = 'url("https:' + e.fields?.eventBanner?.fields?.file?.url + '"';
 		return (
 			<div key={index} className="card">
 				<div
 					style={{
-						backgroundImage: e.fields?.eventBanner?.fields?.file?.url,
+						background: image,
 					}}
 					className="cardLeft"
 				>
@@ -77,14 +71,14 @@ function Cards({ content, loading }) {
 
 	return <>{returnCards}</>;
 }
+let count = 0;
 
 export default function Second() {
+	console.log(++count);
 	const [eventCards, setEventCards] = useState([]);
 	const [isLoading, setLoading] = useState(true);
-
 	useEffect(() => {
 		getEventCards().then((e) => {
-			console.log(e);
 			setEventCards(e);
 			setLoading(false);
 		});

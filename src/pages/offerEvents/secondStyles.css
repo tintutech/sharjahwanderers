@@ -41,9 +41,9 @@
 	}
 
 	.card .cardLeft {
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
+		background-repeat: no-repeat !important;
+		background-position: center !important;
+		background-size: cover !important;
 		aspect-ratio: 1/1;
 		position: relative;
 		overflow: hidden;
