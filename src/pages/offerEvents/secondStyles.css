@@ -28,28 +28,27 @@
 		padding-bottom: 50px;
 		display: flex;
 		overflow: auto;
-		gap: 20px;
+		gap: 30px;
 		scrollbar-color: lightgray transparent;
 		scrollbar-width: thin;
 	}
 
 	.card {
 		flex-shrink: 0;
-		width: 700px;
-		display: grid;
-		grid-template-columns: 1fr 1.1fr;
+		width: 280px;
+		aspect-ratio: 1/1.5;
 	}
 
 	.card .cardLeft {
 		background-repeat: no-repeat !important;
 		background-position: center !important;
 		background-size: cover !important;
-		aspect-ratio: 1/1;
 		position: relative;
+		height: 100%;
 		overflow: hidden;
-		padding: 20px;
+		padding: 0 10px;
+		position: relative;
 	}
-
 	.card .cardLeft > div {
 		gap: 20px;
 		display: flex;
@@ -80,16 +79,18 @@
 
 	.card .cardLeft .month {
 		font-size: 1.1em;
-		color: black;
-		background-color: #d9d9d9;
+		background-color: #6d646496;
 	}
 
 	.card .cardRight {
+		visibility: none;
+		background: rgba(0, 0, 0, 0.5);
+		height: 65%;
 		padding: 20px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
+		overflow: auto;
+		margin-top: 20px;
 	}
+
 	.card .cardRight a {
 		max-width: 250px;
 		text-align: center;
@@ -101,6 +102,30 @@
 
 	.card .content p {
 		margin-bottom: 30px;
+	}
+	.horizontal {
+		width: 5px;
+		height: 30px;
+		background-color: white;
+		position: absolute;
+		bottom: 15px;
+		right: 30px;
+	}
+	.vertical {
+		width: 30px;
+		height: 5px;
+		background-color: white;
+		position: absolute;
+		bottom: 28px;
+		right: 18px;
+	}
+	.open .horizontal {
+		display: none;
+	}
+
+	.horizontal:hover,
+	.vertical:hover {
+		cursor: pointer;
 	}
 }
 #offerEvents .second .innerCard {
@@ -130,16 +155,7 @@
 	}
 
 	#offerEvents .second .card {
-		display: block;
 		width: 280px;
-	}
-	#offerEvents .second .card .cardLeft > div {
-		height: 100%;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-	#offerEvents .second .innerCard {
-		display: block;
 	}
 }
 

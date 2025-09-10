@@ -23,7 +23,10 @@
 		background-color: #000a0c;
 		height: 250px;
 		scrollbar-width: thin;
+		scrollbar-color: rgba(50, 50, 50) transparent;
 		overflow: auto;
+	}
+	.lowerCard:hover {
 	}
 
 	.card h3 {

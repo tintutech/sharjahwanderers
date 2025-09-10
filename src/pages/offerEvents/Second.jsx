@@ -39,6 +39,10 @@ let data = [
 ];
 */
 
+function toggleView(e) {
+	e.target.parentNode.parentNode.parentNode.classList.toggle("open");
+}
+
 function Cards({ content, loading }) {
 	if (loading) return "loading...";
 	return (
@@ -63,10 +67,14 @@ function Cards({ content, loading }) {
 								</div>
 								<p className="two">{e.fields?.eventName}</p>
 							</div>
-						</div>
-						<div className="cardRight">
-							<div className="content">
-								{e.fields?.eventDescription?.content[0]?.content[0]?.value}
+							<div className="cardRight">
+								<div className="content">
+									{e.fields?.eventDescription?.content[0]?.content[0]?.value}
+								</div>
+							</div>
+							<div onClick={(e) => toggleView(e)}>
+								<div className="horizontal"></div>
+								<div className="vertical"></div>
 							</div>
 						</div>
 					</div>
