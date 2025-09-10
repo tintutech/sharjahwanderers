@@ -15,12 +15,12 @@ export default function About() {
 				</p>
 				<p>
 					Today the club is home to the eponymous{" "}
-					<a href="https://www.instagram.com/sharjahrugby/">
+					<a href="https://www.instagram.com/sharjahrugby/" target="_blank">
 						Sharjah Wanderers Rugby team
 					</a>
 					<img src={external} />
 					and{" "}
-					<a href="https://www.instagram.com/sharjah_gaels/">
+					<a href="https://www.instagram.com/sharjah_gaels/" target="_blank">
 						Sharjah Gaels GAA
 					</a>
 					<img src={external} />.
