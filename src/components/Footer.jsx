@@ -18,19 +18,20 @@ function LeftContents() {
 			<div className="contact">
 				<h3>Get in touch</h3>
 				<p>
-					<img src="/phone.svg" /> : +97100000000
+					<img alt="phone" src="/phone.svg" /> : +97100000000
 				</p>
 				<p>
-					<img src="/whatsapp.svg" /> : +97100000000
+					<img alt="whatsapp" src="/whatsapp.svg" /> : +97100000000
 				</p>
 				<p>
-					<img src="/mail.svg" /> : info@Sharjahwsc.com
+					<img alt="email" src="/mail.svg" /> : info@Sharjahwsc.com
 				</p>
 			</div>
 			<div className="map">
 				<h3>Find us.</h3>
 				<div className="iframeDiv">
 					<img
+						alt="placeholder map"
 						onClick={() =>
 							window.open("https://maps.app.goo.gl/UgQXD1eHRTmpYSSg7")
 						}
@@ -61,13 +62,13 @@ function RightContents() {
 			<div className="socials">
 				<div className="links">
 					<a href="#">
-						<img src="/facebook.svg" />
+						<img alt="facebook" src="/facebook.svg" />
 					</a>
 					<a href="#">
-						<img src="/instagram.svg" />
+						<img alt="instagram" src="/instagram.svg" />
 					</a>
 					<a href="#">
-						<img src="/twitter.svg" />
+						<img alt="twitter" src="/twitter.svg" />
 					</a>
 				</div>
 				<p>Follow us on social media</p>

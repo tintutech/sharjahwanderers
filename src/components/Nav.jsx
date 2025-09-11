@@ -23,7 +23,7 @@ export default function Navbar() {
 					href="https://api.whatsapp.com/send/?phone=971585311419&text=Thank+you+for+contacting+Sharjah+Wanderers+Sports+Club%2C+how+can+we+help+you%3F&type=phone_number&app_absent=0"
 					target="_blank"
 				>
-					<img src={whatsapp} />
+					<img alt="whatsapp logo" src={whatsapp} />
 				</a>
 			</div>
 			<dialog id="fullWindow"></dialog>
@@ -31,13 +31,13 @@ export default function Navbar() {
 				<div className="closeDiv">
 					<div></div>
 					<button onClick={closeWindow} className="close">
-						<img src="/multiply.svg" />
+						<img alt="multiply sign" src="/multiply.svg" />
 					</button>
 				</div>
 				<ul>
 					<li>
 						<a href="/">
-							<img src="/logo.svg" />
+							<img alt="website logo" src="/logo.svg" />
 						</a>
 					</li>
 					<li>
@@ -72,7 +72,7 @@ export default function Navbar() {
 			</div>
 			<div className="mobileNav">
 				<a href="#">
-					<img className="logo" src="/logo.svg" />
+					<img alt="home" className="logo" src="/logo.svg" />
 				</a>
 				<button onClick={openWindow} className="hamburgerMenu">
 					&#9776;
@@ -81,12 +81,12 @@ export default function Navbar() {
 			<div className="desktopNav">
 				<div className="topNav">
 					<a href="/">
-						<img src="/home.png" />
+						<img alt="home" src="/home.png" />
 					</a>
 					<div className="rightNavContents">
 						<a href="http://sharjahwanderers.clubm.mobi/">
 							members login
-							<img src="/enter.svg" />
+							<img alt="enter logo" src="/enter.svg" />
 						</a>
 						<a href="/contact">contact</a>
 					</div>
@@ -106,7 +106,7 @@ export default function Navbar() {
 						</li>
 						<li>
 							<a href="/">
-								<img className="logo" src="/logo.svg" />
+								<img alt="logo" className="logo" src="/logo.svg" />
 							</a>
 						</li>
 						<li>
