@@ -11,11 +11,8 @@
 }
 
 #contact {
-	background: url("/palmTreesTest.png");
-	background-size: contain;
-    /* background-position: center center;
-	background-size: 100% 100%;
-    background-repeat: no-repeat; */
+	background: url("/desktopBackground.png");
+	background-size: cover;
 	font-family: "Inter", sans-serif;
 	color: var(--text-color);
 }
@@ -31,4 +28,10 @@ a {
 
 a:hover {
 	text-shadow: 0 0 10px gray;
+}
+
+@media (max-width: 450px) {
+	#contact {
+		background: url("/mobileBackground.png");
+	}
 }
