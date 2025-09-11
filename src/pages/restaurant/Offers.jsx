@@ -70,7 +70,10 @@ function ReturnCard({ data, loading }) {
 			{data.map((e, index) => {
 				return (
 					<div key={index} className="card">
-						<img src={e.fields?.image?.fields?.file?.url} />
+						<img
+							src={e.fields?.image?.fields?.file?.url}
+							alt={e.fields?.image?.fields?.title}
+						/>
 						<div className="mainDiv">
 							<h3>{e.fields?.title}</h3>
 							<div className="lowerDiv">

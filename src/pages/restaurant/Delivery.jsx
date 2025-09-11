@@ -42,7 +42,7 @@ function RightSection() {
 function ReturnImages() {
 	let n = 0;
 	let imgHTML = images.map((e) => {
-		return <img key={n++} src={e} />;
+		return <img key={n++} alt={"delivery menu page " + (n + 1)} src={e} />;
 	});
 	return <div className="galleryContainer">{imgHTML}</div>;
 }

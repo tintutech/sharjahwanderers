@@ -13,13 +13,9 @@ let images = [image1, image2, image3, image4, image5, image6];
 function ReturnImages() {
 	let n = 0;
 	let imgReturn = images.map((e) => {
-		return <img onClick={(e) => expandedPage(e)} key={n++} src={e} />;
+		return <img alt={"dine in menu page " + (n + 1)} key={n++} src={e} />;
 	});
 	return <div className="galleryContainer">{imgReturn}</div>;
-}
-
-function expandedPage(e) {
-	let expand = e.target.parentNode.classList.toggle("full");
 }
 
 export default function DineIn() {

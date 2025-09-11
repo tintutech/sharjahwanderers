@@ -12,6 +12,7 @@ export const RenderPromoCards = ({ promoCards, isLoading }) => {
 							card?.fields?.promoImage?.fields?.file?.url ||
 							card?.fields?.promoTitle
 						}
+						alt={card.fields?.promoImage?.fields?.title}
 					/>
 					<div className="lowerCard">
 						<h3>{card?.fields?.promoTitle}</h3>
