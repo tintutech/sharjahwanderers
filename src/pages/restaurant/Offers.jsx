@@ -73,7 +73,7 @@ function ReturnCards({ e }) {
 
 export default function Offers() {
 	return (
-		<div className="offers">
+		<div id="restaurantOffers" className="offers">
 			<h2>OFFERS</h2>
 			<div className="offerContainer">
 				<ReturnCards e={card1} />

@@ -24,7 +24,7 @@ function expandedPage(e) {
 
 export default function DineIn() {
 	return (
-		<div className="dineInSection">
+		<div id="dine" className="dineInSection">
 			<div className="dineInTop">
 				<h2>DINE-IN</h2>
 				<p>BOOK A TABLE?</p>

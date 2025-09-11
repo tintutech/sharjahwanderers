@@ -17,7 +17,7 @@ let catering2 = {
 
 export default function Catering() {
 	return (
-		<div className="catering">
+		<div id="catering" className="catering">
 			<div className="carousel">
 				<CateringCarousel />
 			</div>

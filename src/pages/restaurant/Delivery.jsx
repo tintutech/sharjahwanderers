@@ -71,7 +71,7 @@ function DeliveryInfo() {
 
 export default function Delivery() {
 	return (
-		<div className="deliverySection">
+		<div id="delivery" className="deliverySection">
 			<div className="topSection">
 				<LeftSection />
 				<RightSection />

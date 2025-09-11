@@ -1,4 +1,5 @@
 import "./topSectionStyles.css";
+import { HashLink } from "react-router-hash-link";
 
 let rightData = {
 	title: "RESTAURANT & BAR",
@@ -24,12 +25,20 @@ function Right() {
 			<div className="top">
 				<h3>MENUS</h3>
 				<div>
-					<a href="#">DINE-IN</a>
-					<a href="#">DELIVERY</a>
+					<HashLink smooth to="#dine">
+						DINE-IN
+					</HashLink>
+					<HashLink smooth to="#delivery">
+						DELIVERY
+					</HashLink>
 				</div>
 				<div>
-					<a href="#">OFFERS</a>
-					<a href="#">CATERING</a>
+					<HashLink smooth to="#restaurantOffers">
+						OFFERS
+					</HashLink>
+					<HashLink smooth to="#catering">
+						CATERING
+					</HashLink>
 				</div>
 			</div>
 			<div className="bottom">
