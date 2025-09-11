@@ -1,5 +1,5 @@
 .eventsCTA {
-	max-width: 350px;
+	width: 450px;
 	padding: 30px;
 	.top {
 		display: flex;
@@ -43,10 +43,11 @@
 }
 
 #fullWindow {
-	color: black;
 	margin: 0 auto;
 	margin-top: 40px;
-	background: #d9d9d9;
+	background-color: #d9d9d9;
+	background: url("/contactOverlay.svg");
+
 	border: none;
 }
 
@@ -56,13 +57,12 @@
 
 @media (max-width: 450px) {
 	.eventsCTA {
-		max-width: 450px;
-		margin-top: 0px;
+		width: 100%;
 	}
 
-	#eventsWindow {
+	#fullWindow {
 		margin: 0px 0px;
-		max-width: 450px;
+		width: 100%;
 		max-height: 100vh;
 	}
 }
