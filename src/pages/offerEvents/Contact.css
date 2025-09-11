@@ -5,6 +5,12 @@
 .swa12-title {
 	z-index: 10;
 }
+
+#offerEvents .eventsCTA {
+	background-color: gray;
+	color: black;
+}
+
 form {
 	max-width: 400px;
 	width: 100%;
@@ -49,6 +55,6 @@ form .input-box {
 	transition: 0.5s;
 }
 
-form button:hover {
-	background: rgba(0, 0, 0, 0.7);
+#offerEvents form button:hover {
+	background: rgba(0, 0, 0, 0.4);
 }
