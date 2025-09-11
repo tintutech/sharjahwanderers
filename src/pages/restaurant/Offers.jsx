@@ -5,6 +5,9 @@ import image4 from "/offers/image4.png";
 import image5 from "/offers/image5.png";
 import image6 from "/offers/image6.png";
 
+import { useState, useEffect } from "react";
+import { getRestaurantOffers } from "/src/contentful.js";
+
 import "./offerStyles.css";
 
 let card1 = {
@@ -57,6 +60,27 @@ let card6 = {
 
 let cards = [card1, card2, card3, card4, card5, card6];
 
+function ReturnCard({ data, loading }) {
+	if (loading) return <p>Loading...</p>;
+	return (
+		<>
+			{data.map((e, index) => {
+				return (
+					<div key={index} className="card">
+						<img src={e.fields?.image?.fields?.file?.url} />
+						<div>
+							<h3>{e.fields?.title}</h3>
+							<p className="desc">{e.fields?.desc}</p>
+							<p>{e.fields?.days}</p>
+							<p>{e.fields?.timing}</p>
+						</div>
+					</div>
+				);
+			})}
+		</>
+	);
+}
+
 function ReturnCards({ e }) {
 	return (
 		<div className="card">
@@ -70,18 +94,31 @@ function ReturnCards({ e }) {
 		</div>
 	);
 }
-
-export default function Offers() {
-	return (
-		<div id="restaurantOffers" className="offers">
-			<h2>OFFERS</h2>
-			<div className="offerContainer">
+/*
 				<ReturnCards e={card1} />
 				<ReturnCards e={card2} />
 				<ReturnCards e={card3} />
 				<ReturnCards e={card4} />
 				<ReturnCards e={card5} />
 				<ReturnCards e={card6} />
+				*/
+
+export default function Offers() {
+	const [currentData, setData] = useState([]);
+	const [isLoading, setLoading] = useState(true);
+
+	useEffect(() => {
+		getRestaurantOffers().then((e) => {
+			setData(e);
+			setLoading(false);
+		});
+	}, []);
+
+	return (
+		<div id="restaurantOffers" className="offers">
+			<h2>OFFERS</h2>
+			<div className="offerContainer">
+				<ReturnCard data={currentData} loading={isLoading} />
 			</div>
 		</div>
 	);

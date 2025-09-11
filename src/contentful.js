@@ -14,6 +14,11 @@ export const getEventCards = () =>
 		.getEntries({ content_type: "events" })
 		.then((response) => response.items);
 
+export const getRestaurantOffers = () =>
+	client
+		.getEntries({ content_type: "restaurantOffers"})
+		.then((response) => response.items);
+
 export const getImage = (sysId) =>
 	client
 		.getEntries({ sys: { id: sysId } })
