@@ -3,15 +3,16 @@ import Swal from "sweetalert2";
 // import "./formComponentStyles.css";
 import "./Contact.css";
 import { getEventCards } from "/src/contentful.js";
+function EventCardTitles() {
+	console.log("hello");
+	getEventCards().then((e) => console.log(e));
+}
 
-export default function FormComponent() {
+export default function FormComponent({ titles }) {
 	const onSubmit = async (event) => {
 		event.preventDefault();
 		document.querySelector("#fullWindow").close();
-		function Events() {
-			getEventCards().then((e) => console.log(e));
-		}
-		Events();
+		EventCardTitles();
 
 		try {
 			const formData = new FormData(event.target);
@@ -60,12 +61,13 @@ export default function FormComponent() {
 						<option value="" disabled hidden>
 							EVENT
 						</option>
-						<option value="General Inquiry">General Inquiry</option>
-						<option value="Membership Inquiry">Membership Inquiry</option>
-						<option value="Facilities Inquiry">Facilities Inquiry</option>
-						<option value="Events & Venue Hire">Events & Venue Hire</option>
-						<option value="Restaurant">Restaurant</option>
-						<option value="Salon & Spa">Salon & Spa</option>
+						{titles.map((e, index) => {
+							return (
+								<option key={index} value={e}>
+									{e}
+								</option>
+							);
+						})}
 					</select>
 				</div>
 				<div className="input-box">

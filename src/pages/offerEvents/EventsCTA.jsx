@@ -2,7 +2,7 @@ import ReactDOM from "react-dom/client";
 import FormComponent from "./FormComponent.jsx";
 import "./eventsCTAStyles.css";
 
-function Dialog() {
+function Dialog({ eventNames }) {
 	return (
 		<div className="eventsCTA">
 			<div className="top">
@@ -17,14 +17,14 @@ function Dialog() {
 					<img src="/multiply.svg" />
 				</button>
 			</div>
-			<FormComponent />
+			<FormComponent titles={eventNames} />
 		</div>
 	);
 }
 
-export default function CTA() {
+export default function CTA(eventNames) {
 	let dialogRoot = ReactDOM.createRoot(document.getElementById("fullWindow"));
-	dialogRoot.render(<Dialog />);
+	dialogRoot.render(<Dialog eventNames={eventNames} />);
 	document.getElementById("fullWindow").showModal();
 	document.querySelector("html").classList.add("stopScroll");
 }

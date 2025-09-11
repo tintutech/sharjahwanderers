@@ -44,7 +44,9 @@ function toggleView(e) {
 	e.target.parentNode.parentNode.parentNode.classList.toggle("open");
 }
 
+let eventNames;
 function Cards({ content, loading }) {
+	eventNames = content.map((e) => e.fields?.eventName);
 	if (loading) return "loading...";
 	return (
 		<>
@@ -99,7 +101,7 @@ export default function Second() {
 		<div className="second">
 			<div className="top">
 				<h2>UPCOMING EVENTS</h2>
-				<a onClick={CTA}>ATTEND EVENT</a>
+				<a onClick={() => CTA(eventNames)}>ATTEND EVENT</a>
 			</div>
 			<div className="cardContainer">
 				<Cards content={eventCards} loading={isLoading} />
