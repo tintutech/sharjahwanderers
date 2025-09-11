@@ -1,0 +1,39 @@
+#notFound {
+	background-image: url("/desktopBackground.png");
+	p {
+		max-width: 300px;
+		font-size: 1.7em;
+		margin: 0 auto;
+		font-weight: 350;
+	}
+	p span {
+		font-weight: 500;
+	}
+	.mainContent {
+		max-width: 500px;
+		margin: 0 auto;
+		margin-top: 50px;
+		padding: 10px;
+	}
+	.mainContent img {
+		margin-top: 20px;
+		width: 100%;
+	}
+	.mainContent a {
+		max-width: 150px;
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+		margin-top: 20px;
+		font-size: 1.1em;
+		padding: 10px 15px;
+		border-radius: 30px;
+		background-color: rgba(50, 50, 50);
+	}
+}
+
+@media (max-width: 450px) {
+	#notFound {
+		background-image: url("/mobileBackground.png");
+	}
+}
