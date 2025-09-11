@@ -68,9 +68,6 @@
 		width: 180%;
 		left: -100px;
 	}
-	* {
-		outline: 1px solid red;
-	}
 	.card h2 {
 		height: 80px;
 		font-size: 1.5em;
