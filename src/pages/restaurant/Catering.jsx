@@ -2,6 +2,16 @@ import Carousel from "../../components/Carousel.jsx";
 import "./cateringStyles.css";
 import CTA from "../../components/CTA.jsx";
 
+import image1 from "/offers/image1.jpg";
+import image2 from "/offers/image2.png";
+import image3 from "/offers/image3.png";
+import image4 from "/offers/image4.jpg";
+import image5 from "/offers/image5.jpg";
+import image6 from "/offers/image6.jpg";
+import image7 from "/offers/image7.jpg";
+
+let images = [image1, image2, image3, image4, image5, image6, image7];
+
 let catering1 = {
 	p1: "We offer catering services for events hosted within Club premises* and private venues for events and parties of all sizes.",
 	p2: "From corporate events, birthday parties and sports events!",
@@ -19,7 +29,7 @@ export default function Catering() {
 	return (
 		<div id="catering" className="catering">
 			<div className="leftContents">
-				<Carousel />
+				<Carousel img={images} />
 			</div>
 			<div className="rightContents">
 				<div className="left">
