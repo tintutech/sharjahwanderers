@@ -1,15 +1,16 @@
-import image1 from "/offers/image1.png";
+/*import image1 from "/offers/image1.png";
 import image2 from "/offers/image2.png";
 import image3 from "/offers/image3.png";
 import image4 from "/offers/image4.png";
 import image5 from "/offers/image5.png";
 import image6 from "/offers/image6.png";
-
+*/
 import { useState, useEffect } from "react";
 import { getRestaurantOffers } from "/src/contentful.js";
 
 import "./offerStyles.css";
 
+/*
 let card1 = {
 	url: image1,
 	title: "SUNDAY BRUNCH OFFERS",
@@ -60,6 +61,8 @@ let card6 = {
 
 let cards = [card1, card2, card3, card4, card5, card6];
 
+*/
+
 function ReturnCard({ data, loading }) {
 	if (loading) return <p>Loading...</p>;
 	return (
@@ -68,11 +71,15 @@ function ReturnCard({ data, loading }) {
 				return (
 					<div key={index} className="card">
 						<img src={e.fields?.image?.fields?.file?.url} />
-						<div>
+						<div className="mainDiv">
 							<h3>{e.fields?.title}</h3>
-							<p className="desc">{e.fields?.desc}</p>
-							<p>{e.fields?.days}</p>
-							<p>{e.fields?.timing}</p>
+							<div className="lowerDiv">
+								<p className="desc">{e.fields?.desc}</p>
+								<div>
+									<p>{e.fields?.days}</p>
+									<p>{e.fields?.timing}</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				);
@@ -87,9 +94,13 @@ function ReturnCards({ e }) {
 			<img src={e.url} />
 			<div>
 				<h3>{e.title}</h3>
-				<p>{e.description}</p>
-				<p>{e.timing[0]}</p>
-				<p>{e.timing[1]}</p>
+				<div className="lowerDiv">
+					<p>{e.description}</p>
+					<div>
+						<p>{e.timing[0]}</p>
+						<p>{e.timing[1]}</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
