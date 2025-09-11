@@ -1,4 +1,4 @@
-import Carousel from "./Carousel.jsx";
+import Carousel from "../../components/Carousel.jsx";
 import "./cateringStyles.css";
 import CTA from "../../components/CTA.jsx";
 
