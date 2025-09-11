@@ -5,7 +5,7 @@
 	display: flex;
 	gap: 30px;
 	grid-template-columns: 1fr 2fr;
-	.carousel {
+	.leftContents {
 		min-width: 350px;
 		max-width: 350px;
 	}

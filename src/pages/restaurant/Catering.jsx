@@ -1,4 +1,4 @@
-import CateringCarousel from "./CateringCarousel.jsx";
+import Carousel from "./Carousel.jsx";
 import "./cateringStyles.css";
 import CTA from "../../components/CTA.jsx";
 
@@ -18,8 +18,8 @@ let catering2 = {
 export default function Catering() {
 	return (
 		<div id="catering" className="catering">
-			<div className="carousel">
-				<CateringCarousel />
+			<div className="leftContents">
+				<Carousel />
 			</div>
 			<div className="rightContents">
 				<div className="left">
