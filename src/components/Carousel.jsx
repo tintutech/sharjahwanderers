@@ -15,7 +15,6 @@ function slideChange(imageList, setState) {
 
 let interval;
 function intervalSet(imageList, changeImage) {
-	changeImage(imageList[n]);
 	interval = setInterval(() => {
 		slideChange(imageList, changeImage);
 	}, 5000);
@@ -33,7 +32,6 @@ export default function Carousel({ img }) {
 	useEffect(() => intervalSet(img, changeImage), []);
 	return (
 		<div className="carousel">
-			<p>{n}</p>
 			<img src={image} />
 			<div className="numbers">
 				{img.map((data, index) => {
