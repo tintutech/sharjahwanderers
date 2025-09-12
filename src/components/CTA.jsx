@@ -39,7 +39,7 @@ export default function CTA() {
 	fullWindow.addEventListener("keydown", (e) => {
 		console.log(e);
 		if (e.key === "Escape") {
-			location.reload();
+			window.location.reload();
 		}
 		e.stopPropagation();
 	});
