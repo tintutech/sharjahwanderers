@@ -4,6 +4,15 @@
 	background-repeat: no-repeat;
 }
 
+#restaurant .carouselContainer {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 20px;
+	.carousel {
+		max-width: 300px;
+	}
+}
+
 #restaurant .topContent {
 	max-width: 1024px;
 	margin: 0 auto;

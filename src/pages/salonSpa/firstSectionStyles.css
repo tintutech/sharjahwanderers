@@ -6,7 +6,7 @@
 	.top {
 		display: flex;
 		justify-content: space-between;
-		align-items: flex-end;
+		align-items: auto;
 		margin-bottom: 40px;
 		gap: 10px;
 	}
@@ -21,14 +21,22 @@
 		font-style: italic;
 	}
 	.right {
+		max-width: 400px;
+	}
+	.carousel {
+		max-width: 350px;
+		margin: 20px auto;
+	}
+	.smallCard {
 		width: 280px;
 		flex-shrink: 0;
 		background-color: #38373733;
 		border: 1px solid rgba(108, 201, 202, 0.3);
 		border-radius: 5px;
 		padding: 15px;
+		margin: 0 auto;
 	}
-	.right a {
+	.smallCard a {
 		display: block;
 		background-color: #9494944d;
 		padding: 8px;
@@ -40,7 +48,7 @@
 		font-size: 0.8em;
 		font-weight: 350;
 	}
-	.right p {
+	.smallCard p {
 		font-size: 0.85em;
 		font-weight: 400;
 		letter-spacing: 0.05em;

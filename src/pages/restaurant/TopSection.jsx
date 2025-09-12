@@ -1,6 +1,20 @@
 import "./topSectionStyles.css";
 import { HashLink } from "react-router-hash-link";
 
+import { getCarouselImages } from "/src/contentful.js";
+
+import Carousel from "../../components/Carousel.jsx";
+
+import image1 from "/offers/image1.jpg";
+import image2 from "/offers/image2.png";
+import image3 from "/offers/image3.png";
+import image4 from "/offers/image4.jpg";
+import image5 from "/offers/image5.jpg";
+import image6 from "/offers/image6.jpg";
+import image7 from "/offers/image7.jpg";
+
+let images = [image1, image2, image3, image4, image5, image6, image7];
+
 let rightData = {
 	title: "RESTAURANT & BAR",
 	para: "The comforts of home, classic British fare and popular modern dishes await at the ",
@@ -66,9 +80,14 @@ function Right() {
 
 export default function topSection() {
 	return (
-		<div className="topContent">
-			<Left />
-			<Right />
-		</div>
+		<>
+			<div className="topContent">
+				<Left />
+				<Right />
+			</div>
+			<div className="carouselContainer">
+				<Carousel img={images} />
+			</div>
+		</>
 	);
 }
