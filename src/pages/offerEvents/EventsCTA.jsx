@@ -25,6 +25,13 @@ function Dialog({ eventNames }) {
 export default function CTA(eventNames) {
 	let dialogRoot = ReactDOM.createRoot(document.getElementById("fullWindow"));
 	dialogRoot.render(<Dialog eventNames={eventNames} />);
-	document.getElementById("fullWindow").showModal();
+	let fullWindow = document.getElementById("fullWindow");
+	fullWindow.showModal();
 	document.querySelector("html").classList.add("stopScroll");
+	fullWindow.addEventListener("keydown", (e) => {
+		if (e.key === "Escape") {
+			location.reload();
+		}
+		e.stopPropagation();
+	});
 }

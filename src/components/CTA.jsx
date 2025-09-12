@@ -28,9 +28,19 @@ function Dialog() {
 	);
 }
 
+function escape(e) {}
+
 export default function CTA() {
 	let dialogRoot = ReactDOM.createRoot(document.getElementById("fullWindow"));
 	dialogRoot.render(<Dialog />);
-	document.getElementById("fullWindow").showModal();
+	let fullWindow = document.getElementById("fullWindow");
+	fullWindow.showModal();
 	document.querySelector("html").classList.add("stopScroll");
+	fullWindow.addEventListener("keydown", (e) => {
+		console.log(e);
+		if (e.key === "Escape") {
+			location.reload();
+		}
+		e.stopPropagation();
+	});
 }
