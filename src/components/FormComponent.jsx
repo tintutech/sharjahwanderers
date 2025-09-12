@@ -7,6 +7,7 @@ export default function FormComponent() {
 	const onSubmit = async (event) => {
 		event.preventDefault();
 		document.querySelector("#fullWindow").close();
+		document.querySelector("html").classList.remove("stopScroll");
 
 		try {
 			const formData = new FormData(event.target);
