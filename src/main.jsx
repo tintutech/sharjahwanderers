@@ -23,6 +23,7 @@ export default function App() {
 					<Route path="*" element={<NotFound />} />
 					<Route path="about" element={<AboutMembership />} />
 					<Route path="membership" element={<AboutMembership />} />
+					<Route path="menu" element={<Restaurant />} />
 					<Route path="restaurant" element={<Restaurant />} />
 					<Route path="facilities" element={<Facilities />} />
 					<Route path="salonspa" element={<SalonSpa />} />
