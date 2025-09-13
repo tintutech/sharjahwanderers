@@ -47,14 +47,14 @@ function toggleView(e) {
 let eventNames;
 function Cards({ content, loading }) {
 	eventNames = content.map((e) => e.fields?.eventName);
+	console.log(content);
 	if (loading) return "loading...";
 	return (
 		<>
 			{content?.map((e, index) => {
-				let date = new Date(e.fields?.eventDate);
+				let date = new Date(e.fields?.date);
 				let day = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
-				let image =
-					'url("https:' + e.fields?.eventBanner?.fields?.file?.url + '"';
+				let image = 'url("https:' + e.fields?.image?.fields?.file?.url + '"';
 				return (
 					<div key={index} className="card">
 						<div
@@ -68,12 +68,10 @@ function Cards({ content, loading }) {
 									<p className="month">{months[date.getMonth()]}</p>
 									<p className="date">{day}</p>
 								</div>
-								<p className="two">{e.fields?.eventName}</p>
+								<p className="two">{e.fields?.name}</p>
 							</div>
 							<div className="cardRight">
-								<div className="content">
-									{e.fields?.eventDescription?.content[0]?.content[0]?.value}
-								</div>
+								<div className="content">{e.fields?.description}</div>
 							</div>
 							<div className="closeDiv" onClick={(e) => toggleView(e)}>
 								<div className="horizontal"></div>
