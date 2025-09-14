@@ -18,10 +18,10 @@ function LeftContents() {
 			<div className="contact">
 				<h3>Get in touch</h3>
 				<p>
-					<img alt="phone" src="/phone.svg" /> : +97100000000
+					<img alt="phone" src="/phone.svg" /> : +971 65 662 105
 				</p>
 				<p>
-					<img alt="whatsapp" src="/whatsapp.svg" /> : +97100000000
+					<img alt="whatsapp" src="/whatsapp.svg" /> : +971 58 531 1419
 				</p>
 				<p>
 					<img alt="email" src="/mail.svg" /> : info@Sharjahwsc.com

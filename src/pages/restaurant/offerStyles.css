@@ -41,7 +41,7 @@
 	.card .mainDiv {
 		padding: 20px;
 		padding-top: 10px;
-		height: 400px;
+		height: 300px;
 	}
 	.card p {
 		font-size: 0.9em;
@@ -73,7 +73,7 @@
 		border-color: gray;
 	}
 	.lowerDiv {
-		height: 75%;
+		height: 60%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
