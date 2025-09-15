@@ -24,9 +24,19 @@ export const getRestaurantOffers = () =>
 		.getEntries({ content_type: "restaurantOffers" })
 		.then((response) => response.items);
 
-export const getCarouselImages = () =>
+export const getCateringImages = () =>
 	client
 		.getEntries({ content_type: "cateringCarousel" })
+		.then((response) => response.items);
+
+export const getRestaurantImages = () =>
+	client
+		.getEntries({ content_type: "restaurantCarousel" })
+		.then((response) => response.items);
+
+export const getSalonImages = () =>
+	client
+		.getEntries({ content_type: "salonCarousel" })
 		.then((response) => response.items);
 
 export const getImage = (sysId) =>

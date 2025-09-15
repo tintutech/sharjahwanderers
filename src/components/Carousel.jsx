@@ -2,32 +2,34 @@ import "./carouselStyles.css";
 
 import { useState, useEffect } from "react";
 
-let n = 0;
+export default function Carousel({ img, loading }) {
+	if (loading) return <p>Loading...</p>;
+	let [n, setN] = useState(0);
 
-function slideChange(imageList, setState) {
-	if (n == imageList.length - 1) {
-		n = 0;
-	} else {
-		n++;
+	function slideChange(imageList, setState) {
+		if (n == imageList.length - 1) {
+			setN((n = 0));
+		} else {
+			setN((n = n + 1));
+		}
+		setState(imageList[n]);
 	}
-	setState(imageList[n]);
-}
 
-let interval;
-function intervalSet(imageList, changeImage) {
-	interval = setInterval(() => {
-		slideChange(imageList, changeImage);
-	}, 5000);
-}
+	let interval;
+	function intervalSet(imageList, changeImage) {
+		interval = setInterval(() => {
+			slideChange(imageList, changeImage);
+		}, 5000);
+	}
+	/*
+	function setImage(num, imageList, changeImage) {
+		clearInterval(interval);
+		setN((n = num));
+		changeImage(imageList[n]);
+		intervalSet(imageList, changeImage);
+	}
+	*/
 
-function setImage(num, imageList, changeImage) {
-	clearInterval(interval);
-	n = num;
-	changeImage(imageList[n]);
-	intervalSet(imageList, changeImage);
-}
-
-export default function Carousel({ img }) {
 	let [image, changeImage] = useState(img[0]);
 	useEffect(() => intervalSet(img, changeImage), []);
 	return (
