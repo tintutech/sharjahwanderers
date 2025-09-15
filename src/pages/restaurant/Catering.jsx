@@ -1,6 +1,8 @@
 import Carousel from "../../components/Carousel.jsx";
 import "./cateringStyles.css";
 import CTA from "../../components/CTA.jsx";
+import { useState, useEffect } from "react";
+import { getCateringImages } from "/src/contentful.js";
 
 import image1 from "/offers/image1.jpg";
 import image2 from "/offers/image2.png";
@@ -26,10 +28,20 @@ let catering2 = {
 };
 
 export default function Catering() {
+	let [loading, setLoading] = useState(true);
+	let [imageList, setImgList] = useState([]);
+	useEffect(() => {
+		let img = [];
+		getCateringImages().then((data) => {
+			data.map((e) => img.push(e.fields?.image?.fields?.file?.url));
+			setImgList((imageList = img));
+			setLoading(false);
+		});
+	}, []);
 	return (
 		<div id="catering" className="catering">
 			<div className="leftContents">
-				<Carousel img={images} />
+				<Carousel img={imageList} loading={loading} />
 			</div>
 			<div className="rightContents">
 				<div className="left">

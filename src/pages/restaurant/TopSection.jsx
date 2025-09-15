@@ -1,8 +1,6 @@
 import "./topSectionStyles.css";
 import { HashLink } from "react-router-hash-link";
 
-import { getCarouselImages } from "/src/contentful.js";
-
 import Carousel from "../../components/Carousel.jsx";
 
 import image1 from "/offers/image1.jpg";
