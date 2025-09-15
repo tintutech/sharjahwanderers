@@ -3,7 +3,6 @@ import "./RenderPromoCards.css";
 
 export const RenderPromoCards = ({ promoCards, isLoading }) => {
 	if (isLoading) return <p>Loading...</p>;
-	console.log(promoCards[0].fields);
 	return (
 		<div className="cardContainerPromo">
 			{promoCards?.map((card, index) => (

@@ -1,5 +1,4 @@
 import "./firstSectionStyles.css";
-import { getCarouselImages } from "/src/contentful.js";
 
 import Carousel from "../../components/Carousel.jsx";
 

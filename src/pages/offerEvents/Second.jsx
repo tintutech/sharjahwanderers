@@ -45,9 +45,9 @@ function toggleView(e) {
 }
 
 let eventNames;
+
 function Cards({ content, loading }) {
 	eventNames = content.map((e) => e.fields?.eventName);
-	console.log(content);
 	if (loading) return "loading...";
 	return (
 		<>
