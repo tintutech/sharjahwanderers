@@ -3,7 +3,10 @@ import { HashLink } from "react-router-hash-link";
 
 import Carousel from "../../components/Carousel.jsx";
 import Announcements from "../../components/Announcements.jsx";
+import { getRestaurantImages } from "/src/contentful.js";
+import { useState, useEffect } from "react";
 
+/*
 import image1 from "/offers/image1.jpg";
 import image2 from "/offers/image2.png";
 import image3 from "/offers/image3.png";
@@ -13,6 +16,8 @@ import image6 from "/offers/image6.jpg";
 import image7 from "/offers/image7.jpg";
 
 let images = [image1, image2, image3, image4, image5, image6, image7];
+
+*/
 
 let rightData = {
 	title: "RESTAURANT & BAR",
@@ -77,7 +82,18 @@ function Right() {
 	);
 }
 
-export default function topSection() {
+export default function TopSection() {
+	let [loading, setLoading] = useState(true);
+	let [imageList, setImgList] = useState([]);
+	useEffect(() => {
+		let img = [];
+		getRestaurantImages().then((data) => {
+			data.map((e) => img.push(e.fields?.image?.fields?.file?.url));
+			setImgList((imageList = img));
+			setLoading(false);
+		});
+	}, []);
+
 	return (
 		<>
 			<div className="announcementContainer">
@@ -89,7 +105,7 @@ export default function topSection() {
 				<Right />
 			</div>
 			<div className="carouselContainer">
-				<Carousel img={images} />
+				<Carousel img={imageList} loading={loading} />
 			</div>
 		</>
 	);

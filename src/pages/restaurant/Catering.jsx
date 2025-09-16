@@ -4,6 +4,7 @@ import CTA from "../../components/CTA.jsx";
 import { useState, useEffect } from "react";
 import { getCateringImages } from "/src/contentful.js";
 
+/*
 import image1 from "/offers/image1.jpg";
 import image2 from "/offers/image2.png";
 import image3 from "/offers/image3.png";
@@ -13,7 +14,7 @@ import image6 from "/offers/image6.jpg";
 import image7 from "/offers/image7.jpg";
 
 let images = [image1, image2, image3, image4, image5, image6, image7];
-
+*/
 let catering1 = {
 	p1: "We offer catering services for events hosted within Club premises* and private venues for events and parties of all sizes.",
 	p2: "From corporate events, birthday parties and sports events!",
