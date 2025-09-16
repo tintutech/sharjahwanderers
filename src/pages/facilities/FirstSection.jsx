@@ -1,7 +1,19 @@
 import "./firstSectionStyles.css";
 import CTA from "../../components/CTA.jsx";
+import { getAnnouncements } from "/src/contentful.js";
 
 function Announcement() {
+	getAnnouncements().then((e) => {
+		let info;
+
+		e.map((e) => {
+			console.log(e);
+			if (e.fields?.title === "facilities announcements") {
+				info = e;
+			}
+		});
+		console.log(info);
+	});
 	return (
 		<div className="announcementCard">
 			<p>

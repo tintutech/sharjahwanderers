@@ -3,6 +3,8 @@ import FormComponent from "./FormComponent.jsx";
 import "./eventsCTAStyles.css";
 
 function Dialog({ eventNames }) {
+	let nameList = [];
+	eventNames.eventCards.map((e) => nameList.push(e.fields?.name));
 	return (
 		<div className="eventsCTA">
 			<div className="top">
@@ -17,7 +19,7 @@ function Dialog({ eventNames }) {
 					<img src="/multiply.svg" />
 				</button>
 			</div>
-			<FormComponent titles={eventNames} />
+			<FormComponent titles={nameList} />
 		</div>
 	);
 }

@@ -3,10 +3,6 @@ import Swal from "sweetalert2";
 // import "./formComponentStyles.css";
 import "./Contact.css";
 import { getEventCards } from "/src/contentful.js";
-function EventCardTitles() {
-	console.log("hello");
-	getEventCards().then((e) => console.log(e));
-}
 
 export default function FormComponent({ titles }) {
 	const onSubmit = async (event) => {

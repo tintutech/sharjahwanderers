@@ -24,6 +24,11 @@ export const getRestaurantOffers = () =>
 		.getEntries({ content_type: "restaurantOffers" })
 		.then((response) => response.items);
 
+export const getAnnouncements = () =>
+	client
+		.getEntries({ content_type: "announcements" })
+		.then((response) => response.items);
+
 export const getCateringImages = () =>
 	client
 		.getEntries({ content_type: "cateringCarousel" })

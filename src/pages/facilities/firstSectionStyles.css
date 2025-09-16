@@ -4,10 +4,8 @@
 	margin: 0 auto;
 	margin-top: 50px;
 	.announcementCard {
-		display: none;
 		max-width: 500px;
 		padding: 25px 35px;
-		margin: 0 auto;
 		margin-bottom: 50px;
 		background-color: #00000012;
 		border: 1px solid #f1ccb04f;

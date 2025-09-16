@@ -99,7 +99,7 @@ export default function Second() {
 		<div className="second">
 			<div className="top">
 				<h2>UPCOMING EVENTS</h2>
-				<a onClick={() => CTA(eventNames)}>ATTEND EVENT</a>
+				<a onClick={() => CTA({ eventCards })}>ATTEND EVENT</a>
 			</div>
 			<div className="cardContainer">
 				<Cards content={eventCards} loading={isLoading} />
