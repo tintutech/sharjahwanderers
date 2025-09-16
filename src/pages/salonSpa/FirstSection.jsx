@@ -20,11 +20,9 @@ export default function FirstSection() {
 	useEffect(() => {
 		let img = [];
 		getSalonImages().then((data) => {
-			console.log(data);
 			data.map((e) => img.push(e.fields?.image?.fields?.file?.url));
 			setImgList((imageList = img));
 			setLoading(false);
-			console.log(imageList);
 		});
 	}, []);
 

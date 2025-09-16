@@ -17,7 +17,6 @@ export default function Announcement({ pageTitle }) {
 		});
 	}, []);
 	if (info != false) {
-		console.log(info);
 		return (
 			<div className="announcementCard">
 				<p>
