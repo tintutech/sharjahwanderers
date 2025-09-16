@@ -75,6 +75,7 @@
 }
 
 .mouse {
+	display: none;
 	height: 35px;
 	width: 20px;
 	border-radius: 14px;
@@ -84,7 +85,7 @@
 }
 
 .wheel {
-	height: 5px;
+	height: 10px;
 	width: 2px;
 	display: block;
 	margin: 5px auto;
