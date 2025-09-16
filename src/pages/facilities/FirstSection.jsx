@@ -1,6 +1,11 @@
 import "./firstSectionStyles.css";
 import CTA from "../../components/CTA.jsx";
+import Announcement from "../../components/Announcements.jsx";
+
+/*
+
 import { getAnnouncements } from "/src/contentful.js";
+
 
 function Announcement() {
 	getAnnouncements().then((e) => {
@@ -26,6 +31,7 @@ function Announcement() {
 		</div>
 	);
 }
+*/
 
 function Card() {
 	return (
@@ -42,7 +48,7 @@ function Card() {
 export default function firstSection() {
 	return (
 		<div className="firstSection">
-			<Announcement />
+			<Announcement pageTitle={"facilities announcements"} />
 			<div className="lower">
 				<div className="left">
 					<h3>FACILITIES</h3>
