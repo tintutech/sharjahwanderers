@@ -2,6 +2,7 @@ import "./topSectionStyles.css";
 import { HashLink } from "react-router-hash-link";
 
 import Carousel from "../../components/Carousel.jsx";
+import Announcements from "../../components/Announcements.jsx";
 
 import image1 from "/offers/image1.jpg";
 import image2 from "/offers/image2.png";
@@ -79,6 +80,10 @@ function Right() {
 export default function topSection() {
 	return (
 		<>
+			<div className="announcementContainer">
+				<Announcements pageTitle={"Restaurant Announcements"} />
+			</div>
+
 			<div className="topContent">
 				<Left />
 				<Right />

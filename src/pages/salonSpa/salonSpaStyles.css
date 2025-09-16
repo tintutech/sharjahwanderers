@@ -15,6 +15,13 @@
 	background-size: cover;
 	font-family: "Inter", sans-serif;
 	color: var(--text-color);
+
+	.announcementContainer {
+		max-width: 920px;
+		margin: 0 auto;
+		padding: 20px;
+		padding-bottom: 0;
+	}
 }
 
 li {

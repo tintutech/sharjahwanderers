@@ -2,6 +2,8 @@ import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
 import { getAnnouncements } from "/src/contentful.js";
 import { useState, useEffect } from "react";
 
+import "./announcementStyles.css";
+
 export default function Announcement({ pageTitle }) {
 	let [info, setInfo] = useState("");
 

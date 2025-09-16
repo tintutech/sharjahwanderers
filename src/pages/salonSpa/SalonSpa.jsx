@@ -5,12 +5,17 @@ import SecondSection from "./SecondSection.jsx";
 import ThirdSection from "./ThirdSection.jsx";
 import Title from "../../components/ReactTitle.jsx";
 import "./salonSpaStyles.css";
+import Announcements from "../../components/Announcements.jsx";
 
 export default function SalonSpa() {
 	return (
 		<div id="salonspa">
 			<Title title="Spa and Salon" />
 			<Nav />
+			<div className="announcementContainer">
+				<Announcements pageTitle={"salon announcements"} />
+			</div>
+
 			<FirstSection />
 			<SecondSection />
 			<ThirdSection />

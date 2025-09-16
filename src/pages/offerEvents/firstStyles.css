@@ -8,6 +8,12 @@
 	align-items: center;
 	flex-wrap: wrap;
 }
+#offerEvents .announcementContainer {
+	max-width: 920px;
+	margin: 0 auto;
+	padding: 20px;
+	padding-bottom: 0;
+}
 
 #offerEvents .first .left {
 	max-width: 300px;

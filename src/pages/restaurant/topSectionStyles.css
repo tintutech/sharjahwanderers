@@ -3,6 +3,12 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+#restaurant .announcementContainer {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 20px;
+	padding-bottom: 0;
+}
 
 #restaurant .carouselContainer {
 	max-width: 1024px;
