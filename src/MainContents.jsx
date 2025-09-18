@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import {RenderPromoCards} from './components/RenderPromoCards.jsx';
-import { getPromotionalCards } from './contentful.js';
+import { useEffect, useState } from "react";
+import { RenderPromoCards } from "./components/RenderPromoCards.jsx";
+import { getPromotionalCards } from "./contentful.js";
 
 import "./mainContentStyles.css";
 
@@ -141,7 +141,7 @@ function Membership() {
 				Become part of the club, explore unique offers, and enjoy unparalleled
 				access to our exclusive club.
 			</p>
-			<a onClick={CTA}>ACTION BUTTON</a>
+			<a onClick={CTA}>get membership</a>
 		</div>
 	);
 }
@@ -156,14 +156,14 @@ function GuestbookMembership() {
 }
 
 export default function MainContents() {
-	const [promoCards, setPromoCards] = useState([])
-	const [isLoading, setLoading] = useState(true)
+	const [promoCards, setPromoCards] = useState([]);
+	const [isLoading, setLoading] = useState(true);
 	useEffect(() => {
-		getPromotionalCards().then(data => {
-			setPromoCards(data)
-			setLoading(false)
-		})
-	}, [])
+		getPromotionalCards().then((data) => {
+			setPromoCards(data);
+			setLoading(false);
+		});
+	}, []);
 	return (
 		<>
 			<div className="mainContainer">

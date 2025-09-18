@@ -69,7 +69,7 @@ function Card3() {
 					Become part of the club, explore unique offers, and enjoy unparalleled
 					access to our exclusive club.
 				</p>
-				<button onClick={CTA}>ACTION BUTTON</button>
+				<button onClick={CTA}>get membership</button>
 			</div>
 			<div className="membershipFees">
 				<h3>MEMBERSHIP FEES</h3>
