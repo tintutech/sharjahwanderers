@@ -92,7 +92,9 @@ function Experience() {
 						<p>{data.cardOne.paraOne}</p>
 						<p>{data.cardOne.paraTwo}</p>
 					</div>
-					<a href="/restaurant">EXPLORE</a>
+					<a href="/restaurant" aria-label="link for restaurant page">
+						EXPLORE
+					</a>
 				</div>
 				<div className="card">
 					<div>
@@ -100,7 +102,9 @@ function Experience() {
 						<p>{data.cardTwo.paraOne}</p>
 						<p>{data.cardTwo.paraTwo}</p>
 					</div>
-					<a href="/facilities">EXPLORE</a>
+					<a href="/facilities" aria-label="link for facilities page">
+						EXPLORE
+					</a>
 				</div>
 				<div className="card">
 					<div>
@@ -109,7 +113,9 @@ function Experience() {
 						<p>{data.cardThree.paraOne}</p>
 						<p>{data.cardThree.paraTwo}</p>
 					</div>{" "}
-					<a href="/salonspa">EXPLORE</a>
+					<a href="/salonspa" aria-label="link for salon and spa page">
+						EXPLORE
+					</a>
 				</div>
 			</div>
 		</div>
@@ -141,7 +147,7 @@ function Membership() {
 				Become part of the club, explore unique offers, and enjoy unparalleled
 				access to our exclusive club.
 			</p>
-			<a onClick={CTA}>get membership</a>
+			<button onClick={CTA}>get membership</button>
 		</div>
 	);
 }

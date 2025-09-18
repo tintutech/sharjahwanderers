@@ -39,6 +39,7 @@ function LeftContents() {
 						src={placeholderMap}
 					/>
 					<iframe
+						title="map of sharjah wanderers club"
 						onLoad={(e) => {
 							document.querySelector(".placeholderMap").classList.add("hidden");
 						}}

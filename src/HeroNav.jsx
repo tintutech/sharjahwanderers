@@ -26,6 +26,7 @@ function HeroSection() {
 				<div className="heroRight"></div>
 			</div>
 			<div className="mouse_scroll">
+				<p>Scroll for more</p>
 				<div className="mouse">
 					<div className="wheel"></div>
 				</div>

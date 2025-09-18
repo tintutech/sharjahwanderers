@@ -9,10 +9,13 @@
 .mouse_scroll {
 	display: block;
 	margin: 0 auto;
-	width: 15px;
+	width: 150px;
 	height: 100px;
 	margin-top: 40px;
 	padding-bottom: 200px;
+	* {
+		text-align: center;
+	}
 }
 
 .m_scroll_arrows {
@@ -26,18 +29,20 @@
 	border-right: 2px solid white;
 	border-bottom: 2px solid white;
 	margin: 0 0 3px 4px;
+	margin: 0 auto;
 
 	width: 10px;
 	height: 10px;
 }
 
 .unu {
-	margin-top: 1px;
+	margin-top: 5px;
 }
 
 .unu,
 .doi,
 .trei {
+	margin-bottom: 2px;
 	-webkit-animation: mouse-scroll 1s infinite;
 	-moz-animation: mouse-scroll 1s infinite;
 	animation: mouse-scroll 1s infinite;
