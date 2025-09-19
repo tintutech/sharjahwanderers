@@ -8,7 +8,10 @@ export const RenderPromoCards = ({ promoCards, isLoading }) => {
 			{promoCards?.map((card, index) => (
 				<div key={index} className="card">
 					<img
-						src={card?.fields?.image?.fields?.file?.url || card?.fields?.title}
+						src={
+							"https:" + card?.fields?.image?.fields?.file?.url ||
+							card?.fields?.title
+						}
 						alt={card.fields?.image?.fields?.title}
 					/>
 					<div className="lowerCard">

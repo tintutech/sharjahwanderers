@@ -6,8 +6,8 @@ import { HashLink } from "react-router-hash-link";
 function LeftContents() {
 	return (
 		<div className="footerLeft">
-			<a href="#">
-				<img src="/logo.svg" />
+			<a href="/">
+				<img alt="website logo" src="/logo.svg" />
 			</a>
 			<div>
 				<h2 className="footerBold">Sharjah Wanderers Sports Club</h2>
@@ -62,14 +62,14 @@ function RightContents() {
 		<div className="footerRight">
 			<div className="socials">
 				<div className="links">
-					<a href="#">
+					<a
+						href="https://www.facebook.com/pages/Sharjah%20Wanderers%20Sports%20Club/1185589958271563/?http_ref=eyJ0cyI6MTc1NzYzODUzMTAwMCwiciI6Imh0dHBzOlwvXC93d3cuZ29vZ2xlLmNvbVwvIn0%3D"
+						target="_blank"
+					>
 						<img alt="facebook" src="/facebook.svg" />
 					</a>
-					<a href="#">
+					<a href="https://www.instagram.com/sharjahwanderers/" target="_blank">
 						<img alt="instagram" src="/instagram.svg" />
-					</a>
-					<a href="#">
-						<img alt="twitter" src="/twitter.svg" />
 					</a>
 				</div>
 				<p>Follow us on social media</p>
@@ -117,7 +117,9 @@ export default function Footer() {
 		<>
 			<div className="endQuote">
 				<p>Not all those who wander are lost,</p>
-				<a href="#">Pay us a Visit.</a>
+				<a href="https://maps.app.goo.gl/UgQXD1eHRTmpYSSg7" target="_blank">
+					Pay us a Visit.
+				</a>
 			</div>
 
 			<div className="footer">
