@@ -10,7 +10,6 @@ const data = {
 		paraOne:
 			"Let our internationally trained chefs provide you with the comfort of Classic British fare and popular modern dishes at our clubhouse restaurant & bar.",
 		paraTwo: "Delivery and Catering available.",
-		link: "",
 	},
 	cardTwo: {
 		title: "PLAY",
@@ -18,14 +17,12 @@ const data = {
 			"Train at our fully equipped gym, swim at our pool, play at our football field, padel court and tennis court.",
 		paraTwo:
 			"Learn to play your favorite sport or train with our certified trainers.",
-		link: "",
 	},
 	cardThree: {
 		title: "INDULGE",
 		paraOne:
 			"Pamper yourself at our best in class spa facilities, get a makeover at our Wandies Salon & Spa.",
 		paraTwo: "Enjoy a complimentary coffee while you get rejuvenated!",
-		link: "",
 	},
 };
 
@@ -60,15 +57,15 @@ function About() {
 						<div></div>
 						<ul>
 							<li>
-								<img className="tick" src="/tick.svg" />
+								<img alt="tick" className="tick" src="/tick.svg" />
 								{aboutData.list[0]}
 							</li>
 							<li>
-								<img className="tick" src="/tick.svg" />
+								<img alt="tick" className="tick" src="/tick.svg" />
 								{aboutData.list[1]}
 							</li>
 							<li>
-								<img className="tick" src="/tick.svg" />
+								<img alt="tick" className="tick" src="/tick.svg" />
 								{aboutData.list[2]}
 							</li>
 						</ul>

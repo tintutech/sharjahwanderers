@@ -12,7 +12,7 @@ import "./restaurantStyles.css";
 export default function Restaurant() {
 	return (
 		<div id="restaurant">
-			<Title title="Restaurant" />
+			<Title title="Restaurant" description="Restaurant Page" />
 			<div className="top">
 				<Nav />
 				<TopSection />

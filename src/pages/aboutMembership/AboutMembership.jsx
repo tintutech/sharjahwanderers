@@ -11,7 +11,10 @@ export default function AboutMembership() {
 	try {
 		return (
 			<div id="aboutMembership">
-				<Title title="About and Membership" />
+				<Title
+					title="About and Membership"
+					description="About and Membership page"
+				/>
 				<div className="topSection">
 					<Nav />
 					<About />

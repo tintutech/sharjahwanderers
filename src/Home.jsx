@@ -7,7 +7,10 @@ import "./homeStyles.css";
 export default function Home() {
 	return (
 		<div id="home">
-			<Title title="Home" />
+			<Title
+				title="Home"
+				description="Home Page for Sharjah Wanderers Sports Club"
+			/>
 			<HeroNav />
 			<MainContents />
 			<Footer />

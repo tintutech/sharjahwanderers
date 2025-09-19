@@ -18,12 +18,12 @@ export default function About() {
 					<a href="https://www.instagram.com/sharjahrugby/" target="_blank">
 						Sharjah Wanderers Rugby team
 					</a>
-					<img src={external} />
+					<img alt="external link icon" src={external} />
 					and{" "}
 					<a href="https://www.instagram.com/sharjah_gaels/" target="_blank">
 						Sharjah Gaels GAA
 					</a>
-					<img src={external} />.
+					<img alt="external link icon" src={external} />.
 				</p>
 				<p>
 					Sharjah Wanderers Sports Club has the only licensed bar at their

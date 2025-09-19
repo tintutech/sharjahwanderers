@@ -12,7 +12,7 @@ import "./facilitiesStyles.css";
 export default function Facilities() {
 	return (
 		<div id="facilities">
-			<Title title="Facilities" />
+			<Title title="Facilities" description="Facilities Page" />
 			<Nav />
 			<FirstSection />
 			<SecondSection />

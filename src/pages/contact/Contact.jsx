@@ -9,7 +9,10 @@ import Timing from "./Timing.jsx";
 export default function Contact() {
 	return (
 		<div id="contact">
-			<Title title="Contact" />
+			<Title
+				title="Contact"
+				description="Contact Page"
+			/>
 			<Nav />
 			<Form />
 			<Timing />

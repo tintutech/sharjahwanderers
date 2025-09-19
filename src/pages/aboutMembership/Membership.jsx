@@ -42,7 +42,7 @@ function Card2() {
 	let paragraphs = data2.benefits.map((e) => {
 		return (
 			<p className="perks" key={n++}>
-				<img src={tick} />
+				<img alt="tick" src={tick} />
 				<span>{e}</span>
 			</p>
 		);

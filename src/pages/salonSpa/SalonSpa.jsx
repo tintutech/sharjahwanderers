@@ -10,7 +10,7 @@ import Announcements from "../../components/Announcements.jsx";
 export default function SalonSpa() {
 	return (
 		<div id="salonspa">
-			<Title title="Spa and Salon" />
+			<Title title="Spa and Salon" description="Spa and Salon Page" />
 			<Nav />
 			<div className="announcementContainer">
 				<Announcements pageTitle={"salon announcements"} />
